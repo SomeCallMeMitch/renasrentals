@@ -64,8 +64,8 @@ const PROPERTIES = [
     parking: "On-site parking",
     laundry: "On-site laundry",
     outdoor: "Yard space",
-    video: "",
-    videoThumb: "assets/property-17.jpg",
+    video: "https://www.youtube.com/embed/mv2Pg6q8Yqo?autoplay=1&rel=0",
+    videoThumb: "https://img.youtube.com/vi/mv2Pg6q8Yqo/hqdefault.jpg",
     image: "assets/property-17.jpg",
     imageAlt: "Exterior and yard view at 5013 63rd St",
     ctaLabel: "Ask About 5013",
@@ -237,7 +237,7 @@ const FAQS = [
   },
   {
     question: "Are video tours available?",
-    answer: "Video tour links are available for 5005 63rd St and 5011 63rd St. The 5013 63rd St page includes photos; ask Rena's Rentals for the latest tour options."
+    answer: "Yes. Video tour links are available for 5005 63rd St, 5011 63rd St, and 5013 63rd St. Ask Rena's Rentals for the latest tour options."
   },
   {
     question: "Is parking available?",
@@ -369,11 +369,19 @@ function renderProperties() {
     const actions = document.createElement("div");
     actions.className = "card-actions";
 
-    const tour = document.createElement("a");
+    const tour = document.createElement(property.video ? "button" : "a");
     tour.className = "button button-small";
     tour.dataset.cta = `property_${property.id}_inquiry`;
-    tour.href = "#gallery";
-    tour.textContent = "View Photos + Tour";
+    if (property.video) {
+      tour.type = "button";
+      tour.classList.add("video-trigger");
+      tour.dataset.videoTitle = `${property.address} video tour`;
+      tour.dataset.videoSrc = property.video;
+      tour.textContent = "Watch Video Tour";
+    } else {
+      tour.href = "#gallery";
+      tour.textContent = "View Photos";
+    }
 
     const inquire = document.createElement("a");
     inquire.className = "text-link";
@@ -571,14 +579,12 @@ if (galleryGrid) {
   });
 }
 
-if (videoGrid) {
-  videoGrid.addEventListener("click", (event) => {
-    const button = event.target.closest(".video-card");
-    if (button) {
-      openVideo(button);
-    }
-  });
-}
+document.addEventListener("click", (event) => {
+  const button = event.target.closest(".video-card, .video-trigger");
+  if (button) {
+    openVideo(button);
+  }
+});
 
 document.querySelectorAll("[data-close-modal]").forEach((button) => {
   button.addEventListener("click", closePhotoModal);
