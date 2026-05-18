@@ -377,6 +377,12 @@ p {
   box-shadow: var(--shadow);
 }
 
+.property-card:nth-child(3):last-child {
+  grid-column: 1 / -1;
+  width: min(100%, 640px);
+  justify-self: center;
+}
+
 .property-image-wrap {
   position: relative;
   aspect-ratio: 4 / 3;
@@ -943,6 +949,11 @@ summary:focus-visible {
   .parent-section,
   .video-section {
     grid-template-columns: 1fr;
+  }
+
+  .property-card:nth-child(3):last-child {
+    grid-column: auto;
+    width: 100%;
   }
 
   .hero {

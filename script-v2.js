@@ -52,6 +52,30 @@ const PROPERTIES = [
       "Full kitchen and shared living space",
       "On-site parking and laundry"
     ]
+  },
+  {
+    id: "5013",
+    address: "5013 63rd St",
+    beds: "3",
+    baths: "3",
+    pricing: "$5,050/month",
+    pricingNote: "Back-house option. Ask about current lease structure and availability.",
+    availability: "Available August 2026",
+    parking: "On-site parking",
+    laundry: "On-site laundry",
+    outdoor: "Yard space",
+    video: "",
+    videoThumb: "assets/property-17.jpg",
+    image: "assets/property-17.jpg",
+    imageAlt: "Exterior and yard view at 5013 63rd St",
+    ctaLabel: "Ask About 5013",
+    benefits: [
+      "3-bedroom, 3-bath back-house option",
+      "Each bedroom has an en suite bathroom",
+      "Full kitchen with stainless appliances",
+      "Air conditioning and heating controls",
+      "On-site parking, laundry, and gardener service"
+    ]
   }
 ];
 
@@ -162,16 +186,49 @@ const GALLERY = [
     alt: "Kitchen counters and double sink at 5005 63rd St",
     title: "Large kitchen",
     caption: "Counter space and full kitchen layout"
+  },
+  {
+    property: "5013",
+    category: "exterior",
+    src: "assets/property-17.jpg",
+    alt: "Exterior and yard view at 5013 63rd St",
+    title: "Back-house setting",
+    caption: "3-bedroom back house with yard space",
+    wide: true
+  },
+  {
+    property: "5013",
+    category: "kitchen",
+    src: "assets/property-20.jpg",
+    alt: "Kitchen with white cabinets and stainless appliances at 5013 63rd St",
+    title: "Updated kitchen",
+    caption: "Full kitchen with stainless appliances"
+  },
+  {
+    property: "5013",
+    category: "bathrooms",
+    src: "assets/property-18.jpg",
+    alt: "Bathroom with shower tub and vanity at 5013 63rd St",
+    title: "En suite baths",
+    caption: "Each bedroom has its own bathroom"
+  },
+  {
+    property: "5013",
+    category: "bedrooms",
+    src: "assets/property-22.jpg",
+    alt: "Bedroom and closet area at 5013 63rd St",
+    title: "Private bedrooms",
+    caption: "Bedroom layout with closet and personal space"
   }
 ];
 
 const FAQS = [
   {
     question: "How close are the homes to SDSU?",
-    answer: "The Rena's Rentals pages describe both homes as a 10 minute walk to campus near 63rd & Pontiac. Contact Rena's Rentals for current map details and tour timing."
+    answer: "The Rena's Rentals pages describe the 63rd Street homes as a 10 minute walk to campus near 63rd & Pontiac. Contact Rena's Rentals for current map details and tour timing."
   },
   {
-    question: "Can smaller groups inquire?",
+    question: "Can a smaller group inquire?",
     answer: "Yes. You do not need to have a full group before reaching out. Text your current group size, timing, and preferred home to ask about current options."
   },
   {
@@ -180,11 +237,11 @@ const FAQS = [
   },
   {
     question: "Are video tours available?",
-    answer: "Yes. The page includes video tour links for both 5005 63rd St and 5011 63rd St."
+    answer: "Video tour links are available for 5005 63rd St and 5011 63rd St. The 5013 63rd St page includes photos; ask Rena's Rentals for the latest tour options."
   },
   {
     question: "Is parking available?",
-    answer: "Both homes list on-site parking. 5005 lists parking for 4-6 vehicles and 5011 lists parking for 5 vehicles. Contact Rena's Rentals for current parking terms."
+    answer: "On-site parking is listed for the homes. Private driveway parking is for tenants only and may be billed monthly per vehicle. Contact Rena's Rentals for current parking terms."
   },
   {
     question: "Are bedrooms private?",
@@ -192,19 +249,39 @@ const FAQS = [
   },
   {
     question: "What is the application process?",
-    answer: "Contact Rena's Rentals for the current application process. If guarantors are involved, ask what documentation and timing are required before tours."
+    answer: "Each prospective tenant applies for approval. If a guarantor is needed, the guarantor also applies, completes the credit check, and signs a Rent Guarantee Form. After approvals and required documents are complete, Rena's Rentals collects the security deposit, assigns the house to the group, and prepares the lease for electronic signature."
   },
   {
-    question: "Are the homes rented by room or as a full house?",
-    answer: "Rooms are currently promoted from $1,100/month, and full groups or smaller roommate groups can inquire. Contact Rena's Rentals for the current structure by home."
-  },
-  {
-    question: "What lease terms are available?",
+    question: "What lease term is available?",
     answer: "Contact Rena's Rentals for current lease terms and availability before making plans."
   },
   {
-    question: "Who handles maintenance?",
-    answer: "Rena's Rentals is the direct contact for rental questions and tours. Ask during the tour how maintenance requests are submitted and handled."
+    question: "Are these homes owner-managed?",
+    answer: "The source site provides direct Rena's Rentals phone and email contact for scheduling viewings and rental questions."
+  },
+  {
+    question: "Who pays utilities?",
+    answer: "Tenants pay gas, electric, water, internet, and trash."
+  },
+  {
+    question: "How do tenants pay utilities?",
+    answer: "A designated tenant sets up gas and electric service and pays that vendor directly. A designated tenant also sets up Cox Cable and pays directly. The landlord receives the water bill, divides it equally by the number of tenants on the property, and bills the house for reimbursement. Trash is added to the rent charge."
+  },
+  {
+    question: "How much are utilities?",
+    answer: "Utility costs are based on consumption. More water use, air conditioning, and electric use will increase the bill."
+  },
+  {
+    question: "Are pets allowed?",
+    answer: "Pets are considered based on breed, age, and training. Ask Rena's Rentals about current pet rent, agreement, guarantor, and approval requirements."
+  },
+  {
+    question: "What are the steps to get this house?",
+    answer: "Each prospective tenant applies for approval. If a guarantor is needed, the guarantor also applies, completes the credit check, and signs a Rent Guarantee Form. After approvals and required documents are complete, Rena's Rentals collects the security deposit, assigns the house to the group, and prepares the lease for electronic signature."
+  },
+  {
+    question: "What if I want to study abroad for a semester?",
+    answer: "If you plan to be on the lease for only part of the year, ask about the replacement process. A replacement tenant may need to be vetted and approved before taking your place on the lease."
   }
 ];
 
@@ -355,7 +432,7 @@ function renderVideos() {
 
   videoGrid.innerHTML = "";
 
-  PROPERTIES.forEach((property) => {
+  PROPERTIES.filter((property) => property.video).forEach((property) => {
     const button = document.createElement("button");
     button.className = "video-card";
     button.type = "button";
