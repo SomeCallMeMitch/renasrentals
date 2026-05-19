@@ -8,6 +8,7 @@
       name="description"
       content="Private-bedroom SDSU-area homes on 63rd Street with rooms from $1,100, parking, full kitchens, shared living space, and parent-friendly tours."
     >
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.4/dist/photoswipe.css">
     <link rel="stylesheet" href="styles-v2.css">
   </head>
   <body>
@@ -21,7 +22,7 @@
       </a>
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="#homes">Homes</a>
-        <a href="#gallery">Photos</a>
+        <a href="#homes">Photos</a>
         <a href="#groups">Group Options</a>
         <a href="#parents">Parents</a>
         <a href="#faq">FAQ</a>
@@ -39,7 +40,7 @@
           <p class="eyebrow">Rooms from $1,100 near 63rd & Pontiac</p>
           <h1 id="hero-title">SDSU-Area Private-Bedroom Homes for Full or Partial Roommate Groups</h1>
           <p class="hero-subhead">
-            Two spacious 63rd Street homes with real bedrooms, full kitchens, parking, shared living
+            Three 63rd Street homes with real bedrooms, full kitchens, parking, shared living
             space, outdoor areas, and parent-friendly tours. Have 2-4 people? You can still inquire.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
@@ -47,7 +48,7 @@
             <a class="button button-secondary" data-cta="hero_group_options" href="#groups">Ask About Group Options</a>
           </div>
           <ul class="proof-chips" aria-label="Key property facts">
-            <li>5BR & 6BR homes</li>
+            <li>3BR, 5BR & 6BR homes</li>
             <li>Private bedrooms</li>
             <li>Parking</li>
             <li>Full kitchens</li>
@@ -93,7 +94,7 @@
       <section class="section" id="homes" aria-labelledby="homes-title">
         <div class="section-heading">
           <p class="eyebrow">Compare the homes</p>
-          <h2 id="homes-title">Three 63rd Street Options</h2>
+          <h2 id="homes-title">Tour the Homes: 5005, 5011, and 5013 63rd St</h2>
           <p>
             The homes are near SDSU in the College Area, with private-bedroom options,
             full-house possibilities, and room pricing from $1,100/month in the larger homes.
@@ -162,24 +163,6 @@
             </ul>
           </article>
         </div>
-      </section>
-
-      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
-        <div class="section-heading">
-          <p class="eyebrow">Photo sequence</p>
-          <h2 id="gallery-title">See the Spaces in the Order Students Use Them</h2>
-          <p>Cook together, hang out, settle into private rooms, then compare bathrooms, outdoor areas, exterior, and parking.</p>
-        </div>
-        <div class="gallery-toolbar" aria-label="Gallery filters">
-          <button class="filter-button is-active" type="button" data-filter="all">All</button>
-          <button class="filter-button" type="button" data-filter="kitchen">Kitchen</button>
-          <button class="filter-button" type="button" data-filter="bedrooms">Bedrooms</button>
-          <button class="filter-button" type="button" data-filter="bathrooms">Bathrooms</button>
-          <button class="filter-button" type="button" data-filter="living">Living/Common Space</button>
-          <button class="filter-button" type="button" data-filter="outdoor">Outdoor Space</button>
-          <button class="filter-button" type="button" data-filter="exterior">Exterior/Parking</button>
-        </div>
-        <div class="gallery-grid" id="gallery-grid"></div>
       </section>
 
       <section class="section video-section" aria-labelledby="video-title">
@@ -261,15 +244,6 @@
       <a data-cta="sticky_text" href="sms:+16199172011?&body=Hi%20Rena%2C%20I%27m%20interested%20in%20the%2063rd%20Street%20SDSU%20homes.">Text</a>
       <a data-cta="sticky_call" href="tel:+16199172011">Call</a>
       <a data-cta="sticky_tour" href="#tour">Tour</a>
-    </div>
-
-    <div class="photo-modal" id="photo-modal" aria-hidden="true">
-      <button class="modal-backdrop" type="button" data-close-modal aria-label="Close enlarged photo"></button>
-      <div class="modal-frame" role="dialog" aria-modal="true" aria-labelledby="modal-caption">
-        <button class="modal-close" type="button" data-close-modal aria-label="Close enlarged photo">Close</button>
-        <img id="modal-image" src="" alt="">
-        <p id="modal-caption"></p>
-      </div>
     </div>
 
     <div class="video-modal" id="video-modal" aria-hidden="true">

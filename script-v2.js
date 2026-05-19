@@ -79,148 +79,93 @@ const PROPERTIES = [
   }
 ];
 
-const GALLERY = [
-  {
-    property: "5005",
-    category: "kitchen",
-    src: "assets/property-02.jpeg",
-    alt: "Kitchen view into living space at 5005 63rd St",
-    title: "Cook together",
-    caption: "Full kitchen connected to shared living space",
-    featured: true
-  },
-  {
-    property: "5011",
-    category: "kitchen",
-    src: "assets/property-07.jpg",
-    alt: "Kitchen island and cabinetry at 5011 63rd St",
-    title: "Kitchen island",
-    caption: "Full kitchen with island seating and storage"
-  },
-  {
-    property: "5011",
-    category: "living",
-    src: "assets/property-16.jpg",
-    alt: "Living room with exposed wood beam ceiling at 5011 63rd St",
-    title: "Hang out",
-    caption: "Large common area for roommates to spread out",
-    wide: true
-  },
-  {
-    property: "5005",
-    category: "living",
-    src: "assets/property-05.jpeg",
-    alt: "Open living and dining room at 5005 63rd St",
-    title: "Living + dining",
-    caption: "Shared room for meals, study, and downtime"
-  },
-  {
-    property: "5005",
-    category: "outdoor",
-    src: "assets/property-08.jpeg",
-    alt: "Outdoor patio and planters at 5005 63rd St",
-    title: "Outdoor patio",
-    caption: "Outdoor space for relaxing between classes",
-    wide: true
-  },
-  {
-    property: "5005",
-    category: "bedrooms",
-    src: "assets/property-13.jpg",
-    alt: "Private bedroom with window at 5005 63rd St",
-    title: "Private bedroom",
-    caption: "Bedroom with window and personal space"
-  },
-  {
-    property: "5005",
-    category: "bathrooms",
-    src: "assets/property-14.jpg",
-    alt: "Bathroom vanity and shower at 5005 63rd St",
-    title: "Bathroom",
-    caption: "Multiple bathrooms for roommate convenience"
-  },
-  {
-    property: "5011",
-    category: "exterior",
-    src: "assets/property-11.jpg",
-    alt: "Front exterior and lawn at 5011 63rd St",
-    title: "Real house setting",
-    caption: "Front exterior and lawn near SDSU"
-  },
-  {
-    property: "5005",
-    category: "exterior",
-    src: "assets/property-09.jpg",
-    alt: "Front exterior and driveway at 5005 63rd St",
-    title: "Exterior + driveway",
-    caption: "House setting with driveway parking"
-  },
-  {
-    property: "5011",
-    category: "outdoor",
-    src: "assets/property-06.jpg",
-    alt: "Side yard and home exterior at 5011 63rd St",
-    title: "Side yard",
-    caption: "Outdoor space alongside the home"
-  },
-  {
-    property: "5011",
-    category: "kitchen",
-    src: "assets/property-12.jpg",
-    alt: "Kitchen cabinetry and appliances at 5011 63rd St",
-    title: "Full-size appliances",
-    caption: "Kitchen storage and appliances for shared routines"
-  },
-  {
-    property: "5011",
-    category: "kitchen",
-    src: "assets/property-15.jpg",
-    alt: "Kitchen counter and pass-through seating at 5011 63rd St",
-    title: "Bar seating",
-    caption: "Counter seating for quick meals"
-  },
-  {
-    property: "5005",
-    category: "kitchen",
-    src: "assets/property-04.jpeg",
-    alt: "Kitchen counters and double sink at 5005 63rd St",
-    title: "Large kitchen",
-    caption: "Counter space and full kitchen layout"
-  },
-  {
-    property: "5013",
-    category: "exterior",
-    src: "assets/property-17.jpg",
-    alt: "Exterior and yard view at 5013 63rd St",
-    title: "Back-house setting",
-    caption: "3-bedroom back house with yard space",
-    wide: true
-  },
-  {
-    property: "5013",
-    category: "kitchen",
-    src: "assets/property-20.jpg",
-    alt: "Kitchen with white cabinets and stainless appliances at 5013 63rd St",
-    title: "Updated kitchen",
-    caption: "Full kitchen with stainless appliances"
-  },
-  {
-    property: "5013",
-    category: "bathrooms",
-    src: "assets/property-18.jpg",
-    alt: "Bathroom with shower tub and vanity at 5013 63rd St",
-    title: "En suite baths",
-    caption: "Each bedroom has its own bathroom"
-  },
-  {
-    property: "5013",
-    category: "bedrooms",
-    src: "assets/property-22.jpg",
-    alt: "Bedroom and closet area at 5013 63rd St",
-    title: "Private bedrooms",
-    caption: "Bedroom layout with closet and personal space"
-  }
-];
+const GALLERY_DIMENSIONS = {
+  "5005": [[1447, 1400], [640, 456], [1800, 1350], [1800, 1350], [512, 384], [1800, 1350], [288, 384], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1050, 1400], [1800, 1350], [1800, 1350], [1050, 1400], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [500, 375]],
+  "5011": [[1800, 1350], [1200, 899], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1200, 900], [900, 1200], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [900, 1200], [1050, 1400], [1050, 1400], [1050, 1400]],
+  "5013": [[1190, 1400], [1800, 1212], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1506, 1400], [1506, 1400], [1800, 1350], [1800, 1350], [1800, 1350]]
+};
+
+const GALLERY_LABELS = {
+  "5005": [
+    ["Exterior", "Front exterior and 63rd Street setting"],
+    ["Kitchen", "Kitchen and shared living area"],
+    ["Kitchen", "Shared kitchen storage and appliances"],
+    ["Living", "Open common space for roommates"],
+    ["Living", "Shared room for meals, study, and downtime"],
+    ["Kitchen", "Kitchen connected to the common areas"],
+    ["Bedroom", "Private bedroom option"],
+    ["Outdoor", "Patio and outdoor space"],
+    ["Bedroom", "Private bedroom layout"],
+    ["Kitchen", "Large shared kitchen view"],
+    ["Kitchen", "Counter space and full kitchen layout"],
+    ["Living", "Shared living area"],
+    ["Bedroom", "Private bedroom with natural light"],
+    ["Bedroom", "Bedroom storage and personal space"],
+    ["Bathroom", "Bathroom vanity and shower"],
+    ["Bathroom", "Bathroom detail"],
+    ["Outdoor", "Outdoor patio and yard area"],
+    ["Exterior", "Driveway and exterior approach"],
+    ["Bedroom", "Private bedroom view"],
+    ["Bathroom", "Bathroom layout"],
+    ["Living", "Roommate common area"],
+    ["Kitchen", "Appliances and prep space"],
+    ["Outdoor", "Outdoor space for the house"],
+    ["Exterior", "Home exterior and parking approach"],
+    ["Bedroom", "Private room option"],
+    ["Exterior", "Street and home context"]
+  ],
+  "5011": [
+    ["Exterior", "Front exterior and lawn near SDSU"],
+    ["Kitchen", "Kitchen island and cabinetry"],
+    ["Kitchen", "Kitchen storage and prep space"],
+    ["Kitchen", "Full-size appliances and shared routines"],
+    ["Living", "Large common area with exposed beam ceiling"],
+    ["Living", "Open floor plan common space"],
+    ["Kitchen", "Pass-through seating and counter area"],
+    ["Kitchen", "Full kitchen layout"],
+    ["Outdoor", "Side yard and home exterior"],
+    ["Bedroom", "Extra-large private bedroom"],
+    ["Bedroom", "Private bedroom option"],
+    ["Bedroom", "Bedroom space with natural light"],
+    ["Bathroom", "Bathroom layout"],
+    ["Bathroom", "Bathroom vanity and shower area"],
+    ["Bathroom", "Bathroom detail"],
+    ["Living", "Common area for roommates"],
+    ["Kitchen", "Kitchen counter and dining flow"],
+    ["Kitchen", "Storage and appliance view"],
+    ["Exterior", "Exterior approach and parking context"],
+    ["Outdoor", "Outdoor space alongside the home"],
+    ["Bedroom", "Private bedroom view"],
+    ["Bathroom", "Bathroom and sink area"],
+    ["Bedroom", "Bedroom storage and window"],
+    ["Exterior", "Home exterior detail"]
+  ],
+  "5013": [
+    ["Exterior", "Back-house exterior and yard space"],
+    ["Exterior", "5013 entry and private back-house setting"],
+    ["Kitchen", "Updated kitchen with stainless appliances"],
+    ["Kitchen", "Kitchen cabinetry and counter space"],
+    ["Kitchen", "Full kitchen layout"],
+    ["Bathroom", "En suite bathroom with vanity and shower"],
+    ["Living", "Open living and dining area"],
+    ["Bedroom", "Private bedroom with closet space"],
+    ["Bedroom", "Bedroom and personal space"],
+    ["Bathroom", "Bathroom vanity and tub shower"],
+    ["Living", "Shared interior space"],
+    ["Kitchen", "Kitchen sink and appliance wall"],
+    ["Bedroom", "Private bedroom option"],
+    ["Bedroom", "Bedroom with natural light"],
+    ["Bathroom", "Bathroom detail"],
+    ["Living", "Interior common area"],
+    ["Bedroom", "Bedroom storage view"],
+    ["Outdoor", "Yard and outdoor area"],
+    ["Exterior", "Back-house exterior detail"],
+    ["Exterior", "Entry and walkway context"],
+    ["Kitchen", "Kitchen and storage view"],
+    ["Living", "Roommate common space"],
+    ["Exterior", "Exterior and parking approach"]
+  ]
+};
 
 const FAQS = [
   {
@@ -286,20 +231,16 @@ const FAQS = [
 ];
 
 const propertyCards = document.querySelector("#property-cards");
-const galleryGrid = document.querySelector("#gallery-grid");
 const videoGrid = document.querySelector("#video-grid");
 const faqGrid = document.querySelector("#faq-grid");
-const modal = document.querySelector("#photo-modal");
-const modalImage = document.querySelector("#modal-image");
-const modalCaption = document.querySelector("#modal-caption");
 const videoModal = document.querySelector("#video-modal");
 const videoIframe = document.querySelector("#video-iframe");
 const videoModalTitle = document.querySelector("#video-modal-title");
-let activeFilter = "all";
-let lastFocusedGalleryItem = null;
 let lastFocusedVideoItem = null;
+let PhotoSwipeConstructor = null;
 
 const textMessage = encodeURIComponent("Hi Rena, I'm interested in the 63rd Street SDSU homes. My group size is ");
+const photoswipeModuleUrl = "https://unpkg.com/photoswipe@5.4.4/dist/photoswipe.esm.js";
 
 function createList(items, className = "feature-list") {
   const list = document.createElement("ul");
@@ -314,6 +255,104 @@ function createList(items, className = "feature-list") {
   return list;
 }
 
+function getProperty(id) {
+  return PROPERTIES.find((property) => property.id === id);
+}
+
+function createGalleryPhotos(property) {
+  const dimensions = GALLERY_DIMENSIONS[property.id] || [];
+  const labels = GALLERY_LABELS[property.id] || [];
+
+  return dimensions.map(([width, height], index) => {
+    const photoNumber = index + 1;
+    const [category = "Photo Tour", caption = "Property photo from the old Rena's Rentals page"] = labels[index] || [];
+    const padded = String(photoNumber).padStart(2, "0");
+    const src = `assets/property-galleries/${property.id}/${property.id}-${padded}.jpg`;
+    const title = `${property.address} - ${category}`;
+
+    return {
+      src,
+      width,
+      height,
+      category,
+      title,
+      caption,
+      alt: `${title}: ${caption}`,
+      photoNumber
+    };
+  });
+}
+
+function getPropertyPhotos(propertyId) {
+  const property = getProperty(propertyId);
+  return property ? createGalleryPhotos(property) : [];
+}
+
+async function loadPhotoSwipe() {
+  if (PhotoSwipeConstructor) {
+    return PhotoSwipeConstructor;
+  }
+
+  const module = await import(photoswipeModuleUrl);
+  PhotoSwipeConstructor = module.default;
+  return PhotoSwipeConstructor;
+}
+
+function registerPhotoSwipeCaption(pswp, property, photos) {
+  pswp.on("uiRegister", () => {
+    pswp.ui.registerElement({
+      name: "property-caption",
+      order: 9,
+      isButton: false,
+      appendTo: "root",
+      html: "",
+      onInit: (element, instance) => {
+        const updateCaption = () => {
+          const item = photos[instance.currIndex];
+          if (!item) {
+            return;
+          }
+
+          element.innerHTML = `
+            <strong>${property.address} - ${item.category} - ${instance.currIndex + 1} of ${photos.length}</strong>
+            <span>${item.caption}</span>
+          `;
+        };
+
+        instance.on("change", updateCaption);
+        updateCaption();
+      }
+    });
+  });
+}
+
+async function openPropertyGallery(propertyId, startIndex = 0) {
+  const property = getProperty(propertyId);
+  const photos = getPropertyPhotos(propertyId);
+
+  if (!property || photos.length === 0) {
+    return;
+  }
+
+  const PhotoSwipe = await loadPhotoSwipe();
+  const pswp = new PhotoSwipe({
+    dataSource: photos.map((photo) => ({
+      src: photo.src,
+      width: photo.width,
+      height: photo.height,
+      alt: photo.alt
+    })),
+    index: Math.max(0, Math.min(startIndex, photos.length - 1)),
+    bgOpacity: 0.94,
+    showHideAnimationType: "fade",
+    padding: { top: 44, bottom: 80, left: 16, right: 16 },
+    wheelToZoom: true
+  });
+
+  registerPhotoSwipeCaption(pswp, property, photos);
+  pswp.init();
+}
+
 function renderProperties() {
   if (!propertyCards) {
     return;
@@ -322,22 +361,73 @@ function renderProperties() {
   propertyCards.innerHTML = "";
 
   PROPERTIES.forEach((property) => {
+    const photos = getPropertyPhotos(property.id);
+    const heroPhoto = photos[0] || {
+      src: property.image,
+      alt: property.imageAlt,
+      category: "Photos",
+      caption: property.address,
+      photoNumber: 1
+    };
+    const previewPhotos = photos.slice(1, 4);
     const article = document.createElement("article");
     article.className = "property-card";
 
-    const imageWrap = document.createElement("div");
-    imageWrap.className = "property-image-wrap";
+    const galleryPreview = document.createElement("div");
+    galleryPreview.className = "property-gallery-preview";
+
+    const heroButton = document.createElement("button");
+    heroButton.className = "property-hero-photo";
+    heroButton.type = "button";
+    heroButton.dataset.galleryProperty = property.id;
+    heroButton.dataset.galleryIndex = "0";
+    heroButton.setAttribute("aria-label", `Open ${property.address} photo gallery`);
 
     const image = document.createElement("img");
-    image.src = property.image;
-    image.alt = property.imageAlt;
+    image.src = heroPhoto.src;
+    image.alt = heroPhoto.alt;
     image.loading = "lazy";
+
+    const photoCount = document.createElement("span");
+    photoCount.className = "photo-count";
+    photoCount.textContent = `View ${photos.length} photos`;
 
     const badge = document.createElement("span");
     badge.className = "property-badge";
     badge.textContent = property.availability;
 
-    imageWrap.append(image, badge);
+    heroButton.append(image, badge, photoCount);
+
+    const thumbnailStrip = document.createElement("div");
+    thumbnailStrip.className = "property-thumbs";
+    previewPhotos.forEach((photo, index) => {
+      const thumb = document.createElement("button");
+      thumb.className = "property-thumb";
+      thumb.type = "button";
+      thumb.dataset.galleryProperty = property.id;
+      thumb.dataset.galleryIndex = String(index + 1);
+      thumb.setAttribute("aria-label", `Open ${property.address} ${photo.category} photo`);
+
+      const thumbImage = document.createElement("img");
+      thumbImage.src = photo.src;
+      thumbImage.alt = photo.alt;
+      thumbImage.loading = "lazy";
+      thumb.appendChild(thumbImage);
+      thumbnailStrip.appendChild(thumb);
+    });
+
+    if (photos.length > 4) {
+      const more = document.createElement("button");
+      more.className = "property-thumb property-thumb-more";
+      more.type = "button";
+      more.dataset.galleryProperty = property.id;
+      more.dataset.galleryIndex = "4";
+      more.textContent = `+${photos.length - 4}`;
+      more.setAttribute("aria-label", `Open ${property.address} gallery with ${photos.length} photos`);
+      thumbnailStrip.appendChild(more);
+    }
+
+    galleryPreview.append(heroButton, thumbnailStrip);
 
     const content = document.createElement("div");
     content.className = "property-content";
@@ -369,67 +459,32 @@ function renderProperties() {
     const actions = document.createElement("div");
     actions.className = "card-actions";
 
-    const tour = document.createElement(property.video ? "button" : "a");
-    tour.className = "button button-small";
-    tour.dataset.cta = `property_${property.id}_inquiry`;
-    if (property.video) {
-      tour.type = "button";
-      tour.classList.add("video-trigger");
-      tour.dataset.videoTitle = `${property.address} video tour`;
-      tour.dataset.videoSrc = property.video;
-      tour.textContent = "Watch Video Tour";
-    } else {
-      tour.href = "#gallery";
-      tour.textContent = "View Photos";
-    }
+    const photoButton = document.createElement("button");
+    photoButton.className = "button button-small";
+    photoButton.type = "button";
+    photoButton.dataset.cta = `property_${property.id}_photos`;
+    photoButton.dataset.galleryProperty = property.id;
+    photoButton.dataset.galleryIndex = "0";
+    photoButton.textContent = `View ${property.id} Photos`;
+
+    const videoButton = document.createElement("button");
+    videoButton.className = "button button-secondary button-small video-trigger";
+    videoButton.type = "button";
+    videoButton.dataset.cta = `property_${property.id}_video`;
+    videoButton.dataset.videoTitle = `${property.address} video tour`;
+    videoButton.dataset.videoSrc = property.video;
+    videoButton.textContent = `Watch ${property.id} Video`;
 
     const inquire = document.createElement("a");
-    inquire.className = "text-link";
+    inquire.className = "button button-secondary button-small";
     inquire.dataset.cta = `property_${property.id}_inquiry`;
     inquire.href = `sms:${CONTACT.phoneHref}?&body=${textMessage}`;
-    inquire.textContent = property.ctaLabel;
+    inquire.textContent = `Text About ${property.id}`;
 
-    actions.append(tour, inquire);
+    actions.append(photoButton, videoButton, inquire);
     content.append(heading, specs, createList(property.benefits), actions);
-    article.append(imageWrap, content);
+    article.append(galleryPreview, content);
     propertyCards.appendChild(article);
-  });
-}
-
-function renderGallery() {
-  if (!galleryGrid) {
-    return;
-  }
-
-  const visibleItems = GALLERY.filter((item) => activeFilter === "all" || item.category === activeFilter);
-  galleryGrid.innerHTML = "";
-
-  visibleItems.forEach((item, index) => {
-    const button = document.createElement("button");
-    button.className = "gallery-item";
-    if (item.featured && activeFilter === "all") {
-      button.classList.add("is-featured");
-    }
-    if (item.wide && activeFilter === "all") {
-      button.classList.add("is-wide");
-    }
-    button.type = "button";
-    button.dataset.src = item.src;
-    button.dataset.alt = item.alt;
-    button.dataset.caption = `${item.title}: ${item.caption}`;
-    button.setAttribute("aria-label", `Open larger photo: ${item.title}`);
-
-    const image = document.createElement("img");
-    image.src = item.src;
-    image.alt = item.alt;
-    image.loading = index < 2 ? "eager" : "lazy";
-
-    const caption = document.createElement("span");
-    caption.className = "gallery-caption";
-    caption.innerHTML = `<strong>${item.title}</strong><small>${item.caption}</small>`;
-
-    button.append(image, caption);
-    galleryGrid.appendChild(button);
   });
 }
 
@@ -482,40 +537,6 @@ function renderFaqs() {
   });
 }
 
-function openPhoto(button) {
-  if (!modal || !modalImage || !modalCaption) {
-    return;
-  }
-
-  lastFocusedGalleryItem = button;
-  modalImage.src = button.dataset.src || "";
-  modalImage.alt = button.dataset.alt || "";
-  modalCaption.textContent = button.dataset.caption || "";
-  modal.classList.add("is-open");
-  modal.setAttribute("aria-hidden", "false");
-  document.body.classList.add("modal-open");
-
-  const closeButton = modal.querySelector(".modal-close");
-  if (closeButton) {
-    closeButton.focus();
-  }
-}
-
-function closePhotoModal() {
-  if (!modal || !modalImage) {
-    return;
-  }
-
-  modal.classList.remove("is-open");
-  modal.setAttribute("aria-hidden", "true");
-  modalImage.src = "";
-  document.body.classList.remove("modal-open");
-
-  if (lastFocusedGalleryItem) {
-    lastFocusedGalleryItem.focus();
-  }
-}
-
 function openVideo(button) {
   if (!videoModal || !videoIframe) {
     return;
@@ -556,28 +577,20 @@ function closeVideoModal() {
 }
 
 renderProperties();
-renderGallery();
 renderVideos();
 renderFaqs();
 
-document.querySelectorAll(".filter-button").forEach((button) => {
-  button.addEventListener("click", () => {
-    activeFilter = button.dataset.filter || "all";
-    document.querySelectorAll(".filter-button").forEach((filterButton) => {
-      filterButton.classList.toggle("is-active", filterButton === button);
-    });
-    renderGallery();
+document.addEventListener("click", (event) => {
+  const trigger = event.target.closest("[data-gallery-property]");
+  if (!trigger) {
+    return;
+  }
+
+  const index = Number(trigger.dataset.galleryIndex || 0);
+  openPropertyGallery(trigger.dataset.galleryProperty, Number.isFinite(index) ? index : 0).catch((error) => {
+    console.error("Unable to open property photo gallery", error);
   });
 });
-
-if (galleryGrid) {
-  galleryGrid.addEventListener("click", (event) => {
-    const button = event.target.closest(".gallery-item");
-    if (button) {
-      openPhoto(button);
-    }
-  });
-}
 
 document.addEventListener("click", (event) => {
   const button = event.target.closest(".video-card, .video-trigger");
@@ -586,19 +599,11 @@ document.addEventListener("click", (event) => {
   }
 });
 
-document.querySelectorAll("[data-close-modal]").forEach((button) => {
-  button.addEventListener("click", closePhotoModal);
-});
-
 document.querySelectorAll("[data-close-video-modal]").forEach((button) => {
   button.addEventListener("click", closeVideoModal);
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && modal && modal.classList.contains("is-open")) {
-    closePhotoModal();
-  }
-
   if (event.key === "Escape" && videoModal && videoModal.classList.contains("is-open")) {
     closeVideoModal();
   }
