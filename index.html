@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SDSU House Living V2 | Private Rooms Near SDSU</title>
+    <title>SDSU House Living V2 | Group Homes Near SDSU</title>
     <meta
       name="description"
-      content="Private-bedroom SDSU-area homes on 63rd Street with rooms from $1,100, parking, full kitchens, shared living space, and parent-friendly tours."
+      content="Private-bedroom SDSU-area homes on 63rd Street with group lease options, parking, full kitchens, shared living space, and parent-friendly tours."
     >
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.4/dist/photoswipe.css">
     <link rel="stylesheet" href="styles-v2.css">
@@ -37,8 +37,8 @@
 
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Rooms from $1,100 near 63rd & Pontiac</p>
-          <h1 id="hero-title">SDSU-Area Private-Bedroom Homes for Full or Partial Roommate Groups</h1>
+          <p class="eyebrow">Full-home and group options near 63rd & Pontiac</p>
+          <h1 id="hero-title">SDSU-Area Private-Bedroom Homes for Roommate Groups</h1>
           <p class="hero-subhead">
             Three 63rd Street homes with real bedrooms, full kitchens, parking, shared living
             space, outdoor areas, and parent-friendly tours. Have 2-4 people? You can still inquire.
@@ -69,14 +69,14 @@
       <section class="section contact-choice" id="tour" aria-labelledby="tour-title">
         <div class="section-heading">
           <p class="eyebrow">Fastest way to get answers</p>
-          <h2 id="tour-title">Text Rena's Rentals for Tour Times and Current Room Options</h2>
+          <h2 id="tour-title">Text Rena's Rentals for Tour Times and Current Group Options</h2>
           <p>
-            Most students move faster by text. Send your group size, preferred home, and whether you
-            want an in-person or video tour.
+            Tell us your group size, preferred home, and timing. Full roommate groups and smaller
+            2-4 person groups can inquire about current options.
           </p>
         </div>
         <div class="contact-grid">
-          <a class="contact-card primary" data-cta="sticky_text" href="sms:+16199172011?&body=Hi%20Rena%2C%20I%27m%20interested%20in%20the%2063rd%20Street%20SDSU%20homes.%20My%20group%20size%20is%20">
+          <a class="contact-card primary" data-cta="sticky_text" href="sms:+16199172011?&body=Hi%20Rena%2C%20I%27m%20interested%20in%20current%20group%20options%20for%20the%2063rd%20Street%20homes%20near%20SDSU.%20My%20group%20size%20is%20">
             <span>Text About Availability</span>
             <strong>619-917-2011</strong>
           </a>
@@ -89,6 +89,58 @@
             <strong>renasrentals@gmail.com</strong>
           </a>
         </div>
+        <form class="inquiry-form" id="inquiry-form">
+          <div class="form-heading">
+            <h3>Send the Right Details</h3>
+            <p>Ask about current lease terms, group pricing, and tour availability.</p>
+          </div>
+          <div class="form-grid">
+            <label>
+              Name
+              <input name="name" autocomplete="name" required>
+            </label>
+            <label>
+              Phone
+              <input name="phone" autocomplete="tel" inputmode="tel" required>
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email">
+            </label>
+            <label>
+              Group size
+              <input name="group-size" inputmode="numeric" placeholder="Example: 4 people" required>
+            </label>
+            <label>
+              Interested home
+              <select name="interested-home" required>
+                <option value="">Select one</option>
+                <option>5005 63rd St</option>
+                <option>5011 63rd St</option>
+                <option>5013 63rd St</option>
+                <option>Open to group options</option>
+              </select>
+            </label>
+            <label>
+              Tour type
+              <select name="tour-type" required>
+                <option value="">Select one</option>
+                <option>In-person tour</option>
+                <option>Video tour first</option>
+                <option>Either works</option>
+              </select>
+            </label>
+            <label>
+              Desired timing
+              <input name="desired-timing" placeholder="Example: this weekend">
+            </label>
+            <label class="form-message">
+              Message
+              <textarea name="message" rows="4" placeholder="Share timing, parking needs, and preferred home."></textarea>
+            </label>
+          </div>
+          <button class="button" data-cta="lead_form_prepare_text" type="submit">Prepare Text to Rena</button>
+        </form>
       </section>
 
       <section class="section" id="homes" aria-labelledby="homes-title">
@@ -96,12 +148,16 @@
           <p class="eyebrow">Compare the homes</p>
           <h2 id="homes-title">Tour the Homes: 5005, 5011, and 5013 63rd St</h2>
           <p>
-            The homes are near SDSU in the College Area, with private-bedroom options,
-            full-house possibilities, and room pricing from $1,100/month in the larger homes.
-            Ask Rena's Rentals for current availability by room, group, and property.
+            The homes are near SDSU in the College Area, with private bedrooms,
+            full-home lease options, shared living space, and parking details to confirm.
+            Ask Rena's Rentals for current lease terms, group pricing, and tour availability.
           </p>
         </div>
         <div class="property-grid" id="property-cards" aria-live="polite"></div>
+        <p class="property-note">
+          These homes are intended for full-home or group lease arrangements near SDSU. Have 2-4 people?
+          You can still inquire about current group options and tour availability.
+        </p>
       </section>
 
       <section class="section proof-section" aria-labelledby="why-title">
@@ -116,7 +172,7 @@
               <p>Roommates can spread out between bedrooms, kitchens, living areas, patios, and outdoor space instead of relying on one small apartment common area.</p>
             </article>
             <article>
-              <h3>Lower-density than large student buildings</h3>
+              <h3>Lower-density than large apartment buildings</h3>
               <p>A house setting reduces everyday building traffic and gives groups a more personal home base near campus.</p>
             </article>
             <article>
@@ -168,7 +224,7 @@
       <section class="section video-section" aria-labelledby="video-title">
         <div>
           <p class="eyebrow">Video tours</p>
-          <h2 id="video-title">Start With the Video, Then Text for Current Room Options</h2>
+          <h2 id="video-title">Start With the Video, Then Text for Current Group Options</h2>
         </div>
         <div class="video-grid" id="video-grid"></div>
       </section>
@@ -191,7 +247,7 @@
           <h2 id="parents-title">Easy for Parents to Review From Anywhere</h2>
           <p>
             Parents and guarantors can join tours, review real photos and available videos, and ask clear
-            questions about rent, parking, application steps, and current room availability.
+            questions about rent, parking, application steps, and current group availability.
           </p>
           <ul class="check-list">
             <li>Photos and available video tours</li>
@@ -222,10 +278,10 @@
       <section class="section final-cta" aria-labelledby="final-title">
         <p class="eyebrow">Still looking near SDSU?</p>
         <h2 id="final-title">Request Tour Times Today.</h2>
-        <p>Text your group size, preferred home, and tour timing. Rena's Rentals can send current room options, photos, available video, and next steps.</p>
+        <p>Text your group size, preferred home, and tour timing. Rena's Rentals can send current group options, photos, available video, and next steps.</p>
         <div class="hero-actions">
           <a class="button" data-cta="sticky_tour" href="#tour">Request Tour Times</a>
-          <a class="button button-secondary" data-cta="sticky_text" href="sms:+16199172011?&body=Hi%20Rena%2C%20I%27m%20interested%20in%20the%2063rd%20Street%20SDSU%20homes.">Text About Availability</a>
+          <a class="button button-secondary" data-cta="sticky_text" href="sms:+16199172011?&body=Hi%20Rena%2C%20I%27m%20interested%20in%20current%20group%20options%20for%20the%2063rd%20Street%20homes%20near%20SDSU.">Text About Availability</a>
           <a class="button button-secondary" data-cta="hero_group_options" href="#groups">Ask About Group Options</a>
         </div>
       </section>
@@ -233,6 +289,7 @@
 
     <footer class="site-footer">
       <p>SDSU House Living V2 by Rena's Rentals</p>
+      <p>Equal Housing Opportunity. Rena's Rentals is not affiliated with or endorsed by SDSU.</p>
       <p>
         <a href="https://www.renasrentals.com/5005-63rd-st" target="_blank" rel="noreferrer">5005 source page</a>
         <a href="https://www.renasrentals.com/5011-63rd-st" target="_blank" rel="noreferrer">5011 source page</a>
@@ -241,7 +298,7 @@
     </footer>
 
     <div class="mobile-cta" aria-label="Quick contact actions">
-      <a data-cta="sticky_text" href="sms:+16199172011?&body=Hi%20Rena%2C%20I%27m%20interested%20in%20the%2063rd%20Street%20SDSU%20homes.">Text</a>
+      <a data-cta="sticky_text" href="sms:+16199172011?&body=Hi%20Rena%2C%20I%27m%20interested%20in%20current%20group%20options%20for%20the%2063rd%20Street%20homes%20near%20SDSU.">Text</a>
       <a data-cta="sticky_call" href="tel:+16199172011">Call</a>
       <a data-cta="sticky_tour" href="#tour">Tour</a>
     </div>

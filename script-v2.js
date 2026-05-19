@@ -10,23 +10,33 @@ const PROPERTIES = [
     address: "5005 63rd St",
     beds: "5",
     baths: "4",
-    pricing: "Rooms from $1,100/month",
-    pricingNote: "Ask about current room availability and group options.",
+    bedrooms: "5",
+    bathrooms: "4",
+    leaseLabel: "5BR / 4BA Full-Home Lease",
+    benefitLine: "Private bedrooms • Parking • Short walk to SDSU",
+    bestFor: "Best for roommate groups",
+    rentTotal: "Ask Rena's Rentals",
+    rentDisplayMode: "ask",
     availability: "Available August 2026",
+    walkTime: "Short walk to SDSU",
     parking: "4-6 vehicles",
     laundry: "On-site laundry",
     outdoor: "Outdoor patio / yard space",
     video: "https://www.youtube.com/embed/axuQexUtISc?autoplay=1&rel=0",
+    videoUrl: "https://www.youtube.com/embed/axuQexUtISc?autoplay=1&rel=0",
     videoThumb: "https://img.youtube.com/vi/axuQexUtISc/hqdefault.jpg",
+    galleryImages: "property-galleries/5005",
     image: "assets/property-02.jpeg",
     imageAlt: "Kitchen and shared living space at 5005 63rd St",
-    ctaLabel: "Ask About 5005",
+    primaryCtaLabel: "Ask About Terms",
+    secondaryCtaLabel: "View Photos",
+    ctaLabel: "Ask About Terms",
     benefits: [
-      "Private-bedroom shared home setting",
-      "Dual AC system upstairs and downstairs",
-      "Two dishwashers, two sinks, and two refrigerators",
-      "Family room, living room, and separate dining rooms",
-      "On-site parking and laundry"
+      "Full-home layout near SDSU",
+      "Private bedrooms",
+      "Multiple bathrooms",
+      "Full kitchen and shared living space",
+      "Parking available, confirm current details"
     ]
   },
   {
@@ -34,23 +44,33 @@ const PROPERTIES = [
     address: "5011 63rd St",
     beds: "6",
     baths: "3",
-    pricing: "Rooms from $1,100/month",
-    pricingNote: "Ask about current room availability and group options.",
+    bedrooms: "6",
+    bathrooms: "3",
+    leaseLabel: "6BR / 3BA Full-Home Lease",
+    benefitLine: "Private bedrooms • Full kitchen • Short walk to SDSU",
+    bestFor: "Best for larger roommate groups",
+    rentTotal: "Ask Rena's Rentals",
+    rentDisplayMode: "ask",
     availability: "Available August 2026",
+    walkTime: "Short walk to SDSU",
     parking: "5 vehicles",
     laundry: "On-site laundry",
     outdoor: "Front lawn / side yard space",
     video: "https://www.youtube.com/embed/uTAwdTavdIw?autoplay=1&rel=0",
+    videoUrl: "https://www.youtube.com/embed/uTAwdTavdIw?autoplay=1&rel=0",
     videoThumb: "https://img.youtube.com/vi/uTAwdTavdIw/hqdefault.jpg",
+    galleryImages: "property-galleries/5011",
     image: "assets/property-16.jpg",
     imageAlt: "Living room with exposed wood beam ceiling at 5011 63rd St",
-    ctaLabel: "Ask About 5011",
+    primaryCtaLabel: "Ask About Terms",
+    secondaryCtaLabel: "View Photos",
+    ctaLabel: "Ask About Terms",
     benefits: [
-      "Private-bedroom shared home setting",
-      "Open floor plan with exposed beam high ceilings",
-      "Extra large bedrooms",
-      "Full kitchen and shared living space",
-      "On-site parking and laundry"
+      "Larger full-home layout near SDSU",
+      "Private bedrooms",
+      "Full kitchen",
+      "Shared living/common areas",
+      "Parking available, confirm current details"
     ]
   },
   {
@@ -58,23 +78,33 @@ const PROPERTIES = [
     address: "5013 63rd St",
     beds: "3",
     baths: "3",
-    pricing: "$5,050/month",
-    pricingNote: "Back-house option. Ask about current lease structure and availability.",
+    bedrooms: "3",
+    bathrooms: "3",
+    leaseLabel: "3BR / 3BA Home Near SDSU",
+    benefitLine: "Private bedrooms • Newer back house • Short walk to SDSU",
+    bestFor: "Ask about current availability",
+    rentTotal: "$5,050/month",
+    rentDisplayMode: "hidden",
     availability: "Available August 2026",
+    walkTime: "Short walk to SDSU",
     parking: "On-site parking",
     laundry: "On-site laundry",
     outdoor: "Yard space",
     video: "https://www.youtube.com/embed/mv2Pg6q8Yqo?autoplay=1&rel=0",
+    videoUrl: "https://www.youtube.com/embed/mv2Pg6q8Yqo?autoplay=1&rel=0",
     videoThumb: "https://img.youtube.com/vi/mv2Pg6q8Yqo/hqdefault.jpg",
+    galleryImages: "property-galleries/5013",
     image: "assets/property-17.jpg",
     imageAlt: "Exterior and yard view at 5013 63rd St",
-    ctaLabel: "Ask About 5013",
+    primaryCtaLabel: "Ask About Terms",
+    secondaryCtaLabel: "View Photos",
+    ctaLabel: "Ask About Terms",
     benefits: [
-      "3-bedroom, 3-bath back-house option",
-      "Each bedroom has an en suite bathroom",
-      "Full kitchen with stainless appliances",
-      "Air conditioning and heating controls",
-      "On-site parking, laundry, and gardener service"
+      "3BR / 3BA home near SDSU",
+      "Private bedrooms",
+      "Newer back house feel",
+      "Kitchen and shared space",
+      "Ask about current availability"
     ]
   }
 ];
@@ -163,7 +193,7 @@ const FAQS = [
   },
   {
     question: "Can parents join the tour?",
-    answer: "Yes. Parents and guarantors can join in-person or video tours and ask questions about rent, parking, application steps, and current room availability."
+    answer: "Yes. Parents and guarantors can join in-person or video tours and ask questions about rent, parking, application steps, and current group availability."
   },
   {
     question: "Are video tours available?",
@@ -175,7 +205,7 @@ const FAQS = [
   },
   {
     question: "Are bedrooms private?",
-    answer: "The homes are being marketed as private-bedroom shared homes. Confirm the exact room plan and current room availability directly with Rena's Rentals."
+    answer: "The homes are marketed for private-bedroom roommate group living near SDSU. Confirm the exact lease structure, group options, and current availability directly with Rena's Rentals."
   },
   {
     question: "What is the application process?",
@@ -221,10 +251,10 @@ const faqGrid = document.querySelector("#faq-grid");
 const videoModal = document.querySelector("#video-modal");
 const videoIframe = document.querySelector("#video-iframe");
 const videoModalTitle = document.querySelector("#video-modal-title");
+const inquiryForm = document.querySelector("#inquiry-form");
 let lastFocusedVideoItem = null;
 let PhotoSwipeConstructor = null;
 
-const textMessage = encodeURIComponent("Hi Rena, I'm interested in the 63rd Street SDSU homes. My group size is ");
 const photoswipeModuleUrl = "https://unpkg.com/photoswipe@5.4.4/dist/photoswipe.esm.js";
 
 function createList(items, className = "feature-list") {
@@ -379,7 +409,7 @@ function renderProperties() {
 
     const badge = document.createElement("span");
     badge.className = "property-badge";
-    badge.textContent = property.availability;
+    badge.textContent = property.bestFor || property.availability;
 
     heroButton.append(image, badge, photoCount);
 
@@ -418,18 +448,36 @@ function renderProperties() {
     content.className = "property-content";
 
     const heading = document.createElement("div");
+    heading.className = "property-heading";
     const title = document.createElement("h3");
     title.textContent = property.address;
-    const price = document.createElement("p");
-    price.className = "price";
-    price.innerHTML = `${property.pricing}<small>${property.pricingNote}</small>`;
-    heading.append(title, price);
+
+    const leaseLabel = document.createElement("p");
+    leaseLabel.className = "lease-label";
+    leaseLabel.textContent = property.leaseLabel;
+
+    const benefitLine = document.createElement("p");
+    benefitLine.className = "benefit-line";
+    benefitLine.textContent = property.benefitLine;
+
+    const bestFor = document.createElement("p");
+    bestFor.className = "best-for";
+    bestFor.textContent = property.bestFor;
+
+    heading.append(title, leaseLabel, benefitLine);
+    if (property.rentDisplayMode === "show" && property.rentTotal) {
+      const rent = document.createElement("p");
+      rent.className = "rent-display";
+      rent.textContent = property.rentTotal;
+      heading.appendChild(rent);
+    }
+    heading.appendChild(bestFor);
 
     const specs = document.createElement("dl");
     specs.className = "specs";
     [
-      ["Bedrooms", property.beds],
-      ["Baths", property.baths],
+      ["Bedrooms", property.bedrooms || property.beds],
+      ["Baths", property.bathrooms || property.baths],
       ["Parking", property.parking]
     ].forEach(([label, value]) => {
       const div = document.createElement("div");
@@ -447,26 +495,30 @@ function renderProperties() {
     const photoButton = document.createElement("button");
     photoButton.className = "button button-small";
     photoButton.type = "button";
-    photoButton.dataset.cta = `property_${property.id}_photos`;
+    photoButton.dataset.cta = `property_${property.id}_view_photos`;
     photoButton.dataset.galleryProperty = property.id;
     photoButton.dataset.galleryIndex = "0";
-    photoButton.textContent = `View ${property.id} Photos`;
+    photoButton.textContent = "View Photos";
 
     const videoButton = document.createElement("button");
     videoButton.className = "button button-secondary button-small video-trigger";
     videoButton.type = "button";
-    videoButton.dataset.cta = `property_${property.id}_video`;
+    videoButton.dataset.cta = `property_${property.id}_watch_video`;
     videoButton.dataset.videoTitle = `${property.address} video tour`;
-    videoButton.dataset.videoSrc = property.video;
-    videoButton.textContent = `Watch ${property.id} Video`;
+    videoButton.dataset.videoSrc = property.videoUrl || property.video;
+    videoButton.textContent = "Watch Video";
 
     const inquire = document.createElement("a");
     inquire.className = "button button-secondary button-small";
-    inquire.dataset.cta = `property_${property.id}_inquiry`;
-    inquire.href = `sms:${CONTACT.phoneHref}?&body=${textMessage}`;
-    inquire.textContent = `Text About ${property.id}`;
+    inquire.dataset.cta = `property_${property.id}_ask_terms`;
+    inquire.href = "#tour";
+    inquire.textContent = property.primaryCtaLabel || "Ask About Terms";
 
-    actions.append(photoButton, videoButton, inquire);
+    actions.append(photoButton);
+    if (property.videoUrl || property.video) {
+      actions.append(videoButton);
+    }
+    actions.append(inquire);
     content.append(heading, specs, createList(property.benefits), actions);
     article.append(galleryPreview, content);
     propertyCards.appendChild(article);
@@ -480,12 +532,13 @@ function renderVideos() {
 
   videoGrid.innerHTML = "";
 
-  PROPERTIES.filter((property) => property.video).forEach((property) => {
+  PROPERTIES.filter((property) => property.videoUrl || property.video).forEach((property) => {
     const button = document.createElement("button");
     button.className = "video-card";
     button.type = "button";
+    button.dataset.cta = `property_${property.id}_watch_video`;
     button.dataset.videoTitle = `${property.address} video tour`;
-    button.dataset.videoSrc = property.video;
+    button.dataset.videoSrc = property.videoUrl || property.video;
 
     button.innerHTML = `
       <span class="video-thumb">
@@ -494,12 +547,42 @@ function renderVideos() {
       </span>
       <span>
         <strong>Watch the ${property.address} video tour</strong>
-        <small>Then text ${CONTACT.phoneDisplay} for current room options</small>
+        <small>Then text ${CONTACT.phoneDisplay} for current group options</small>
       </span>
     `;
 
     videoGrid.appendChild(button);
   });
+}
+
+function handleInquiryFormSubmit(event) {
+  event.preventDefault();
+
+  const data = new FormData(inquiryForm);
+  const details = {
+    name: data.get("name") || "",
+    phone: data.get("phone") || "",
+    email: data.get("email") || "",
+    groupSize: data.get("group-size") || "",
+    home: data.get("interested-home") || "",
+    tourType: data.get("tour-type") || "",
+    timing: data.get("desired-timing") || "",
+    message: data.get("message") || ""
+  };
+
+  const message = [
+    "Hi Rena, I'm interested in current group options for the 63rd Street homes near SDSU.",
+    `Name: ${details.name}`,
+    `Phone: ${details.phone}`,
+    `Email: ${details.email}`,
+    `Group size: ${details.groupSize}`,
+    `Interested home: ${details.home}`,
+    `Tour type: ${details.tourType}`,
+    `Desired timing: ${details.timing}`,
+    `Message: ${details.message}`
+  ].filter((line) => !line.endsWith(": ")).join("\n");
+
+  window.location.href = `sms:${CONTACT.phoneHref}?&body=${encodeURIComponent(message)}`;
 }
 
 function renderFaqs() {
@@ -583,6 +666,10 @@ document.addEventListener("click", (event) => {
     openVideo(button);
   }
 });
+
+if (inquiryForm) {
+  inquiryForm.addEventListener("submit", handleInquiryFormSubmit);
+}
 
 document.querySelectorAll("[data-close-video-modal]").forEach((button) => {
   button.addEventListener("click", closeVideoModal);
