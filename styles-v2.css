@@ -362,66 +362,6 @@ p {
   line-height: 1.1;
 }
 
-.inquiry-form {
-  display: grid;
-  gap: 18px;
-  margin-top: clamp(18px, 3vw, 30px);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: clamp(16px, 2.4vw, 26px);
-  background: var(--paper);
-  box-shadow: 0 12px 34px oklch(25% 0.04 150 / 0.08);
-}
-
-.form-heading {
-  display: grid;
-  gap: 5px;
-}
-
-.form-heading h3,
-.form-heading p {
-  margin: 0;
-}
-
-.form-heading p {
-  color: var(--muted);
-  font-weight: 700;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.form-grid label {
-  display: grid;
-  gap: 7px;
-  color: var(--ink);
-  font-size: 0.86rem;
-  font-weight: 850;
-}
-
-.form-grid input,
-.form-grid select,
-.form-grid textarea {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 11px 12px;
-  background: var(--warm);
-  color: var(--ink);
-  font: inherit;
-}
-
-.form-grid textarea {
-  resize: vertical;
-}
-
-.form-message {
-  grid-column: span 2;
-}
-
 .property-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1010,9 +950,6 @@ details p {
 .property-thumb:focus-visible,
 .video-card:focus-visible,
 .button:focus-visible,
-.form-grid input:focus-visible,
-.form-grid select:focus-visible,
-.form-grid textarea:focus-visible,
 a:focus-visible,
 summary:focus-visible {
   outline: 3px solid oklch(78% 0.12 82);
@@ -1048,14 +985,9 @@ summary:focus-visible {
   }
 
   .contact-grid,
-  .form-grid,
   .group-section,
   .faq-grid {
     grid-template-columns: 1fr;
-  }
-
-  .form-message {
-    grid-column: auto;
   }
 
   .group-section .button {
