@@ -251,7 +251,6 @@ const faqGrid = document.querySelector("#faq-grid");
 const videoModal = document.querySelector("#video-modal");
 const videoIframe = document.querySelector("#video-iframe");
 const videoModalTitle = document.querySelector("#video-modal-title");
-const inquiryForm = document.querySelector("#inquiry-form");
 let lastFocusedVideoItem = null;
 let PhotoSwipeConstructor = null;
 
@@ -555,36 +554,6 @@ function renderVideos() {
   });
 }
 
-function handleInquiryFormSubmit(event) {
-  event.preventDefault();
-
-  const data = new FormData(inquiryForm);
-  const details = {
-    name: data.get("name") || "",
-    phone: data.get("phone") || "",
-    email: data.get("email") || "",
-    groupSize: data.get("group-size") || "",
-    home: data.get("interested-home") || "",
-    tourType: data.get("tour-type") || "",
-    timing: data.get("desired-timing") || "",
-    message: data.get("message") || ""
-  };
-
-  const message = [
-    "Hi Rena, I'm interested in current group options for the 63rd Street homes near SDSU.",
-    `Name: ${details.name}`,
-    `Phone: ${details.phone}`,
-    `Email: ${details.email}`,
-    `Group size: ${details.groupSize}`,
-    `Interested home: ${details.home}`,
-    `Tour type: ${details.tourType}`,
-    `Desired timing: ${details.timing}`,
-    `Message: ${details.message}`
-  ].filter((line) => !line.endsWith(": ")).join("\n");
-
-  window.location.href = `sms:${CONTACT.phoneHref}?&body=${encodeURIComponent(message)}`;
-}
-
 function renderFaqs() {
   if (!faqGrid) {
     return;
@@ -666,10 +635,6 @@ document.addEventListener("click", (event) => {
     openVideo(button);
   }
 });
-
-if (inquiryForm) {
-  inquiryForm.addEventListener("submit", handleInquiryFormSubmit);
-}
 
 document.querySelectorAll("[data-close-video-modal]").forEach((button) => {
   button.addEventListener("click", closeVideoModal);
