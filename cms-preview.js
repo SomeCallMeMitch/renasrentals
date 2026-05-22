@@ -105,13 +105,42 @@ function renderProperties(properties = []) {
     const actions = document.createElement("div");
     actions.className = "card-actions";
     actions.innerHTML = `
+      <a class="button button-small" href="#homes">View Photos</a>
+      <a class="button button-secondary button-small" href="#video-title">Watch Video</a>
       <a class="button button-small" href="#tour">Ask About Terms</a>
-      <a class="button button-secondary button-small" href="admin/">Edit Copy</a>
     `;
 
     content.append(heading, createFeatureList(property.features), actions);
     article.append(preview, content);
     container.appendChild(article);
+  });
+}
+
+function renderVideos(properties = []) {
+  const container = document.querySelector("#cms-video-grid");
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = "";
+
+  properties.forEach((property) => {
+    const button = document.createElement("button");
+    button.className = "video-card";
+    button.type = "button";
+
+    button.innerHTML = `
+      <span class="video-thumb">
+        <img src="${property.videoThumb}" alt="${property.address} video tour thumbnail" loading="lazy">
+        <span class="video-play-icon" aria-hidden="true"></span>
+      </span>
+      <span>
+        <strong>${property.videoTitle}</strong>
+        <small>Then text ${document.querySelector("[data-content='contact.phone']")?.textContent || "619-917-2011"} for current group options</small>
+      </span>
+    `;
+
+    container.appendChild(button);
   });
 }
 
@@ -156,6 +185,7 @@ loadContent()
     setTextContent(data);
     setContactLinks(data);
     renderProperties(data.properties);
+    renderVideos(data.properties);
     renderFaqs(data.faqs);
   })
   .catch((error) => {

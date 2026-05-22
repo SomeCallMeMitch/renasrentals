@@ -4,8 +4,6 @@ This branch adds a test-only Decap CMS setup. It does not switch the live homepa
 
 ## Test URLs
 
-After Netlify creates a deploy preview for this branch:
-
 - Preview page: `/cms-preview.html`
 - Editor: `/admin/`
 
@@ -18,13 +16,9 @@ In the Netlify project dashboard:
 3. Enable Git Gateway.
 4. Invite the editor user.
 
-The Decap config currently commits edits to:
-
-`codex/test-decap-cms`
-
-That is intentional for testing. If this is promoted to the production homepage later, change `admin/config.yml` to use:
-
 `branch: main`
+
+Edits through `/admin/` commit to `main`, but only the CMS preview page reads `content/cms-preview.json`. The live homepage still does not use this file.
 
 ## Editable Test Content
 
@@ -50,4 +44,4 @@ If the test feels good, the next step is to make `index.html` use the same conte
 - `content/properties.json`
 - `content/faqs.json`
 
-Do not change the CMS branch to `main` until the editing workflow is approved.
+Keep the live homepage disconnected until the editing workflow is approved.

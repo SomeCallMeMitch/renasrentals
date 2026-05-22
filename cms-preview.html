@@ -4,52 +4,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
-    <title>CMS Preview | Rena's Rentals</title>
-    <meta name="description" content="Editable test page for Rena's Rentals SDSU-area housing copy.">
+    <title>SDSU House Living V2 | Group Homes Near SDSU</title>
+    <meta
+      name="description"
+      content="Private-bedroom SDSU-area homes on 63rd Street with group lease options, parking, full kitchens, shared living space, and parent-friendly tours."
+    >
     <link rel="stylesheet" href="styles-v2.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="CMS preview home">
+      <a class="brand" href="#top" aria-label="SDSU House Living V2 home">
         <span class="brand-mark">63</span>
         <span>
-          <strong>CMS Preview</strong>
+          <strong>SDSU House Living</strong>
           <small>Rena's Rentals</small>
         </span>
       </a>
       <nav class="main-nav" aria-label="Primary navigation">
-        <a href="index.html">Live Page</a>
-        <a href="admin/">Admin</a>
         <a href="#homes">Homes</a>
+        <a href="#homes">Photos</a>
+        <a href="#groups">Group Options</a>
+        <a href="#parents">Parents</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="button header-cta" href="admin/">Edit Copy</a>
+      <a class="button header-cta" href="#tour">Request Tour Times</a>
     </header>
 
     <main id="top">
-      <section class="urgency-strip" aria-label="CMS preview notice">
-        <p>This is a CMS test page. The live homepage is unchanged until we choose to connect it.</p>
+      <section class="urgency-strip" aria-label="Tour scheduling notice">
+        <p data-content="urgency.body">Now scheduling SDSU-area housing tours. Full groups and smaller roommate groups are welcome to inquire.</p>
       </section>
 
       <section class="hero cms-preview-hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow" data-content="hero.eyebrow">CMS test page</p>
-          <h1 id="hero-title" data-content="hero.headline">Editable SDSU-Area Housing Copy</h1>
+          <p class="eyebrow" data-content="hero.eyebrow">Full-home and group options near 63rd & Pontiac</p>
+          <h1 id="hero-title" data-content="hero.headline">SDSU-Area Private-Bedroom Homes for Roommate Groups</h1>
           <p class="hero-subhead" data-content="hero.subhead">
-            This separate preview page reads copy from a content file managed through Decap CMS.
+            Three 63rd Street homes with real bedrooms, full kitchens, parking, shared living space, outdoor areas, and parent-friendly tours. Have 2-4 people? You can still inquire.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button" href="#tour" data-content="hero.primaryCta">Request Tour Times</a>
             <a class="button button-secondary" href="#groups" data-content="hero.secondaryCta">Ask About Group Options</a>
           </div>
-          <p class="trust-line">Editable source: <code>content/cms-preview.json</code></p>
+          <p class="trust-line" data-content="hero.trustLine">Official Rena's Rentals contact: text or call 619-917-2011.</p>
         </div>
         <div class="hero-media" aria-label="Property photo collage">
-          <img class="hero-main-image" src="assets/property-galleries/5013/5013-01.jpg" alt="Exterior of 5013 63rd St">
+          <img class="hero-main-image" src="assets/property-02.jpeg" alt="Kitchen and shared living space at a Rena's Rentals 63rd Street home">
           <div class="hero-stack" aria-hidden="true">
-            <img src="assets/property-galleries/5005/5005-01.jpg" alt="">
-            <img src="assets/property-galleries/5011/5011-01.jpg" alt="">
+            <img src="assets/property-11.jpg" alt="">
+            <img src="assets/property-08.jpeg" alt="">
           </div>
         </div>
       </section>
@@ -58,7 +62,10 @@
         <div class="section-heading">
           <p class="eyebrow" data-content="contact.eyebrow">Fastest way to get answers</p>
           <h2 id="tour-title" data-content="contact.heading">Text Rena's Rentals for Tour Times and Current Group Options</h2>
-          <p data-content="contact.body">Tell us your group size, preferred home, and timing.</p>
+          <p data-content="contact.body">
+            Tell us your group size, preferred home, and timing. Full roommate groups and smaller
+            2-4 person groups can inquire about current options.
+          </p>
         </div>
         <div class="contact-grid">
           <a class="contact-card primary" data-cms-phone-link href="sms:+16199172011">
@@ -80,10 +87,86 @@
         <div class="section-heading">
           <p class="eyebrow" data-content="homes.eyebrow">Compare the homes</p>
           <h2 id="homes-title" data-content="homes.heading">Tour the Homes: 5005, 5011, and 5013 63rd St</h2>
-          <p data-content="homes.body">The homes are near SDSU in the College Area.</p>
+          <p data-content="homes.body">
+            The homes are near SDSU in the College Area, with private bedrooms,
+            full-home lease options, shared living space, and parking details to confirm.
+            Ask Rena's Rentals for current lease terms, group pricing, and tour availability.
+          </p>
         </div>
         <div class="property-grid" id="cms-property-cards" aria-live="polite"></div>
-        <p class="property-note" data-content="homes.note">These homes are intended for full-home or group lease arrangements near SDSU.</p>
+        <p class="property-note" data-content="homes.note">
+          These homes are intended for full-home or group lease arrangements near SDSU. Have 2-4 people?
+          You can still inquire about current group options and tour availability.
+        </p>
+      </section>
+
+      <section class="section proof-section" aria-labelledby="why-title">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Why a real house</p>
+            <h2 id="why-title">More Room, More Privacy, Fewer Building-Scale Tradeoffs</h2>
+          </div>
+          <div class="proof-list">
+            <article>
+              <h3>Private rooms with real shared spaces</h3>
+              <p>Roommates can spread out between bedrooms, kitchens, living areas, patios, and outdoor space instead of relying on one small apartment common area.</p>
+            </article>
+            <article>
+              <h3>Lower-density than large apartment buildings</h3>
+              <p>A house setting reduces everyday building traffic and gives groups a more personal home base near campus.</p>
+            </article>
+            <article>
+              <h3>Not a chopped-up micro-room pitch</h3>
+              <p>The offer is straightforward: real bedrooms, full kitchens, parking, and common areas in upgraded homes near SDSU.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quick-compare" aria-labelledby="compare-title">
+        <div class="section-heading">
+          <p class="eyebrow">Scannable comparison</p>
+          <h2 id="compare-title">House Living vs. The Usual Student Options</h2>
+        </div>
+        <div class="compare-grid">
+          <article class="compare-card preferred">
+            <h3>63rd Street Homes</h3>
+            <ul>
+              <li>Private bedrooms</li>
+              <li>Full kitchens</li>
+              <li>Shared living space</li>
+              <li>Outdoor areas</li>
+              <li>On-site parking listed for the homes</li>
+              <li>Direct Rena's Rentals contact</li>
+            </ul>
+          </article>
+          <article class="compare-card">
+            <h3>Dorms or Large Buildings</h3>
+            <ul>
+              <li>More shared traffic</li>
+              <li>Less private common space</li>
+              <li>Building-scale routines</li>
+              <li>Parking may vary</li>
+            </ul>
+          </article>
+          <article class="compare-card">
+            <h3>Dense Converted Rentals</h3>
+            <ul>
+              <li>Room sizes can vary widely</li>
+              <li>Common space may be limited</li>
+              <li>Parking can be tight</li>
+              <li>Amenities need careful review</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section video-section" aria-labelledby="video-title">
+        <div>
+          <p class="eyebrow">Video tours</p>
+          <h2 id="video-title">Start With the Video, Then Text for Current Group Options</h2>
+        </div>
+        <div class="video-grid" id="cms-video-grid"></div>
       </section>
 
       <section class="section group-section" id="groups" aria-labelledby="groups-title">
@@ -91,13 +174,42 @@
           <p class="eyebrow" data-content="groupOptions.eyebrow">Partial groups welcome</p>
           <h2 id="groups-title" data-content="groupOptions.heading">Have 2-4 People? Start the Conversation Now.</h2>
         </div>
-        <p data-content="groupOptions.body">You do not need to have a full group before reaching out.</p>
+        <p data-content="groupOptions.body">
+          You do not need to have a full group before reaching out. Tell us your current group size,
+          timing, and preferred home. We can explain current options, tour availability, and next steps.
+        </p>
         <a class="button" href="#tour">Ask About Group Options</a>
+      </section>
+
+      <section class="section parent-section" id="parents" aria-labelledby="parents-title">
+        <div class="parent-copy">
+          <p class="eyebrow">For parents and guarantors</p>
+          <h2 id="parents-title">Easy for Parents to Review From Anywhere</h2>
+          <p>
+            Parents and guarantors can join tours, review real photos and available videos, and ask clear
+            questions about rent, parking, application steps, and current group availability.
+          </p>
+          <ul class="check-list">
+            <li>Photos and available video tours</li>
+            <li>Parents/guarantors can join tours</li>
+            <li>Clear rent, lease, parking, and application steps</li>
+            <li>Direct communication with Rena's Rentals</li>
+            <li>Real bedrooms, kitchens, bathrooms, and shared spaces</li>
+          </ul>
+          <a class="button" href="mailto:renasrentals@gmail.com?subject=Parent-friendly%2063rd%20Street%20tour%20request">Request a Parent-Friendly Tour</a>
+        </div>
+        <div class="parent-panel">
+          <h3>What to text first</h3>
+          <p>Use this format so Rena can respond with the right tour options:</p>
+          <blockquote>
+            Hi Rena, we are looking near SDSU. Group size: __. Preferred home: 5005 / 5011 / 5013 / either. Tour type: in-person / video. Parking needs: __.
+          </blockquote>
+        </div>
       </section>
 
       <section class="section faq-section" id="faq" aria-labelledby="faq-title">
         <div class="section-heading">
-          <p class="eyebrow">Editable questions</p>
+          <p class="eyebrow">Common questions</p>
           <h2 id="faq-title">FAQ</h2>
         </div>
         <div class="faq-grid" id="cms-faq-grid"></div>
@@ -106,16 +218,17 @@
       <section class="section final-cta" aria-labelledby="final-title">
         <p class="eyebrow" data-content="finalCta.eyebrow">Still looking near SDSU?</p>
         <h2 id="final-title" data-content="finalCta.heading">Request Tour Times Today.</h2>
-        <p data-content="finalCta.body">Text your group size, preferred home, and tour timing.</p>
+        <p data-content="finalCta.body">Text your group size, preferred home, and tour timing. Rena's Rentals can send current group options, photos, available video, and next steps.</p>
         <div class="hero-actions">
           <a class="button" href="#tour">Request Tour Times</a>
-          <a class="button button-secondary" href="admin/">Edit This Test Copy</a>
+          <a class="button button-secondary" data-cms-phone-link href="sms:+16199172011">Text About Availability</a>
+          <a class="button button-secondary" href="#groups">Ask About Group Options</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>CMS preview page for Rena's Rentals.</p>
+      <p>SDSU House Living V2 by Rena's Rentals</p>
       <p>Equal Housing Opportunity. Rena's Rentals is not affiliated with or endorsed by SDSU.</p>
     </footer>
 
