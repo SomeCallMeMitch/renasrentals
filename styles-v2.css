@@ -407,6 +407,10 @@ p {
   border-radius: 8px;
 }
 
+.cms-static-photo {
+  cursor: default;
+}
+
 .property-hero-photo img,
 .property-thumb img {
   position: absolute;
