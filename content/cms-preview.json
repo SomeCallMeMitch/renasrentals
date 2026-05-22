@@ -1,15 +1,15 @@
 {
   "meta": {
     "title": "SDSU House Living V2 | Group Homes Near SDSU",
-    "description": "Private-bedroom SDSU-area homes on 63rd Street with group lease options, parking, full kitchens, shared living space, and parent-friendly tours."
+    "description": "Private-bedroom SDSU-area homes on 63rd Street with group lease options, parking, gourmet kitchens, shared living space, and parent-friendly tours."
   },
   "urgency": {
-    "body": "Now scheduling SDSU-area housing tours. Full groups and smaller roommate groups are welcome to inquire."
+    "body": "Now scheduling SDSU-area housing tours. Roommate groups or individual bedroom options are welcome to inquire."
   },
   "hero": {
     "eyebrow": "Full-home and group options near 63rd & Pontiac",
     "headline": "SDSU-Area Private-Bedroom Homes for Roommate Groups",
-    "subhead": "Three 63rd Street homes with real bedrooms, full kitchens, parking, shared living space, outdoor areas, and parent-friendly tours. Have 2-4 people? You can still inquire.",
+    "subhead": "Three 63rd Street homes with bedrooms, gourmet kitchens, parking, shared living space, outdoor areas, and parent-friendly tours. Have 2-4 people? You can still inquire.",
     "primaryCta": "Request Tour Times",
     "secondaryCta": "Ask About Group Options",
     "trustLine": "Official Rena's Rentals contact: text or call 619-917-2011."
@@ -17,14 +17,14 @@
   "contact": {
     "eyebrow": "Fastest way to get answers",
     "heading": "Text Rena's Rentals for Tour Times and Current Group Options",
-    "body": "Tell us your group size, preferred home, and timing. Full roommate groups and smaller 2-4 person groups can inquire about current options.",
+    "body": "Tell us your group size, preferred home, and timing. Roommate groups or individual bedroom options can inquire about current options.",
     "phone": "619-917-2011",
     "email": "renasrentals@gmail.com"
   },
   "homes": {
     "eyebrow": "Compare the homes",
     "heading": "Tour the Homes: 5005, 5011, and 5013 63rd St",
-    "body": "The homes are near SDSU in the College Area, with private bedrooms, full-home lease options, shared living space, and parking details to confirm. Ask Rena's Rentals for current lease terms, group pricing, and tour availability.",
+    "body": "The homes are near SDSU in the College Area, with private bedrooms, full-home lease options, shared living space, and parking details to review. Ask Rena's Rentals for current lease terms, group pricing, and tour availability.",
     "note": "These homes are intended for full-home or group lease arrangements near SDSU. Have 2-4 people? You can still inquire about current group options and tour availability."
   },
   "properties": [
@@ -42,7 +42,7 @@
         "Full-home layout near SDSU",
         "Private bedrooms",
         "Multiple bathrooms",
-        "Full kitchen and shared living space",
+        "Gourmet kitchen and shared living space",
         "Parking available, confirm current details"
       ]
     },
@@ -50,7 +50,7 @@
       "id": "5011",
       "address": "5011 63rd St",
       "leaseLabel": "6BR / 3BA Full-Home Lease",
-      "benefitLine": "Private bedrooms - Full kitchen - Short walk to SDSU",
+      "benefitLine": "Private bedrooms - Gourmet kitchen - Short walk to SDSU",
       "bestFor": "Best for larger roommate groups",
       "image": "assets/property-galleries/5011/5011-01.jpg",
       "imageAlt": "Kitchen at 5011 63rd St",
@@ -59,7 +59,7 @@
       "features": [
         "Larger full-home layout near SDSU",
         "Private bedrooms",
-        "Full kitchen",
+        "Gourmet kitchen",
         "Shared living/common areas",
         "Parking available, confirm current details"
       ]
@@ -86,7 +86,7 @@
   "groupOptions": {
     "eyebrow": "Partial groups welcome",
     "heading": "Have 2-4 People? Start the Conversation Now.",
-    "body": "You do not need to have a full group before reaching out. Tell us your current group size, timing, and preferred home. We can explain current options, tour availability, and next steps."
+    "body": "Roommate groups or individual bedroom options are welcome. Tell us your current group size, timing, and preferred home. We can explain current options, tour availability, and next steps."
   },
   "finalCta": {
     "eyebrow": "Still looking near SDSU?",
@@ -100,7 +100,7 @@
     },
     {
       "question": "Can a smaller group inquire?",
-      "answer": "Yes. You do not need to have a full group before reaching out. Text your current group size, timing, and preferred home to ask about current options."
+      "answer": "Yes. Roommate groups or individual bedroom options are welcome. Text your current group size, timing, and preferred home to ask about current options."
     },
     {
       "question": "Can parents join the tour?",
@@ -116,7 +116,7 @@
     },
     {
       "question": "Are bedrooms private?",
-      "answer": "The homes are marketed for private-bedroom roommate group living near SDSU. Confirm the exact lease structure, group options, and current availability directly with Rena's Rentals."
+      "answer": "The homes are marketed for private-bedroom roommate group living near SDSU. Ask Rena's Rentals about the exact lease structure, group options, and current availability."
     },
     {
       "question": "What is the application process?",

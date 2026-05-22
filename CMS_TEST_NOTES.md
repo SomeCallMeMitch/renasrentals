@@ -12,7 +12,7 @@ This branch adds a test-only Decap CMS setup. It does not switch the live homepa
 In the Netlify project dashboard:
 
 1. Enable Netlify Identity.
-2. Set registration to invite-only for real testing.
+2. Set registration to invite-only for live testing.
 3. Enable Git Gateway.
 4. Invite the editor user.
 

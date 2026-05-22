@@ -35,7 +35,7 @@ const PROPERTIES = [
       "Full-home layout near SDSU",
       "Private bedrooms",
       "Multiple bathrooms",
-      "Full kitchen and shared living space",
+      "Gourmet kitchen and shared living space",
       "Parking available, confirm current details"
     ]
   },
@@ -47,7 +47,7 @@ const PROPERTIES = [
     bedrooms: "6",
     bathrooms: "3",
     leaseLabel: "6BR / 3BA Full-Home Lease",
-    benefitLine: "Private bedrooms ? Full kitchen ? Short walk to SDSU",
+    benefitLine: "Private bedrooms ? Gourmet kitchen ? Short walk to SDSU",
     bestFor: "Best for larger roommate groups",
     rentTotal: "Ask Rena's Rentals",
     rentDisplayMode: "ask",
@@ -68,7 +68,7 @@ const PROPERTIES = [
     benefits: [
       "Larger full-home layout near SDSU",
       "Private bedrooms",
-      "Full kitchen",
+      "Gourmet kitchen",
       "Shared living/common areas",
       "Parking available, confirm current details"
     ]
@@ -189,7 +189,7 @@ const FAQS = [
   },
   {
     question: "Can a smaller group inquire?",
-    answer: "Yes. You do not need to have a full group before reaching out. Text your current group size, timing, and preferred home to ask about current options."
+    answer: "Yes. Roommate groups or individual bedroom options are welcome. Text your current group size, timing, and preferred home to ask about current options."
   },
   {
     question: "Can parents join the tour?",
@@ -205,7 +205,7 @@ const FAQS = [
   },
   {
     question: "Are bedrooms private?",
-    answer: "The homes are marketed for private-bedroom roommate group living near SDSU. Confirm the exact lease structure, group options, and current availability directly with Rena's Rentals."
+    answer: "The homes are marketed for private-bedroom roommate group living near SDSU. Ask Rena's Rentals about the exact lease structure, group options, and current availability."
   },
   {
     question: "What is the application process?",
