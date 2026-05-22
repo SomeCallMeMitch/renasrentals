@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "CMS Preview | Rena's Rentals",
+    "description": "Editable test page for Rena's Rentals SDSU-area housing copy."
+  },
+  "hero": {
+    "eyebrow": "CMS test page",
+    "headline": "Editable SDSU-Area Housing Copy",
+    "subhead": "This separate preview page reads copy from a content file managed through Decap CMS. The live homepage is not using this content yet.",
+    "primaryCta": "Request Tour Times",
+    "secondaryCta": "Ask About Group Options"
+  },
+  "contact": {
+    "eyebrow": "Fastest way to get answers",
+    "heading": "Text Rena's Rentals for Tour Times and Current Group Options",
+    "body": "Tell us your group size, preferred home, and timing. Full roommate groups and smaller 2-4 person groups can inquire about current options.",
+    "phone": "619-917-2011",
+    "email": "renasrentals@gmail.com"
+  },
+  "homes": {
+    "eyebrow": "Compare the homes",
+    "heading": "Tour the Homes: 5005, 5011, and 5013 63rd St",
+    "body": "The homes are near SDSU in the College Area, with private bedrooms, full-home lease options, shared living space, and parking details to confirm.",
+    "note": "These homes are intended for full-home or group lease arrangements near SDSU. Have 2-4 people? You can still inquire about current group options and tour availability."
+  },
+  "properties": [
+    {
+      "id": "5005",
+      "address": "5005 63rd St",
+      "leaseLabel": "5BR / 4BA Full-Home Lease",
+      "benefitLine": "Private bedrooms - Parking - Short walk to SDSU",
+      "bestFor": "Best for roommate groups",
+      "image": "assets/property-galleries/5005/5005-01.jpg",
+      "imageAlt": "Kitchen at 5005 63rd St",
+      "features": [
+        "Full-home layout near SDSU",
+        "Private bedrooms",
+        "Multiple bathrooms",
+        "Full kitchen and shared living space",
+        "Parking available, confirm current details"
+      ]
+    },
+    {
+      "id": "5011",
+      "address": "5011 63rd St",
+      "leaseLabel": "6BR / 3BA Full-Home Lease",
+      "benefitLine": "Private bedrooms - Full kitchen - Short walk to SDSU",
+      "bestFor": "Best for larger roommate groups",
+      "image": "assets/property-galleries/5011/5011-01.jpg",
+      "imageAlt": "Kitchen at 5011 63rd St",
+      "features": [
+        "Larger full-home layout near SDSU",
+        "Private bedrooms",
+        "Full kitchen",
+        "Shared living/common areas",
+        "Parking available, confirm current details"
+      ]
+    },
+    {
+      "id": "5013",
+      "address": "5013 63rd St",
+      "leaseLabel": "3BR / 3BA Home Near SDSU",
+      "benefitLine": "Private bedrooms - Newer back house - Short walk to SDSU",
+      "bestFor": "Ask about current availability",
+      "image": "assets/property-galleries/5013/5013-01.jpg",
+      "imageAlt": "Exterior at 5013 63rd St",
+      "features": [
+        "3BR / 3BA home near SDSU",
+        "Private bedrooms",
+        "Newer back house feel",
+        "Kitchen and shared space",
+        "Ask about current availability"
+      ]
+    }
+  ],
+  "groupOptions": {
+    "eyebrow": "Partial groups welcome",
+    "heading": "Have 2-4 People? Start the Conversation Now.",
+    "body": "You do not need to have a full group before reaching out. Tell us your current group size, timing, and preferred home."
+  },
+  "finalCta": {
+    "eyebrow": "Still looking near SDSU?",
+    "heading": "Request Tour Times Today.",
+    "body": "Text your group size, preferred home, and tour timing. Rena's Rentals can send current group options, photos, available video, and next steps."
+  },
+  "faqs": [
+    {
+      "question": "How close are the homes to SDSU?",
+      "answer": "The Rena's Rentals pages describe the 63rd Street homes as a 10 minute walk to campus near 63rd & Pontiac."
+    },
+    {
+      "question": "Can a smaller group inquire?",
+      "answer": "Yes. You do not need to have a full group before reaching out."
+    },
+    {
+      "question": "Can parents join the tour?",
+      "answer": "Yes. Parents and guarantors can join in-person or video tours and ask questions."
+    }
+  ]
+}
