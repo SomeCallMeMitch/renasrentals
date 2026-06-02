@@ -12,15 +12,25 @@
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.4/dist/photoswipe.css">
     <link rel="stylesheet" href="styles-v2.css">
   </head>
-  <body class="theme-preview" data-theme="material-ocean">
+  <body class="theme-preview" data-theme="rose-olive">
     <aside class="theme-switcher" aria-label="Color palette preview">
-      <p>Color preview</p>
+      <p>
+        <strong id="active-palette-name">Rose & Olive</strong>
+        <span>Color preview</span>
+      </p>
       <div class="theme-options">
-        <button type="button" data-theme-option="material-ocean" aria-pressed="true">1 Material Ocean</button>
-        <button type="button" data-theme-option="tailwind-sky" aria-pressed="false">2 Tailwind Sky</button>
-        <button type="button" data-theme-option="canva-waves" aria-pressed="false">6 Canva Waves</button>
-        <button type="button" data-theme-option="pico-azure" aria-pressed="false">7 Pico Azure</button>
-        <button type="button" data-theme-option="adobe-aqua" aria-pressed="false">8 Adobe Aqua</button>
+        <button type="button" data-theme-option="rose-olive" aria-pressed="true">Rose & Olive</button>
+        <button type="button" data-theme-option="blush-navy" aria-pressed="false">Blush & Navy</button>
+        <button type="button" data-theme-option="sage-petal" aria-pressed="false">Sage & Petal</button>
+        <button type="button" data-theme-option="lavender-charcoal" aria-pressed="false">Lavender & Charcoal</button>
+        <button type="button" data-theme-option="terracotta-cream" aria-pressed="false">Terracotta & Cream</button>
+        <button type="button" data-theme-option="plum-linen" aria-pressed="false">Plum & Linen</button>
+        <button type="button" data-theme-option="coastal-blush" aria-pressed="false">Coastal Blush</button>
+        <button type="button" data-theme-option="champagne-berry" aria-pressed="false">Champagne & Berry</button>
+        <button type="button" data-theme-option="peach-forest" aria-pressed="false">Soft Peach & Forest</button>
+        <button type="button" data-theme-option="mauve-mushroom" aria-pressed="false">Mauve & Mushroom</button>
+        <button type="button" data-theme-option="dusty-blue-rose" aria-pressed="false">Dusty Blue & Rose</button>
+        <button type="button" data-theme-option="cocoa-orchid" aria-pressed="false">Cream, Cocoa & Orchid</button>
       </div>
     </aside>
     <header class="site-header">
@@ -278,6 +288,7 @@
 
     <script>
       const themeButtons = document.querySelectorAll("[data-theme-option]");
+      const activePaletteName = document.querySelector("#active-palette-name");
 
       themeButtons.forEach((button) => {
         button.addEventListener("click", () => {
@@ -285,6 +296,9 @@
           themeButtons.forEach((option) => {
             option.setAttribute("aria-pressed", String(option === button));
           });
+          if (activePaletteName) {
+            activePaletteName.textContent = button.textContent.trim();
+          }
         });
       });
     </script>
