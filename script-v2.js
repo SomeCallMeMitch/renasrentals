@@ -14,7 +14,7 @@ const PROPERTIES = [
     bathrooms: "4",
     leaseLabel: "5BR / 4BA Full-Home Lease",
     benefitLine: "Private bedrooms • Parking • Short walk to SDSU",
-    bestFor: "Best for roommate groups",
+    bestFor: "Rented for this school season",
     rentTotal: "Ask Rena's Rentals",
     rentDisplayMode: "ask",
     availability: "Available August 2026",
@@ -82,7 +82,7 @@ const PROPERTIES = [
     bathrooms: "3",
     leaseLabel: "3BR / 3BA Home Near SDSU",
     benefitLine: "Private bedrooms • Newer back house • Short walk to SDSU",
-    bestFor: "Ask about current availability",
+    bestFor: "Rented for this school season",
     rentTotal: "$5,050/month",
     rentDisplayMode: "hidden",
     availability: "Available August 2026",
@@ -104,7 +104,7 @@ const PROPERTIES = [
       "Private bedrooms",
       "Newer back house feel",
       "Kitchen and shared space",
-      "Ask about current availability"
+      "Rented for this school season"
     ]
   }
 ];
