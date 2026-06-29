@@ -383,59 +383,27 @@ const GALLERY_LABELS = {
 const FAQS = [
   {
     question: "How close are the homes to SDSU?",
-    answer: "The Rena's Rentals pages describe the 63rd Street homes as a 10 minute walk to campus near 63rd & Pontiac. Contact Rena's Rentals for current map details and tour timing."
+    answer: "Our 63rd Street homes are a 10 minute walk to campus near 63rd & Pontiac."
   },
   {
     question: "Can a smaller group inquire?",
     answer: "Yes. Roommate groups or individual bedroom options are welcome. Text your current group size, timing, and preferred home to ask about current options."
   },
   {
-    question: "Can parents join the tour?",
-    answer: "Yes. Parents and guarantors can join in-person or video tours and ask questions about rent, parking, application steps, and current group availability."
-  },
-  {
-    question: "Are video tours available?",
-    answer: "Yes. Video tour links are available for 5005 63rd St, 5011 63rd St, 5013 63rd St, 5051 63rd St, and 5735 Campanile Way. The 5053 and 5737 pages reference or imply tour media, but exact video URLs still need confirmation. Ask Rena's Rentals for the latest tour options."
-  },
-  {
     question: "Is parking available?",
-    answer: "On-site parking is listed for the homes. Private driveway parking is for tenants only and may be billed monthly per vehicle. Contact Rena's Rentals for current parking terms."
-  },
-  {
-    question: "Are bedrooms private?",
-    answer: "The homes are marketed for private-bedroom roommate group living near SDSU. Ask Rena's Rentals about the exact lease structure, group options, and current availability."
+    answer: "Private driveway parking is for tenants only and may be billed monthly per vehicle. Contact Rena's Rentals for current parking terms."
   },
   {
     question: "What is the application process?",
     answer: "Each prospective tenant applies for approval. If a guarantor is needed, the guarantor also applies, completes the credit check, and signs a Rent Guarantee Form. After approvals and required documents are complete, Rena's Rentals collects the security deposit, assigns the house to the group, and prepares the lease for electronic signature."
   },
   {
-    question: "What lease term is available?",
-    answer: "Contact Rena's Rentals for current lease terms and availability before making plans."
-  },
-  {
-    question: "Are these homes owner-managed?",
-    answer: "The source site provides direct Rena's Rentals phone and email contact for scheduling viewings and rental questions."
-  },
-  {
-    question: "Who pays utilities?",
-    answer: "Tenants pay gas, electric, water, internet, and trash."
-  },
-  {
     question: "How do tenants pay utilities?",
     answer: "A designated tenant sets up gas and electric service and pays that vendor directly. A designated tenant also sets up Cox Cable and pays directly. The landlord receives the water bill, divides it equally by the number of tenants on the property, and bills the house for reimbursement. Trash is added to the rent charge."
   },
   {
-    question: "How much are utilities?",
-    answer: "Utility costs are based on consumption. More water use, air conditioning, and electric use will increase the bill."
-  },
-  {
     question: "Are pets allowed?",
     answer: "Pets are considered based on breed, age, and training. Ask Rena's Rentals about current pet rent, agreement, guarantor, and approval requirements."
-  },
-  {
-    question: "What are the steps to get this house?",
-    answer: "Each prospective tenant applies for approval. If a guarantor is needed, the guarantor also applies, completes the credit check, and signs a Rent Guarantee Form. After approvals and required documents are complete, Rena's Rentals collects the security deposit, assigns the house to the group, and prepares the lease for electronic signature."
   },
   {
     question: "What if I want to study abroad for a semester?",
