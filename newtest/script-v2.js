@@ -4,6 +4,8 @@ const CONTACT = {
   email: "renasrentals@gmail.com"
 };
 
+const APPLY_URL = "https://renasrentals.tenantcloud.com/listing/610773";
+
 function trackEvent(eventName, params = {}) {
   if (typeof window === "undefined" || typeof window.gtag !== "function" || !eventName) {
     return;
@@ -22,11 +24,12 @@ const PROPERTIES = [
     bathrooms: "4",
     leaseLabel: "5BR / 4BA Full-Home Lease",
     benefitLine: "Private bedrooms • Parking • Short walk to SDSU",
-    bestFor: "Best for roommate groups",
-    statusLabel: "Available",
+    bestFor: "Rented",
+    status: "rented",
+    statusLabel: "Rented",
     rentTotal: "$8,000/mo",
     rentDisplayMode: "show",
-    availability: "Available",
+    availability: "Rented",
     walkTime: "Short walk to SDSU",
     parking: "4-6 vehicles",
     laundry: "On-site laundry",
@@ -42,7 +45,7 @@ const PROPERTIES = [
     secondaryCtaLabel: "View Photos",
     ctaLabel: "Ask About Terms",
     benefits: [
-      "Full-home layout near SDSU",
+      "Home layout near SDSU",
       "Private bedrooms",
       "Multiple bathrooms",
       "Gourmet kitchen and shared living space",
@@ -59,6 +62,7 @@ const PROPERTIES = [
     leaseLabel: "1BR / 1BA Side Studio",
     benefitLine: "Separate entrance - Private sitting area - Full kitchen",
     bestFor: "Best for private 1BR living",
+    status: "available",
     statusLabel: "Available",
     rentTotal: "$1,300/mo",
     rentDisplayMode: "show",
@@ -96,6 +100,7 @@ const PROPERTIES = [
     leaseLabel: "1BR / 1BA Back Cottage",
     benefitLine: "Separate entrance - Private deck - Fully furnished",
     bestFor: "Best for private cottage living",
+    status: "available",
     statusLabel: "Available",
     rentTotal: "$1,300/mo",
     rentDisplayMode: "show",
@@ -132,7 +137,8 @@ const PROPERTIES = [
     bathrooms: "3",
     leaseLabel: "6BR / 3BA Full-Home Lease",
     benefitLine: "Private bedrooms • Gourmet kitchen • Short walk to SDSU",
-    bestFor: "Best for larger roommate groups",
+    bestFor: "Currently available",
+    status: "available",
     statusLabel: "Available",
     rentTotal: "$9,900/mo",
     rentDisplayMode: "show",
@@ -152,7 +158,7 @@ const PROPERTIES = [
     secondaryCtaLabel: "View Photos",
     ctaLabel: "Ask About Terms",
     benefits: [
-      "Larger full-home layout near SDSU",
+      "Larger home layout near SDSU",
       "Private bedrooms",
       "Gourmet kitchen",
       "Shared living/common areas",
@@ -168,11 +174,12 @@ const PROPERTIES = [
     bathrooms: "3",
     leaseLabel: "3BR / 3BA Home Near SDSU",
     benefitLine: "Private bedrooms • Newer back house • Short walk to SDSU",
-    bestFor: "Best for groups of 3",
-    statusLabel: "Available",
+    bestFor: "Rented",
+    status: "rented",
+    statusLabel: "Rented",
     rentTotal: "$5,050/mo",
     rentDisplayMode: "show",
-    availability: "Available",
+    availability: "Rented",
     walkTime: "Short walk to SDSU",
     parking: "On-site parking",
     laundry: "On-site laundry",
@@ -204,13 +211,14 @@ const PROPERTIES = [
     baths: "2",
     bedrooms: "4",
     bathrooms: "2",
-    leaseLabel: "4BR / 2BA Full-Home Lease",
+    leaseLabel: "4BR / 2BA Near SDSU",
     benefitLine: "Private bedrooms - AC - Solar panels - 10-minute walk to SDSU",
-    bestFor: "Best for groups of 4",
-    statusLabel: "Available",
+    bestFor: "Rented",
+    status: "rented",
+    statusLabel: "Rented",
     rentTotal: "$7,300/mo",
     rentDisplayMode: "show",
-    availability: "Available",
+    availability: "Rented",
     walkTime: "10-minute walk to SDSU",
     parking: "4 vehicles",
     laundry: "Washer and dryer included",
@@ -243,11 +251,12 @@ const PROPERTIES = [
     bathrooms: "3",
     leaseLabel: "3BR / 3BA ADU Back House",
     benefitLine: "Ensuite bedrooms - Built in 2020 - 10-minute walk to SDSU",
-    bestFor: "Best for groups of 3",
-    statusLabel: "Available",
+    bestFor: "Rented",
+    status: "rented",
+    statusLabel: "Rented",
     rentTotal: "$5,050/mo",
     rentDisplayMode: "show",
-    availability: "Available",
+    availability: "Rented",
     walkTime: "10-minute walk to SDSU",
     parking: "Permit street parking",
     laundry: "Washer and dryer onsite",
@@ -401,16 +410,20 @@ const FAQS = [
     answer: "The 63rd Street properties are a 10 minute walk to campus near 63rd & Pontiac."
   },
   {
-    question: "Can a smaller group inquire?",
-    answer: "Yes. Roommate groups or individual bedroom options are welcome. Text your current group size, timing, and preferred home to ask about current options."
+    question: "Can two people share a bedroom?",
+    answer: "Yes, we have doubles. Text Rena with your group size and preferred home so she can explain current double-room options and availability."
+  },
+  {
+    question: "How do I check current availability?",
+    answer: "Text Rena with your group size, preferred home, and timing so she can send current options and next steps."
   },
   {
     question: "Is parking available?",
     answer: "Private driveway parking is for tenants only and may be billed monthly per vehicle. Contact Rena's Rentals for current parking terms."
   },
   {
-    question: "What is the application process?",
-    answer: "Each prospective tenant applies for approval. If a guarantor is needed, the guarantor also applies, completes the credit check, and signs a Rent Guarantee Form. After approvals and required documents are complete, Rena's Rentals collects the security deposit, assigns the house to the group, and prepares the lease for electronic signature."
+    question: "How do I apply?",
+    answer: "Use the Apply Now link for the current TenantCloud application. Contact Rena for current terms and next steps."
   },
   {
     question: "How do tenants pay utilities?",
@@ -418,11 +431,7 @@ const FAQS = [
   },
   {
     question: "Are pets allowed?",
-    answer: "Pets are considered based on breed, age, and training. Ask Rena's Rentals about current pet rent, agreement, guarantor, and approval requirements."
-  },
-  {
-    question: "What if I want to study abroad for a semester?",
-    answer: "If you plan to be on the lease for only part of the year, ask about the replacement process. A replacement tenant may need to be vetted and approved before taking your place on the lease."
+    answer: "Pets are considered based on breed, age, and training. Ask Rena's Rentals about current pet rent, agreement, and approval requirements."
   }
 ];
 
@@ -432,6 +441,7 @@ const faqGrid = document.querySelector("#faq-grid");
 const videoModal = document.querySelector("#video-modal");
 const videoIframe = document.querySelector("#video-iframe");
 const videoModalTitle = document.querySelector("#video-modal-title");
+const heroSlider = document.querySelector("[data-hero-slider]");
 let lastFocusedVideoItem = null;
 let PhotoSwipeConstructor = null;
 
@@ -448,6 +458,69 @@ function createList(items, className = "feature-list") {
   });
 
   return list;
+}
+
+function initHeroSlider() {
+  if (!heroSlider) {
+    return;
+  }
+
+  const slides = [...heroSlider.querySelectorAll("[data-hero-slide]")];
+  const dots = [...heroSlider.querySelectorAll("[data-hero-dot]")];
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let activeIndex = slides.findIndex((slide) => slide.classList.contains("is-active"));
+  let timer = null;
+
+  if (slides.length <= 1 || dots.length === 0) {
+    return;
+  }
+
+  activeIndex = activeIndex >= 0 ? activeIndex : 0;
+
+  const showSlide = (nextIndex) => {
+    activeIndex = (nextIndex + slides.length) % slides.length;
+
+    slides.forEach((slide, index) => {
+      slide.classList.toggle("is-active", index === activeIndex);
+    });
+
+    dots.forEach((dot, index) => {
+      const isActive = index === activeIndex;
+      dot.classList.toggle("is-active", isActive);
+      dot.setAttribute("aria-selected", String(isActive));
+    });
+  };
+
+  const stop = () => {
+    if (timer) {
+      window.clearInterval(timer);
+      timer = null;
+    }
+  };
+
+  const start = () => {
+    if (reduceMotion || timer) {
+      return;
+    }
+
+    timer = window.setInterval(() => showSlide(activeIndex + 1), 6000);
+  };
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      stop();
+      showSlide(index);
+      start();
+    });
+  });
+
+  heroSlider.addEventListener("mouseenter", stop);
+  heroSlider.addEventListener("mouseleave", start);
+  heroSlider.addEventListener("focusin", stop);
+  heroSlider.addEventListener("focusout", start);
+
+  showSlide(activeIndex);
+  start();
 }
 
 function getProperty(id) {
@@ -605,6 +678,7 @@ function renderProperties() {
     const previewPhotos = photos.slice(1, 4);
     const article = document.createElement("article");
     article.className = "property-card";
+    article.classList.add(property.status === "available" ? "property-card--available" : "property-card--rented");
 
     const galleryPreview = document.createElement("div");
     galleryPreview.className = "property-gallery-preview";
@@ -648,6 +722,14 @@ function renderProperties() {
     badge.textContent = property.bestFor || property.availability;
 
     heroButton.append(badge, photoCount);
+
+    if (property.status === "rented") {
+      const rentedWatermark = document.createElement("span");
+      rentedWatermark.className = "rented-watermark";
+      rentedWatermark.setAttribute("aria-label", "Rented");
+      rentedWatermark.textContent = "RENTED";
+      heroButton.appendChild(rentedWatermark);
+    }
 
     const thumbnailStrip = document.createElement("div");
     thumbnailStrip.className = "property-thumbs";
@@ -762,12 +844,6 @@ function renderProperties() {
     videoButton.dataset.videoSrc = property.videoUrl || property.video;
     videoButton.textContent = "Watch Video";
 
-    const inquire = document.createElement("a");
-    inquire.className = "button button-secondary button-small";
-    inquire.dataset.cta = `property_${property.id}_ask_terms`;
-    inquire.href = "#tour";
-    inquire.textContent = property.primaryCtaLabel || "Ask About Terms";
-
     const apply = document.createElement("a");
     apply.className = "button button-small";
     apply.dataset.cta = `property_${property.id}_apply`;
@@ -777,6 +853,12 @@ function renderProperties() {
       apply.target = "_blank";
       apply.rel = "noreferrer";
     }
+
+    const inquire = document.createElement("a");
+    inquire.className = "button button-secondary button-small";
+    inquire.dataset.cta = `property_${property.id}_ask_terms`;
+    inquire.href = "#tour";
+    inquire.textContent = property.primaryCtaLabel || "Ask About Terms";
 
     if (hasGalleryPhotos) {
       actions.append(photoButton);
@@ -817,7 +899,7 @@ function renderVideos() {
       </span>
       <span>
         <strong>Watch the ${property.address} video tour</strong>
-        <small>Then text ${CONTACT.phoneDisplay} for current group options</small>
+        <small>Then text ${CONTACT.phoneDisplay} for current availability</small>
       </span>
     `;
 
@@ -884,6 +966,7 @@ function closeVideoModal() {
   }
 }
 
+initHeroSlider();
 renderProperties();
 renderVideos();
 renderFaqs();
