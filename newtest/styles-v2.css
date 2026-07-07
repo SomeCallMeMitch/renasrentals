@@ -280,15 +280,12 @@ p {
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
+.brand-logo {
+  display: block;
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: var(--green);
-  color: var(--paper);
-  font-weight: 850;
+  object-fit: cover;
 }
 
 .brand strong,
@@ -297,7 +294,7 @@ p {
 }
 
 .brand strong {
-  font-size: 0.98rem;
+  font-size: 1.08rem;
   line-height: 1.1;
 }
 
@@ -579,6 +576,12 @@ p {
   border-radius: 8px;
 }
 
+.property-hero-photo.is-empty {
+  display: grid;
+  place-items: center;
+  cursor: default;
+}
+
 .cms-static-photo {
   cursor: default;
 }
@@ -590,6 +593,15 @@ p {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.property-photo-placeholder {
+  max-width: 18ch;
+  color: var(--green);
+  font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+  font-weight: 875;
+  line-height: 1.1;
+  text-align: center;
 }
 
 .property-thumbs {
@@ -673,6 +685,38 @@ p {
   margin: 0;
   color: var(--green);
   font-weight: 850;
+}
+
+.property-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.status-pill,
+.price-pill {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.84rem;
+  font-weight: 875;
+  line-height: 1;
+}
+
+.status-pill {
+  border: 1px solid var(--best-for-border);
+  background: var(--best-for-bg);
+  color: var(--green);
+}
+
+.price-pill {
+  border: 1px solid var(--green);
+  background: var(--green);
+  color: var(--paper);
 }
 
 .best-for {
@@ -1150,7 +1194,6 @@ summary:focus-visible {
   color: white;
 }
 
-.theme-preview .brand-mark,
 .theme-preview .button,
 .theme-preview .button-secondary,
 .theme-preview .contact-card.primary,
@@ -1323,7 +1366,7 @@ summary:focus-visible {
     padding: 12px 16px;
   }
 
-  .brand-mark {
+  .brand-logo {
     width: 38px;
     height: 38px;
   }
