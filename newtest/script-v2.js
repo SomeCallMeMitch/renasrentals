@@ -22,13 +22,14 @@ const PROPERTIES = [
     baths: "4",
     bedrooms: "5",
     bathrooms: "4",
-    leaseLabel: "5BR / 4BA Near SDSU",
-    benefitLine: "Private bedrooms - Parking - Short walk to SDSU",
+    leaseLabel: "5BR / 4BA Full-Home Lease",
+    benefitLine: "Private bedrooms • Parking • Short walk to SDSU",
     bestFor: "Rented",
     status: "rented",
-    rentTotal: "Ask Rena's Rentals",
-    rentDisplayMode: "ask",
-    availability: "Available August 2026",
+    statusLabel: "Rented",
+    rentTotal: "$8,000/mo",
+    rentDisplayMode: "show",
+    availability: "Rented",
     walkTime: "Short walk to SDSU",
     parking: "4-6 vehicles",
     laundry: "On-site laundry",
@@ -39,6 +40,7 @@ const PROPERTIES = [
     galleryImages: "property-galleries/5005",
     image: "assets/property-02.jpeg",
     imageAlt: "Kitchen and shared living space at 5005 63rd St",
+    applyUrl: "https://renasrentals.tenantcloud.com/listing/596156",
     primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
     ctaLabel: "Ask About Terms",
@@ -47,7 +49,83 @@ const PROPERTIES = [
       "Private bedrooms",
       "Multiple bathrooms",
       "Gourmet kitchen and shared living space",
-      "Parking available, confirm current details"
+      "Gardener included"
+    ]
+  },
+  {
+    id: "5005-studio",
+    address: "5005 63rd St Studio",
+    beds: "1",
+    baths: "1",
+    bedrooms: "1",
+    bathrooms: "1",
+    leaseLabel: "1BR / 1BA Side Studio",
+    benefitLine: "Separate entrance - Private sitting area - Full kitchen",
+    bestFor: "Best for private 1BR living",
+    status: "available",
+    statusLabel: "Available",
+    rentTotal: "$1,300/mo",
+    rentDisplayMode: "show",
+    availability: "Available",
+    walkTime: "Short walk to SDSU",
+    parking: "Designated parking spot",
+    laundry: "Ask about laundry",
+    outdoor: "Private entry and sitting area",
+    video: "https://www.youtube.com/embed/7ZubFYE0P1o?autoplay=1&rel=0",
+    videoUrl: "https://www.youtube.com/embed/7ZubFYE0P1o?autoplay=1&rel=0",
+    videoThumb: "https://img.youtube.com/vi/7ZubFYE0P1o/hqdefault.jpg",
+    galleryImages: "property-galleries/5005-studio",
+    image: "assets/property-galleries/5005-studio/5005-studio-03.jpg",
+    imageAlt: "5005 63rd St side studio living area with closet storage",
+    applyUrl: "#tour",
+    primaryCtaLabel: "Ask About Terms",
+    secondaryCtaLabel: "View Photos",
+    ctaLabel: "Ask About Terms",
+    benefits: [
+      "1BR / 1BA side studio",
+      "Separate entrance and private entry",
+      "Private sitting area",
+      "Full kitchen and AC",
+      "Semi furnished with a designated parking spot",
+      "Gardener included"
+    ]
+  },
+  {
+    id: "5005-cottage",
+    address: "5005 63rd St Cottage",
+    beds: "1",
+    baths: "1",
+    bedrooms: "1",
+    bathrooms: "1",
+    leaseLabel: "1BR / 1BA Back Cottage",
+    benefitLine: "Separate entrance - Private deck - Fully furnished",
+    bestFor: "Best for private cottage living",
+    status: "available",
+    statusLabel: "Available",
+    rentTotal: "$1,300/mo",
+    rentDisplayMode: "show",
+    availability: "Available",
+    walkTime: "Short walk to SDSU",
+    parking: "Dedicated parking spot",
+    laundry: "Laundry included",
+    outdoor: "Private deck",
+    video: "https://www.youtube.com/embed/VcvTbG7YdQI?autoplay=1&rel=0",
+    videoUrl: "https://www.youtube.com/embed/VcvTbG7YdQI?autoplay=1&rel=0",
+    videoThumb: "https://img.youtube.com/vi/VcvTbG7YdQI/hqdefault.jpg",
+    galleryImages: "property-galleries/5005-cottage",
+    image: "assets/property-galleries/5005-cottage/5005-cottage-01.jpg",
+    imageAlt: "5005 63rd St Cottage furnished living room",
+    applyUrl: "#tour",
+    primaryCtaLabel: "Ask About Terms",
+    secondaryCtaLabel: "View Photos",
+    ctaLabel: "Ask About Terms",
+    benefits: [
+      "1BR / 1BA back cottage",
+      "Separate entrance",
+      "Private deck",
+      "AC, laundry, and fully furnished",
+      "Dedicated parking spot",
+      "Gardener included"
     ]
   },
   {
@@ -57,13 +135,14 @@ const PROPERTIES = [
     baths: "3",
     bedrooms: "6",
     bathrooms: "3",
-    leaseLabel: "6BR / 3BA Near SDSU",
-    benefitLine: "Private bedrooms - Gourmet kitchen - Short walk to SDSU",
+    leaseLabel: "6BR / 3BA Full-Home Lease",
+    benefitLine: "Private bedrooms • Gourmet kitchen • Short walk to SDSU",
     bestFor: "Currently available",
     status: "available",
-    rentTotal: "Ask Rena's Rentals",
-    rentDisplayMode: "ask",
-    availability: "Available August 2026",
+    statusLabel: "Available",
+    rentTotal: "$9,900/mo",
+    rentDisplayMode: "show",
+    availability: "Available",
     walkTime: "Short walk to SDSU",
     parking: "5 vehicles",
     laundry: "On-site laundry",
@@ -74,6 +153,7 @@ const PROPERTIES = [
     galleryImages: "property-galleries/5011",
     image: "assets/property-16.jpg",
     imageAlt: "Living room with exposed wood beam ceiling at 5011 63rd St",
+    applyUrl: "https://renasrentals.tenantcloud.com/listing/610773",
     primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
     ctaLabel: "Ask About Terms",
@@ -82,7 +162,7 @@ const PROPERTIES = [
       "Private bedrooms",
       "Gourmet kitchen",
       "Shared living/common areas",
-      "Parking available, confirm current details"
+      "Gardener included"
     ]
   },
   {
@@ -93,12 +173,13 @@ const PROPERTIES = [
     bedrooms: "3",
     bathrooms: "3",
     leaseLabel: "3BR / 3BA Home Near SDSU",
-    benefitLine: "Private bedrooms - Newer back house - Short walk to SDSU",
+    benefitLine: "Private bedrooms • Newer back house • Short walk to SDSU",
     bestFor: "Rented",
     status: "rented",
-    rentTotal: "$5,050/month",
-    rentDisplayMode: "hidden",
-    availability: "Available August 2026",
+    statusLabel: "Rented",
+    rentTotal: "$5,050/mo",
+    rentDisplayMode: "show",
+    availability: "Rented",
     walkTime: "Short walk to SDSU",
     parking: "On-site parking",
     laundry: "On-site laundry",
@@ -109,6 +190,7 @@ const PROPERTIES = [
     galleryImages: "property-galleries/5013",
     image: "assets/property-17.jpg",
     imageAlt: "Exterior and yard view at 5013 63rd St",
+    applyUrl: "https://renasrentals.tenantcloud.com/listing/610789",
     primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
     ctaLabel: "Ask About Terms",
@@ -117,7 +199,7 @@ const PROPERTIES = [
       "Private bedrooms",
       "Newer back house feel",
       "Kitchen and shared space",
-      "Ask about current availability"
+      "Gardener included"
     ]
   },
   // TODO: Replace these downloaded Wix source images if the missing
@@ -133,9 +215,10 @@ const PROPERTIES = [
     benefitLine: "Private bedrooms - AC - Solar panels - 10-minute walk to SDSU",
     bestFor: "Rented",
     status: "rented",
-    rentTotal: "$7,300/month",
-    rentDisplayMode: "hidden",
-    availability: "Available August 2026",
+    statusLabel: "Rented",
+    rentTotal: "$7,300/mo",
+    rentDisplayMode: "show",
+    availability: "Rented",
     walkTime: "10-minute walk to SDSU",
     parking: "4 vehicles",
     laundry: "Washer and dryer included",
@@ -146,6 +229,7 @@ const PROPERTIES = [
     galleryImages: "property-galleries/5051",
     image: "assets/property-galleries/5051/5051-01.jpg",
     imageAlt: "5051 63rd St property photo from Rena's Rentals",
+    applyUrl: "https://renasrentals.tenantcloud.com/listing/610795",
     primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
     ctaLabel: "Ask About Terms",
@@ -169,9 +253,10 @@ const PROPERTIES = [
     benefitLine: "Ensuite bedrooms - Built in 2020 - 10-minute walk to SDSU",
     bestFor: "Rented",
     status: "rented",
-    rentTotal: "$5,050/month",
-    rentDisplayMode: "hidden",
-    availability: "Available August 2026",
+    statusLabel: "Rented",
+    rentTotal: "$5,050/mo",
+    rentDisplayMode: "show",
+    availability: "Rented",
     walkTime: "10-minute walk to SDSU",
     parking: "Permit street parking",
     laundry: "Washer and dryer onsite",
@@ -179,6 +264,7 @@ const PROPERTIES = [
     galleryImages: "property-galleries/5053",
     image: "assets/property-galleries/5053/5053-01.jpg",
     imageAlt: "5053 63rd St ADU back house property photo from Rena's Rentals",
+    applyUrl: "https://renasrentals.tenantcloud.com/listing/610797",
     primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
     ctaLabel: "Ask About Terms",
@@ -187,87 +273,20 @@ const PROPERTIES = [
       "Built in 2020 with 1,200 square feet",
       "Each bedroom has an ensuite bathroom",
       "Ceiling-mounted AC, ceiling fans, and mirrored closets",
-      "Granite kitchen island, stainless appliances, pantry, and outdoor yard space"
+      "Granite kitchen island, stainless appliances, pantry, and outdoor yard space",
+      "Gardener included"
     ]
   },
-  {
-    id: "5735",
-    address: "5735 Campanile Way",
-    beds: "5",
-    baths: "3",
-    bedrooms: "5",
-    bathrooms: "3",
-    leaseLabel: "5BR / 3BA House Near SDSU",
-    benefitLine: "Private courtyard - Updated kitchen - 12-minute walk to SDSU",
-    bestFor: "Rented",
-    status: "rented",
-    rentTotal: "$6,775/month",
-    rentDisplayMode: "hidden",
-    availability: "Available August 2024",
-    walkTime: "12-minute walk / 6-minute bike ride to SDSU",
-    parking: "4 vehicles",
-    laundry: "On-site laundry",
-    outdoor: "Private courtyard",
-    video: "https://www.youtube.com/embed/-928N0x6DJg?start=4&autoplay=1&rel=0",
-    videoUrl: "https://www.youtube.com/embed/-928N0x6DJg?start=4&autoplay=1&rel=0",
-    videoThumb: "https://img.youtube.com/vi/-928N0x6DJg/hqdefault.jpg",
-    galleryImages: "property-galleries/5735",
-    image: "assets/property-galleries/5735/5735-01.jpg",
-    imageAlt: "5735 Campanile Way exterior property photo from Rena's Rentals",
-    primaryCtaLabel: "Ask About Terms",
-    secondaryCtaLabel: "View Photos",
-    ctaLabel: "Ask About Terms",
-    benefits: [
-      "5BR / 3BA house near SDSU",
-      "Campanile Way and Campanile Drive location",
-      "Private courtyard and parking for four",
-      "Updated flooring, quartz countertops, and new kitchen appliances",
-      "AC, on-site laundry, vinyl plank wood floors, and remodeled bathrooms"
-    ]
-  },
-  // TODO: Add 5737 YouTube video URL and additional confirmed property photos when provided.
-  {
-    id: "5737",
-    address: "5737 Campanile Way",
-    beds: "4",
-    baths: "2",
-    bedrooms: "4",
-    bathrooms: "2",
-    leaseLabel: "4BR / 2BA Newer Home Near SDSU",
-    benefitLine: "New construction - Stainless appliances - 12-minute walk to SDSU",
-    bestFor: "Rented",
-    status: "rented",
-    rentTotal: "$6,000/month",
-    rentDisplayMode: "hidden",
-    availability: "August 2025",
-    walkTime: "12-minute walk / 6-minute bike ride to SDSU",
-    parking: "Street parking only",
-    laundry: "Washer and dryer in unit",
-    outdoor: "Ask about outdoor space",
-    galleryImages: "property-galleries/5737",
-    image: "assets/property-galleries/5737/5737-01.jpg",
-    imageAlt: "5737 Campanile Way kitchen property photo from Rena's Rentals",
-    primaryCtaLabel: "Ask About Terms",
-    secondaryCtaLabel: "View Photos",
-    ctaLabel: "Ask About Terms",
-    benefits: [
-      "4BR / 2BA newer home near SDSU",
-      "One person per room",
-      "Quartz counters and stainless appliances",
-      "Washer/dryer in unit, wood flooring, new window blinds, and new paint",
-      "New air conditioning and street parking only"
-    ]
-  }
 ];
 
 const GALLERY_DIMENSIONS = {
   "5005": [[1447, 1400], [640, 456], [1800, 1350], [1800, 1350], [512, 384], [1800, 1350], [288, 384], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1050, 1400], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [500, 375]],
+  "5005-studio": [[240, 320], [240, 320], [320, 240], [320, 240], [320, 240], [320, 240], [320, 240], [320, 240], [240, 320], [240, 320]],
+  "5005-cottage": [[640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480]],
   "5011": [[1800, 1350], [1200, 899], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1200, 900], [900, 1200], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1050, 1400], [1050, 1400]],
   "5013": [[1800, 1212], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350]],
   "5051": [[1350, 1800], [1440, 1080], [1800, 1350], [1800, 1350], [1350, 1800], [1350, 1800], [1800, 1350], [1024, 768], [1800, 1350]],
-  "5053": [[1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350]],
-  "5735": [[1800, 1012], [1800, 1350], [740, 1097], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1152, 864], [810, 1440], [1600, 1200], [1012, 1800], [1800, 1350], [1800, 1350], [1800, 1350], [1350, 1800], [1800, 1350], [1800, 1350], [1280, 960], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [960, 1280]],
-  "5737": [[1080, 720]]
+  "5053": [[1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350]]
 };
 
 const GALLERY_LABELS = {
@@ -295,6 +314,32 @@ const GALLERY_LABELS = {
     ["Kitchen", "Refrigerator, microwave, and oven storage wall"],
     ["Bathroom", "Large tub and bathroom window"],
     ["Living", "Furnished living room with media wall and patio access"]
+  ],
+  "5005-studio": [
+    ["Storage", "Built-in desk and cabinet storage in the side studio"],
+    ["Storage", "Hall storage and closet cabinetry near the studio entry"],
+    ["Living", "Side studio living and sleeping area with closet wall"],
+    ["Living", "Private studio room with natural light and AC"],
+    ["Kitchen", "Full kitchen with counter seating and semi-furnished setup"],
+    ["Kitchen", "Kitchen storage, refrigerator, and AC in the side studio"],
+    ["Kitchen", "Kitchen sink and pass-through counter toward the studio room"],
+    ["Kitchen", "Gas range, microwave, and tile counter in the studio kitchen"],
+    ["Outdoor", "Separate side entrance and private sitting area"],
+    ["Bathroom", "Studio bathroom with tub shower, toilet, and vanity"]
+  ],
+  "5005-cottage": [
+    ["Living", "Furnished living room with sofa, storage, and natural light"],
+    ["Living", "Living area with sofa, windows, and room for a desk"],
+    ["Living", "Long living room view with desk, storage, and laundry"],
+    ["Kitchen", "Dining area leading into the cottage kitchen"],
+    ["Bedroom", "Furnished bedroom with bed, sofa, skylight, and AC"],
+    ["Bedroom", "Bedroom view with mounted TV, closet, and dining area beyond"],
+    ["Kitchen", "Full kitchen with refrigerator, gas range, sink, and cabinet storage"],
+    ["Bathroom", "Bathroom with toilet, towels, and glass shower"],
+    ["Outdoor", "Private deck with bench seating and plants"],
+    ["Outdoor", "Cottage deck and private entry from the landscaped walkway"],
+    ["Outdoor", "Side walkway with citrus trees leading toward the cottage"],
+    ["Exterior", "Separate cottage entrance beside the private deck"]
   ],
   "5011": [
     ["Kitchen", "Kitchen appliance wall with cabinetry and counter space"],
@@ -356,51 +401,21 @@ const GALLERY_LABELS = {
     ["Outdoor", "Grass yard and outdoor sitting space"],
     ["Laundry", "Onsite washer and dryer area"],
     ["Bedroom", "Private bedroom with ceiling-mounted AC and ensuite access"]
-  ],
-  "5735": [
-    ["Exterior", "5735 Campanile Way exterior and driveway"],
-    ["Kitchen", "Updated kitchen with new appliances and quartz countertops"],
-    ["Living", "Shared living space near the private courtyard"],
-    ["Kitchen", "Kitchen workspace and appliance view"],
-    ["Bedroom", "Private bedroom in the 5735 house"],
-    ["Bathroom", "Remodeled bathroom finish"],
-    ["Outdoor", "Private courtyard and outdoor approach"],
-    ["Bedroom", "Bedroom with updated flooring"],
-    ["Bathroom", "Bathroom vanity and shower area"],
-    ["Living", "Common area with vinyl plank wood floors"],
-    ["Outdoor", "Campanile Way exterior detail"],
-    ["Bedroom", "Private bedroom with natural light"],
-    ["Bedroom", "Additional private bedroom"],
-    ["Bedroom", "Bedroom or study-ready room"],
-    ["Bathroom", "Remodeled bathroom with updated fixtures"],
-    ["Kitchen", "Kitchen storage and countertop detail"],
-    ["Laundry", "On-site laundry area"],
-    ["Outdoor", "Exterior walkway and entry"],
-    ["Bedroom", "Private bedroom with closet space"],
-    ["Living", "Shared interior room"],
-    ["Exterior", "Campanile property exterior"],
-    ["Kitchen", "Kitchen and dining flow"],
-    ["Bedroom", "Private room from the old source page"],
-    ["Bathroom", "Bathroom detail from the source gallery"],
-    ["Outdoor", "Outdoor approach and property setting"]
-  ],
-  "5737": [
-    ["Kitchen", "5737 Campanile Way kitchen with quartz counters and stainless appliances"]
   ]
 };
 
 const FAQS = [
   {
+    question: "How close are the properties to SDSU?",
+    answer: "The 63rd Street properties are a 10 minute walk to campus near 63rd & Pontiac."
+  },
+  {
     question: "Can two people share a bedroom?",
     answer: "Yes, we have doubles. Text Rena with your group size and preferred home so she can explain current double-room options and availability."
   },
   {
-    question: "How close are the homes to SDSU?",
-    answer: "Our 63rd Street homes are a 10 minute walk to campus near 63rd & Pontiac."
-  },
-  {
     question: "How do I check current availability?",
-    answer: "Text Rena with your group size, preferred home, and timing. Ask Rena's Rentals to confirm current details."
+    answer: "Text Rena with your group size, preferred home, and timing so she can send current options and next steps."
   },
   {
     question: "Is parking available?",
@@ -652,13 +667,14 @@ function renderProperties() {
 
   PROPERTIES.forEach((property) => {
     const photos = getPropertyPhotos(property.id);
-    const heroPhoto = photos[0] || {
+    const hasGalleryPhotos = photos.length > 0;
+    const heroPhoto = photos[0] || (property.image ? {
       src: property.image,
       alt: property.imageAlt,
       category: "Photos",
       caption: property.address,
       photoNumber: 1
-    };
+    } : null);
     const previewPhotos = photos.slice(1, 4);
     const article = document.createElement("article");
     article.className = "property-card";
@@ -675,20 +691,37 @@ function renderProperties() {
     heroButton.dataset.analyticsLocation = "property_card_hero_image";
     heroButton.setAttribute("aria-label", `Open ${property.address} photo gallery`);
 
-    const image = document.createElement("img");
-    image.src = heroPhoto.src;
-    image.alt = heroPhoto.alt;
-    image.loading = "lazy";
+    if (!hasGalleryPhotos) {
+      heroButton.disabled = true;
+      heroButton.classList.add("is-empty");
+    }
+
+    if (heroPhoto) {
+      const image = document.createElement("img");
+      image.src = heroPhoto.src;
+      image.alt = heroPhoto.alt;
+      image.loading = "lazy";
+      heroButton.appendChild(image);
+    } else {
+      const placeholder = document.createElement("span");
+      placeholder.className = "property-photo-placeholder";
+      placeholder.textContent = property.photoPlaceholder || "Photos coming soon";
+      heroButton.appendChild(placeholder);
+    }
 
     const photoCount = document.createElement("span");
     photoCount.className = "photo-count";
-    photoCount.textContent = `View ${photos.length} photos`;
+    photoCount.textContent = hasGalleryPhotos
+      ? `View ${photos.length} photos`
+      : property.videoUrl || property.video
+        ? "Video available"
+        : "Photos coming soon";
 
     const badge = document.createElement("span");
     badge.className = "property-badge";
     badge.textContent = property.bestFor || property.availability;
 
-    heroButton.append(image, badge, photoCount);
+    heroButton.append(badge, photoCount);
 
     if (property.status === "rented") {
       const rentedWatermark = document.createElement("span");
@@ -700,36 +733,41 @@ function renderProperties() {
 
     const thumbnailStrip = document.createElement("div");
     thumbnailStrip.className = "property-thumbs";
-    previewPhotos.forEach((photo, index) => {
-      const thumb = document.createElement("button");
-      thumb.className = "property-thumb";
-      thumb.type = "button";
-      thumb.dataset.galleryProperty = property.id;
-      thumb.dataset.galleryIndex = String(index + 1);
-      thumb.dataset.analyticsLocation = "property_card_thumbnail";
-      thumb.setAttribute("aria-label", `Open ${property.address} ${photo.category} photo`);
+    if (hasGalleryPhotos) {
+      previewPhotos.forEach((photo, index) => {
+        const thumb = document.createElement("button");
+        thumb.className = "property-thumb";
+        thumb.type = "button";
+        thumb.dataset.galleryProperty = property.id;
+        thumb.dataset.galleryIndex = String(index + 1);
+        thumb.dataset.analyticsLocation = "property_card_thumbnail";
+        thumb.setAttribute("aria-label", `Open ${property.address} ${photo.category} photo`);
 
-      const thumbImage = document.createElement("img");
-      thumbImage.src = photo.src;
-      thumbImage.alt = photo.alt;
-      thumbImage.loading = "lazy";
-      thumb.appendChild(thumbImage);
-      thumbnailStrip.appendChild(thumb);
-    });
+        const thumbImage = document.createElement("img");
+        thumbImage.src = photo.src;
+        thumbImage.alt = photo.alt;
+        thumbImage.loading = "lazy";
+        thumb.appendChild(thumbImage);
+        thumbnailStrip.appendChild(thumb);
+      });
 
-    if (photos.length > 4) {
-      const more = document.createElement("button");
-      more.className = "property-thumb property-thumb-more";
-      more.type = "button";
-      more.dataset.galleryProperty = property.id;
-      more.dataset.galleryIndex = "4";
-      more.dataset.analyticsLocation = "property_card_more_photos";
-      more.textContent = `+${photos.length - 4}`;
-      more.setAttribute("aria-label", `Open ${property.address} gallery with ${photos.length} photos`);
-      thumbnailStrip.appendChild(more);
+      if (photos.length > 4) {
+        const more = document.createElement("button");
+        more.className = "property-thumb property-thumb-more";
+        more.type = "button";
+        more.dataset.galleryProperty = property.id;
+        more.dataset.galleryIndex = "4";
+        more.dataset.analyticsLocation = "property_card_more_photos";
+        more.textContent = `+${photos.length - 4}`;
+        more.setAttribute("aria-label", `Open ${property.address} gallery with ${photos.length} photos`);
+        thumbnailStrip.appendChild(more);
+      }
     }
 
-    galleryPreview.append(heroButton, thumbnailStrip);
+    galleryPreview.appendChild(heroButton);
+    if (hasGalleryPhotos) {
+      galleryPreview.appendChild(thumbnailStrip);
+    }
 
     const content = document.createElement("div");
     content.className = "property-content";
@@ -747,17 +785,24 @@ function renderProperties() {
     benefitLine.className = "benefit-line";
     benefitLine.textContent = property.benefitLine;
 
+    const metaRow = document.createElement("div");
+    metaRow.className = "property-meta-row";
+
+    const status = document.createElement("span");
+    status.className = "status-pill";
+    status.textContent = property.statusLabel || property.availability || "Available";
+
+    const price = document.createElement("span");
+    price.className = "price-pill";
+    price.textContent = property.rentTotal || "Ask Rena's Rentals";
+
+    metaRow.append(status, price);
+
     const bestFor = document.createElement("p");
     bestFor.className = "best-for";
     bestFor.textContent = property.bestFor;
 
-    heading.append(title, leaseLabel, benefitLine);
-    if (property.rentDisplayMode === "show" && property.rentTotal) {
-      const rent = document.createElement("p");
-      rent.className = "rent-display";
-      rent.textContent = property.rentTotal;
-      heading.appendChild(rent);
-    }
+    heading.append(title, leaseLabel, benefitLine, metaRow);
     heading.appendChild(bestFor);
 
     const specs = document.createElement("dl");
@@ -799,30 +844,30 @@ function renderProperties() {
     videoButton.dataset.videoSrc = property.videoUrl || property.video;
     videoButton.textContent = "Watch Video";
 
-    const textFutureAvailability = document.createElement("a");
-    textFutureAvailability.className = "button button-secondary button-small";
-    textFutureAvailability.dataset.cta = `property_${property.id}_text_future_availability`;
-    textFutureAvailability.href = "sms:+16199172011?&body=Hi%20Rena%2C%20I%27m%20interested%20in%20future%20availability.";
-    textFutureAvailability.textContent = "Text for Future Availability";
-
     const apply = document.createElement("a");
-    apply.className = "button button-secondary button-small";
-    apply.dataset.cta = `apply_property_${property.id}`;
-    apply.href = APPLY_URL;
-    apply.target = "_blank";
-    apply.rel = "noopener noreferrer";
-    apply.textContent = "Apply Now";
+    apply.className = "button button-small";
+    apply.dataset.cta = `property_${property.id}_apply`;
+    apply.href = property.applyUrl || "#tour";
+    apply.textContent = property.applyLabel || "Apply";
+    if (property.applyUrl && property.applyUrl.startsWith("http")) {
+      apply.target = "_blank";
+      apply.rel = "noreferrer";
+    }
 
-    actions.append(photoButton);
+    const inquire = document.createElement("a");
+    inquire.className = "button button-secondary button-small";
+    inquire.dataset.cta = `property_${property.id}_ask_terms`;
+    inquire.href = "#tour";
+    inquire.textContent = property.primaryCtaLabel || "Ask About Terms";
+
+    if (hasGalleryPhotos) {
+      actions.append(photoButton);
+    }
     if (property.videoUrl || property.video) {
       actions.append(videoButton);
     }
-
-    if (property.status === "available") {
-      actions.append(apply);
-    } else {
-      actions.append(textFutureAvailability);
-    }
+    actions.append(apply);
+    actions.append(inquire);
     content.append(heading, specs, createList(property.benefits), actions);
     article.append(galleryPreview, content);
     propertyCards.appendChild(article);
