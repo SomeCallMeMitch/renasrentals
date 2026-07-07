@@ -1030,31 +1030,6 @@ p {
   border-left: 18px solid var(--green);
 }
 
-.group-section {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.8fr) minmax(280px, 1fr) auto;
-  gap: clamp(16px, 3vw, 28px);
-  align-items: center;
-  background: var(--green);
-  color: var(--paper);
-}
-
-.group-section .eyebrow {
-  color: var(--hero-accent);
-}
-
-.group-section p {
-  margin: 0;
-  color: var(--hero-copy-muted);
-}
-
-.group-section .button {
-  background: var(--paper);
-  border-color: var(--paper);
-  color: var(--green);
-  white-space: nowrap;
-}
-
 .faq-grid p {
   color: var(--muted);
 }
@@ -1279,23 +1254,20 @@ summary:focus-visible {
 }
 
 .theme-preview .hero .button,
-.theme-preview .hero .button-secondary,
-.theme-preview .group-section .button {
+.theme-preview .hero .button-secondary {
   background: var(--color-accent);
   border-color: var(--color-accent);
   color: white;
 }
 
 .theme-preview .hero .button:hover,
-.theme-preview .hero .button-secondary:hover,
-.theme-preview .group-section .button:hover {
+.theme-preview .hero .button-secondary:hover {
   background: color-mix(in srgb, var(--color-accent) 78%, var(--color-primary));
   border-color: color-mix(in srgb, var(--color-accent) 78%, var(--color-primary));
   color: white;
 }
 
 .theme-preview .proof-section,
-.theme-preview .group-section,
 .theme-preview .final-cta {
   background: var(--color-primary);
   color: white;
@@ -1404,13 +1376,8 @@ summary:focus-visible {
   }
 
   .contact-grid,
-  .group-section,
   .faq-grid {
     grid-template-columns: 1fr;
-  }
-
-  .group-section .button {
-    justify-self: start;
   }
 }
 
