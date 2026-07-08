@@ -4,7 +4,7 @@ const CONTACT = {
   email: "renasrentals@gmail.com"
 };
 
-const APPLY_URL = "https://renasrentals.tenantcloud.com/listing/610773";
+const APPLY_URL = "https://renasrentals.tenantcloud.com/";
 
 function trackEvent(eventName, params = {}) {
   if (typeof window === "undefined" || typeof window.gtag !== "function" || !eventName) {
@@ -41,9 +41,7 @@ const PROPERTIES = [
     image: "assets/property-02.jpeg",
     imageAlt: "Kitchen and shared living space at 5005 63rd St",
     applyUrl: "https://renasrentals.tenantcloud.com/listing/596156",
-    primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
-    ctaLabel: "Ask About Terms",
     benefits: [
       "Home layout near SDSU",
       "Private bedrooms",
@@ -61,12 +59,12 @@ const PROPERTIES = [
     bathrooms: "1",
     leaseLabel: "1BR / 1BA Side Studio",
     benefitLine: "Separate entrance - Private sitting area - Full kitchen",
-    bestFor: "Best for private 1BR living",
-    status: "available",
-    statusLabel: "Available",
+    bestFor: "Rented",
+    status: "rented",
+    statusLabel: "Rented",
     rentTotal: "$1,300/mo",
     rentDisplayMode: "show",
-    availability: "Available",
+    availability: "Rented",
     walkTime: "Short walk to SDSU",
     parking: "Designated parking spot",
     laundry: "Ask about laundry",
@@ -77,10 +75,8 @@ const PROPERTIES = [
     galleryImages: "property-galleries/5005-studio",
     image: "assets/property-galleries/5005-studio/5005-studio-03.jpg",
     imageAlt: "5005 63rd St side studio living area with closet storage",
-    applyUrl: "#tour",
-    primaryCtaLabel: "Ask About Terms",
+    applyUrl: "https://renasrentals.tenantcloud.com/",
     secondaryCtaLabel: "View Photos",
-    ctaLabel: "Ask About Terms",
     benefits: [
       "1BR / 1BA side studio",
       "Separate entrance and private entry",
@@ -99,12 +95,12 @@ const PROPERTIES = [
     bathrooms: "1",
     leaseLabel: "1BR / 1BA Back Cottage",
     benefitLine: "Separate entrance - Private deck - Fully furnished",
-    bestFor: "Best for private cottage living",
-    status: "available",
-    statusLabel: "Available",
+    bestFor: "Rented",
+    status: "rented",
+    statusLabel: "Rented",
     rentTotal: "$1,300/mo",
     rentDisplayMode: "show",
-    availability: "Available",
+    availability: "Rented",
     walkTime: "Short walk to SDSU",
     parking: "Dedicated parking spot",
     laundry: "Laundry included",
@@ -115,10 +111,8 @@ const PROPERTIES = [
     galleryImages: "property-galleries/5005-cottage",
     image: "assets/property-galleries/5005-cottage/5005-cottage-01.jpg",
     imageAlt: "5005 63rd St Cottage furnished living room",
-    applyUrl: "#tour",
-    primaryCtaLabel: "Ask About Terms",
+    applyUrl: "https://renasrentals.tenantcloud.com/",
     secondaryCtaLabel: "View Photos",
-    ctaLabel: "Ask About Terms",
     benefits: [
       "1BR / 1BA back cottage",
       "Separate entrance",
@@ -154,9 +148,7 @@ const PROPERTIES = [
     image: "assets/property-16.jpg",
     imageAlt: "Living room with exposed wood beam ceiling at 5011 63rd St",
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610773",
-    primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
-    ctaLabel: "Ask About Terms",
     benefits: [
       "Larger home layout near SDSU",
       "Private bedrooms",
@@ -191,9 +183,7 @@ const PROPERTIES = [
     image: "assets/property-17.jpg",
     imageAlt: "Exterior and yard view at 5013 63rd St",
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610789",
-    primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
-    ctaLabel: "Ask About Terms",
     benefits: [
       "3BR / 3BA home near SDSU",
       "Private bedrooms",
@@ -230,9 +220,7 @@ const PROPERTIES = [
     image: "assets/property-galleries/5051/5051-01.jpg",
     imageAlt: "5051 63rd St property photo from Rena's Rentals",
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610795",
-    primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
-    ctaLabel: "Ask About Terms",
     benefits: [
       "4BR / 2BA home near SDSU",
       "1,800 square foot open floor plan",
@@ -265,9 +253,7 @@ const PROPERTIES = [
     image: "assets/property-galleries/5053/5053-01.jpg",
     imageAlt: "5053 63rd St ADU back house property photo from Rena's Rentals",
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610797",
-    primaryCtaLabel: "Ask About Terms",
     secondaryCtaLabel: "View Photos",
-    ctaLabel: "Ask About Terms",
     benefits: [
       "3BR / 3BA ADU back house near SDSU",
       "Built in 2020 with 1,200 square feet",
@@ -717,11 +703,7 @@ function renderProperties() {
         ? "Video available"
         : "Photos coming soon";
 
-    const badge = document.createElement("span");
-    badge.className = "property-badge";
-    badge.textContent = property.bestFor || property.availability;
-
-    heroButton.append(badge, photoCount);
+    heroButton.append(photoCount);
 
     if (property.status === "rented") {
       const rentedWatermark = document.createElement("span");
@@ -798,12 +780,7 @@ function renderProperties() {
 
     metaRow.append(status, price);
 
-    const bestFor = document.createElement("p");
-    bestFor.className = "best-for";
-    bestFor.textContent = property.bestFor;
-
     heading.append(title, leaseLabel, benefitLine, metaRow);
-    heading.appendChild(bestFor);
 
     const specs = document.createElement("dl");
     specs.className = "specs";
@@ -847,18 +824,12 @@ function renderProperties() {
     const apply = document.createElement("a");
     apply.className = "button button-small";
     apply.dataset.cta = `property_${property.id}_apply`;
-    apply.href = property.applyUrl || "#tour";
+    apply.href = property.applyUrl || APPLY_URL;
     apply.textContent = property.applyLabel || "Apply";
     if (property.applyUrl && property.applyUrl.startsWith("http")) {
       apply.target = "_blank";
       apply.rel = "noreferrer";
     }
-
-    const inquire = document.createElement("a");
-    inquire.className = "button button-secondary button-small";
-    inquire.dataset.cta = `property_${property.id}_ask_terms`;
-    inquire.href = "#tour";
-    inquire.textContent = property.primaryCtaLabel || "Ask About Terms";
 
     if (hasGalleryPhotos) {
       actions.append(photoButton);
@@ -867,7 +838,6 @@ function renderProperties() {
       actions.append(videoButton);
     }
     actions.append(apply);
-    actions.append(inquire);
     content.append(heading, specs, createList(property.benefits), actions);
     article.append(galleryPreview, content);
     propertyCards.appendChild(article);
