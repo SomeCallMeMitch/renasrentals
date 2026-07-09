@@ -229,7 +229,6 @@ const PROPERTIES = [
       "Gardener included"
     ]
   },
-  // TODO: Add 5053 YouTube video URL when provided.
   {
     id: "5053",
     address: "5053 63rd St",
@@ -249,6 +248,9 @@ const PROPERTIES = [
     parking: "Permit street parking",
     laundry: "Washer and dryer onsite",
     outdoor: "Grass yard, fruit trees, side gate entrance",
+    video: "https://www.youtube.com/embed/NwwAeLRS_bk?autoplay=1&rel=0",
+    videoUrl: "https://www.youtube.com/embed/NwwAeLRS_bk?autoplay=1&rel=0",
+    videoThumb: "https://img.youtube.com/vi/NwwAeLRS_bk/hqdefault.jpg",
     galleryImages: "property-galleries/5053",
     image: "assets/property-galleries/5053/5053-01.jpg",
     imageAlt: "5053 63rd St kitchen and living area",
