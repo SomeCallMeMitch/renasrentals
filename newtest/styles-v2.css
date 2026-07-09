@@ -292,6 +292,12 @@ p {
   text-decoration: none;
 }
 
+.brand-text {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
 .brand-logo {
   display: block;
   width: 42px;
@@ -306,13 +312,15 @@ p {
 }
 
 .brand strong {
-  font-size: 1.08rem;
+  font-size: 2.16rem;
   line-height: 1.1;
 }
 
 .brand small {
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: 0.86rem;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .main-nav {
@@ -550,6 +558,11 @@ p {
 
 .contact-choice {
   background: var(--paper);
+  padding-bottom: clamp(13px, 2vw, 29px);
+}
+
+#homes {
+  padding-top: clamp(13px, 2vw, 29px);
 }
 
 .contact-grid {
@@ -1396,6 +1409,20 @@ summary:focus-visible {
     height: 38px;
   }
 
+  .brand-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+  }
+
+  .brand strong {
+    font-size: 1.52rem;
+  }
+
+  .brand small {
+    font-size: 0.72rem;
+  }
+
   .header-cta {
     display: none;
   }
@@ -1433,6 +1460,14 @@ summary:focus-visible {
 
   .section {
     padding: 26px 18px;
+  }
+
+  .contact-choice {
+    padding-bottom: 13px;
+  }
+
+  #homes {
+    padding-top: 13px;
   }
 
   .card-actions {
@@ -1581,10 +1616,10 @@ summary:focus-visible {
 
 @media (max-width: 390px) {
   .brand strong {
-    font-size: 0.9rem;
+    font-size: 1.22rem;
   }
 
   .brand small {
-    font-size: 0.7rem;
+    font-size: 0.66rem;
   }
 }
