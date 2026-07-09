@@ -251,7 +251,7 @@ const PROPERTIES = [
     outdoor: "Grass yard, fruit trees, side gate entrance",
     galleryImages: "property-galleries/5053",
     image: "assets/property-galleries/5053/5053-01.jpg",
-    imageAlt: "5053 63rd St ADU back house property photo from Rena's Rentals",
+    imageAlt: "5053 63rd St kitchen and living area",
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610797",
     secondaryCtaLabel: "View Photos",
     benefits: [
@@ -271,7 +271,7 @@ const GALLERY_DIMENSIONS = {
   "5011": [[1800, 1350], [1200, 899], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1200, 900], [900, 1200], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1050, 1400], [1050, 1400]],
   "5013": [[1800, 1212], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350]],
   "5051": [[1350, 1800], [1440, 1080], [1800, 1350], [1800, 1350], [1350, 1800], [1350, 1800], [1800, 1350], [1024, 768], [1800, 1350]],
-  "5053": [[1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350]]
+  "5053": [[2000, 1500], [2000, 1500], [2000, 1500], [2000, 1500], [2000, 1500], [2000, 1500], [1500, 2000], [1500, 2000], [1500, 2000], [1500, 2000], [1500, 2000], [2000, 1500]]
 };
 
 const GALLERY_LABELS = {
@@ -377,15 +377,18 @@ const GALLERY_LABELS = {
     ["Bathroom", "Bathroom"]
   ],
   "5053": [
-    ["Exterior", "5053 ADU back house exterior and yard setting"],
-    ["Kitchen", "Updated granite kitchen and island with stainless appliances"],
-    ["Kitchen", "Kitchen pantry and cabinet storage"],
-    ["Living", "Fresh modern living area in the 5053 back house"],
-    ["Bedroom", "Extra large bedroom with mirrored closet and ceiling fan"],
-    ["Bathroom", "Ensuite bathroom connected to a private bedroom"],
-    ["Outdoor", "Grass yard and outdoor sitting space"],
-    ["Laundry", "Onsite washer and dryer area"],
-    ["Bedroom", "Private bedroom with ceiling-mounted AC and ensuite access"]
+    ["Kitchen / Living", "Kitchen and living area"],
+    ["Exterior", "ADU back house and walkway"],
+    ["Kitchen", "Island, sink, and appliances"],
+    ["Kitchen", "Kitchen counter and cabinets"],
+    ["Living", "Living area with patio doors"],
+    ["Bathroom", "Tub shower and vanity"],
+    ["Bedroom", "Bedroom with ceiling fan"],
+    ["Bedroom", "Bedroom with window and ceiling fan"],
+    ["Bedroom", "Bedroom with closet"],
+    ["Hallway", "Hallway to bedrooms"],
+    ["Bathroom", "Bathroom with tub shower"],
+    ["Bedroom", "Bedroom with ceiling AC and fan"]
   ]
 };
 
