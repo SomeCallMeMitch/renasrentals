@@ -73,8 +73,9 @@ const PROPERTIES = [
     videoUrl: "https://www.youtube.com/embed/7ZubFYE0P1o?autoplay=1&rel=0",
     videoThumb: "https://img.youtube.com/vi/7ZubFYE0P1o/hqdefault.jpg",
     galleryImages: "property-galleries/5005-studio",
-    image: "assets/property-galleries/5005-studio/5005-studio-03.jpg",
-    imageAlt: "5005 63rd St side studio living area with closet storage",
+    image: "assets/property-galleries/5005-studio/5005-studio-01.jpg",
+    imageAlt: "5005 63rd St side studio kitchen with barstools",
+    featuredPhotoIndex: 0,
     applyUrl: "https://renasrentals.tenantcloud.com/",
     secondaryCtaLabel: "View Photos",
     benefits: [
@@ -265,7 +266,7 @@ const PROPERTIES = [
 
 const GALLERY_DIMENSIONS = {
   "5005": [[1447, 1400], [640, 456], [1800, 1350], [1800, 1350], [512, 384], [1800, 1350], [288, 384], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1050, 1400], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [500, 375]],
-  "5005-studio": [[240, 320], [240, 320], [320, 240], [320, 240], [320, 240], [320, 240], [320, 240], [320, 240], [240, 320], [240, 320]],
+  "5005-studio": [[1448, 1086], [1086, 1448], [1086, 1448], [1448, 1086], [1448, 1086], [1448, 1086], [1086, 1448], [1448, 1086], [1448, 1086], [1086, 1448]],
   "5005-cottage": [[640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480], [640, 480]],
   "5011": [[1800, 1350], [1200, 899], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1200, 900], [900, 1200], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1050, 1400], [1050, 1400]],
   "5013": [[1800, 1212], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350], [1800, 1350], [1800, 1350], [1050, 1400], [1800, 1350], [1800, 1350]],
@@ -300,16 +301,16 @@ const GALLERY_LABELS = {
     ["Living", "Furnished living room with media wall and patio access"]
   ],
   "5005-studio": [
-    ["Storage", "Built-in desk and cabinet storage in the side studio"],
-    ["Storage", "Hall storage and closet cabinetry near the studio entry"],
-    ["Living", "Side studio living and sleeping area with closet wall"],
-    ["Living", "Private studio room with natural light and AC"],
-    ["Kitchen", "Full kitchen with counter seating and semi-furnished setup"],
-    ["Kitchen", "Kitchen storage, refrigerator, and AC in the side studio"],
-    ["Kitchen", "Kitchen sink and pass-through counter toward the studio room"],
-    ["Kitchen", "Gas range, microwave, and tile counter in the studio kitchen"],
-    ["Outdoor", "Separate side entrance and private sitting area"],
-    ["Bathroom", "Studio bathroom with tub shower, toilet, and vanity"]
+    ["Kitchen", "Kitchen with barstools"],
+    ["Storage", "Hall storage"],
+    ["Storage", "Built-in desk"],
+    ["Kitchen", "Kitchen counter seating"],
+    ["Storage", "Studio closet"],
+    ["Kitchen", "Range and microwave"],
+    ["Bathroom", "Bathroom"],
+    ["Living", "Studio room"],
+    ["Living", "Private entrance"],
+    ["Outdoor", "Side entrance"]
   ],
   "5005-cottage": [
     ["Living", "Furnished living room with sofa, storage, and natural light"],
