@@ -23,7 +23,7 @@ const PROPERTIES = [
     bedrooms: "5",
     bathrooms: "4",
     leaseLabel: "5BR / 4BA Full-Home Lease",
-    benefitLine: "Private bedrooms • Parking • Short walk to SDSU",
+    benefitLine: "Large open floorplan - Parking - Short walk to SDSU",
     bestFor: "Rented",
     status: "rented",
     statusLabel: "Rented",
@@ -31,7 +31,7 @@ const PROPERTIES = [
     rentDisplayMode: "show",
     availability: "Rented",
     walkTime: "Short walk to SDSU",
-    parking: "4-6 vehicles",
+    parking: "4 vehicles",
     laundry: "On-site laundry",
     outdoor: "Outdoor patio / yard space",
     video: "https://www.youtube.com/embed/axuQexUtISc?autoplay=1&rel=0",
@@ -43,10 +43,10 @@ const PROPERTIES = [
     applyUrl: "https://renasrentals.tenantcloud.com/listing/596156",
     secondaryCtaLabel: "View Photos",
     benefits: [
-      "Home layout near SDSU",
-      "Private bedrooms",
-      "Multiple bathrooms",
       "Gourmet kitchen and shared living space",
+      "Large backyard with BBQ",
+      "Washer and dryer",
+      "Central A/C",
       "Gardener included"
     ]
   },
@@ -62,7 +62,7 @@ const PROPERTIES = [
     bestFor: "Rented",
     status: "rented",
     statusLabel: "Rented",
-    rentTotal: "$1,300/mo",
+    rentTotal: "$2,100/mo",
     rentDisplayMode: "show",
     availability: "Rented",
     walkTime: "Short walk to SDSU",
@@ -78,11 +78,10 @@ const PROPERTIES = [
     applyUrl: "https://renasrentals.tenantcloud.com/",
     secondaryCtaLabel: "View Photos",
     benefits: [
-      "1BR / 1BA side studio",
-      "Separate entrance and private entry",
+      "Separate, private entrance",
       "Private sitting area",
       "Full kitchen and AC",
-      "Semi furnished with a designated parking spot",
+      "Semi furnished",
       "Gardener included"
     ]
   },
@@ -98,7 +97,7 @@ const PROPERTIES = [
     bestFor: "Rented",
     status: "rented",
     statusLabel: "Rented",
-    rentTotal: "$1,300/mo",
+    rentTotal: "$2,400/mo",
     rentDisplayMode: "show",
     availability: "Rented",
     walkTime: "Short walk to SDSU",
@@ -111,10 +110,10 @@ const PROPERTIES = [
     galleryImages: "property-galleries/5005-cottage",
     image: "assets/property-galleries/5005-cottage/5005-cottage-01.jpg",
     imageAlt: "5005 63rd St Cottage furnished living room",
+    featuredPhotoIndex: 8,
     applyUrl: "https://renasrentals.tenantcloud.com/",
     secondaryCtaLabel: "View Photos",
     benefits: [
-      "1BR / 1BA back cottage",
       "Separate entrance",
       "Private deck",
       "AC, laundry, and fully furnished",
@@ -130,11 +129,11 @@ const PROPERTIES = [
     bedrooms: "6",
     bathrooms: "3",
     leaseLabel: "6BR / 3BA Full-Home Lease",
-    benefitLine: "Private bedrooms • Gourmet kitchen • Short walk to SDSU",
+    benefitLine: "Large open floorplan - Gourmet kitchen - Short walk to SDSU",
     bestFor: "Currently available",
     status: "available",
     statusLabel: "Available",
-    rentTotal: "$9,900/mo",
+    rentTotal: "$1,300/mo per room",
     rentDisplayMode: "show",
     availability: "Available",
     walkTime: "Short walk to SDSU",
@@ -150,10 +149,10 @@ const PROPERTIES = [
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610773",
     secondaryCtaLabel: "View Photos",
     benefits: [
-      "Larger home layout near SDSU",
-      "Private bedrooms",
-      "Gourmet kitchen",
-      "Shared living/common areas",
+      "Large open floorplan",
+      "Gas BBQ included",
+      "Washer and dryer",
+      "Central A/C",
       "Gardener included"
     ]
   },
@@ -165,7 +164,7 @@ const PROPERTIES = [
     bedrooms: "3",
     bathrooms: "3",
     leaseLabel: "3BR / 3BA Home Near SDSU",
-    benefitLine: "Private bedrooms • Newer back house • Short walk to SDSU",
+    benefitLine: "Ensuite bedrooms - Built in 2020 - Short walk to SDSU",
     bestFor: "Rented",
     status: "rented",
     statusLabel: "Rented",
@@ -185,10 +184,10 @@ const PROPERTIES = [
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610789",
     secondaryCtaLabel: "View Photos",
     benefits: [
-      "3BR / 3BA home near SDSU",
-      "Private bedrooms",
-      "Newer back house feel",
-      "Kitchen and shared space",
+      "Built in 2020 with 1,200 square feet",
+      "Each bedroom has an ensuite bathroom",
+      "Ceiling-mounted AC, ceiling fans, and mirrored closets",
+      "Granite kitchen island, stainless appliances, pantry, and outdoor yard space",
       "Gardener included"
     ]
   },
@@ -202,14 +201,14 @@ const PROPERTIES = [
     bedrooms: "4",
     bathrooms: "2",
     leaseLabel: "4BR / 2BA Near SDSU",
-    benefitLine: "Private bedrooms - AC - Solar panels - 10-minute walk to SDSU",
+    benefitLine: "AC - Solar panels - Short walk to SDSU",
     bestFor: "Rented",
     status: "rented",
     statusLabel: "Rented",
     rentTotal: "$7,300/mo",
     rentDisplayMode: "show",
     availability: "Rented",
-    walkTime: "10-minute walk to SDSU",
+    walkTime: "Short walk to SDSU",
     parking: "4 vehicles",
     laundry: "Washer and dryer included",
     outdoor: "Backyard with fruit trees",
@@ -222,11 +221,11 @@ const PROPERTIES = [
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610795",
     secondaryCtaLabel: "View Photos",
     benefits: [
-      "4BR / 2BA home near SDSU",
       "1,800 square foot open floor plan",
       "Eat-in kitchen, living room, and dining space",
       "AC, solar panels, and oak hardwood floors",
-      "Washer and dryer, backyard, parking for 4, and gardener included"
+      "Washer and dryer, backyard",
+      "Gardener included"
     ]
   },
   // TODO: Add 5053 YouTube video URL when provided.
@@ -238,14 +237,14 @@ const PROPERTIES = [
     bedrooms: "3",
     bathrooms: "3",
     leaseLabel: "3BR / 3BA ADU Back House",
-    benefitLine: "Ensuite bedrooms - Built in 2020 - 10-minute walk to SDSU",
+    benefitLine: "Ensuite bedrooms - Built in 2020 - Short walk to SDSU",
     bestFor: "Rented",
     status: "rented",
     statusLabel: "Rented",
     rentTotal: "$5,050/mo",
     rentDisplayMode: "show",
     availability: "Rented",
-    walkTime: "10-minute walk to SDSU",
+    walkTime: "Short walk to SDSU",
     parking: "Permit street parking",
     laundry: "Washer and dryer onsite",
     outdoor: "Grass yard, fruit trees, side gate entrance",
@@ -255,7 +254,6 @@ const PROPERTIES = [
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610797",
     secondaryCtaLabel: "View Photos",
     benefits: [
-      "3BR / 3BA ADU back house near SDSU",
       "Built in 2020 with 1,200 square feet",
       "Each bedroom has an ensuite bathroom",
       "Ceiling-mounted AC, ceiling fans, and mirrored closets",
@@ -328,7 +326,7 @@ const GALLERY_LABELS = {
     ["Exterior", "Separate cottage entrance beside the private deck"]
   ],
   "5011": [
-    ["Kitchen", "Kitchen appliance wall with cabinetry and counter space"],
+    ["Kitchen", "Large modern kitchen"],
     ["Exterior", "Front exterior and lawn near SDSU"],
     ["Outdoor", "Side yard and exterior approach"],
     ["Kitchen", "Kitchen sink, cabinets, and pass-through counter"],
@@ -342,9 +340,9 @@ const GALLERY_LABELS = {
     ["Bedroom", "Private bedroom with closet and natural light"],
     ["Bathroom", "Bathroom vanity near bedroom hallway"],
     ["Bedroom", "Bedroom with mirrored closet doors"],
-    ["Living", "Shared room with sliding door and window AC"],
+    ["Bedroom", "Bedroom with sliding door"],
     ["Living", "Lofted ceiling and staircase detail"],
-    ["Living", "Downstairs common area with staircase and kitchenette"],
+    ["Kitchenette", "Kitchenette"],
     ["Laundry", "Laundry room with washer, dryer, and utility sink"],
     ["Bathroom", "Bathroom vanity and shower area"],
     ["Bathroom", "Bathroom sink, toilet, and tub shower"]
@@ -367,15 +365,15 @@ const GALLERY_LABELS = {
     ["Kitchen", "Kitchen island, refrigerator, and stainless appliances"]
   ],
   "5051": [
-    ["Exterior", "Front exterior view for 5051 63rd St"],
-    ["Kitchen", "Eat-in kitchen with cabinet storage"],
-    ["Living", "Open living space with hardwood flooring"],
-    ["Dining", "Dining area connected to the living space"],
-    ["Bedroom", "Large bedroom with sliding door closet"],
-    ["Bathroom", "Remodeled bathroom finish from the 5051 page"],
-    ["Outdoor", "Backyard and outdoor space at 5051 63rd St"],
-    ["Bedroom", "Bedroom with ceiling fan and natural light"],
-    ["Kitchen", "Kitchen and shared living details at 5051 63rd St"]
+    ["Dining", "Dining and living room"],
+    ["Living", "Living room"],
+    ["Living", "Living room seating area"],
+    ["Dining", "Dining area"],
+    ["Living", "Open living room"],
+    ["Living", "Front room with ceiling fan"],
+    ["Bedroom", "Bedroom with mirrored closet"],
+    ["Bedroom", "Bedroom with closet storage"],
+    ["Bathroom", "Bathroom"]
   ],
   "5053": [
     ["Exterior", "5053 ADU back house exterior and yard setting"],
@@ -654,14 +652,18 @@ function renderProperties() {
   PROPERTIES.forEach((property) => {
     const photos = getPropertyPhotos(property.id);
     const hasGalleryPhotos = photos.length > 0;
-    const heroPhoto = photos[0] || (property.image ? {
+    const featuredPhotoIndex = Math.max(
+      0,
+      Math.min(Number(property.featuredPhotoIndex || 0), Math.max(photos.length - 1, 0))
+    );
+    const heroPhoto = photos[featuredPhotoIndex] || (property.image ? {
       src: property.image,
       alt: property.imageAlt,
       category: "Photos",
       caption: property.address,
       photoNumber: 1
     } : null);
-    const previewPhotos = photos.slice(1, 4);
+    const previewPhotos = photos.filter((_, index) => index !== featuredPhotoIndex).slice(0, 3);
     const article = document.createElement("article");
     article.className = "property-card";
     article.classList.add(property.status === "available" ? "property-card--available" : "property-card--rented");
@@ -673,7 +675,7 @@ function renderProperties() {
     heroButton.className = "property-hero-photo";
     heroButton.type = "button";
     heroButton.dataset.galleryProperty = property.id;
-    heroButton.dataset.galleryIndex = "0";
+    heroButton.dataset.galleryIndex = String(featuredPhotoIndex);
     heroButton.dataset.analyticsLocation = "property_card_hero_image";
     heroButton.setAttribute("aria-label", `Open ${property.address} photo gallery`);
 
@@ -716,12 +718,12 @@ function renderProperties() {
     const thumbnailStrip = document.createElement("div");
     thumbnailStrip.className = "property-thumbs";
     if (hasGalleryPhotos) {
-      previewPhotos.forEach((photo, index) => {
+      previewPhotos.forEach((photo) => {
         const thumb = document.createElement("button");
         thumb.className = "property-thumb";
         thumb.type = "button";
         thumb.dataset.galleryProperty = property.id;
-        thumb.dataset.galleryIndex = String(index + 1);
+        thumb.dataset.galleryIndex = String(photo.photoNumber - 1);
         thumb.dataset.analyticsLocation = "property_card_thumbnail";
         thumb.setAttribute("aria-label", `Open ${property.address} ${photo.category} photo`);
 
