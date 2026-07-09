@@ -46,7 +46,7 @@ const PROPERTIES = [
       "Gourmet kitchen and shared living space",
       "Large backyard with BBQ",
       "Washer and dryer",
-      "Central A/C",
+      "Dual Central A/C system",
       "Gardener included"
     ]
   },
@@ -81,7 +81,7 @@ const PROPERTIES = [
     benefits: [
       "Separate, private entrance",
       "Private sitting area",
-      "Full kitchen and AC",
+      "Full kitchen and Central AC",
       "Semi furnished",
       "Gardener included"
     ]
@@ -117,7 +117,7 @@ const PROPERTIES = [
     benefits: [
       "Separate entrance",
       "Private deck",
-      "AC, laundry, and fully furnished",
+      "Central AC, Washer & Dryer, and fully furnished",
       "Dedicated parking spot",
       "Gardener included"
     ]
@@ -186,9 +186,9 @@ const PROPERTIES = [
     secondaryCtaLabel: "View Photos",
     benefits: [
       "Built in 2020 with 1,200 square feet",
-      "Each bedroom has an ensuite bathroom",
-      "Ceiling-mounted AC, ceiling fans, and mirrored closets",
-      "Granite kitchen island, stainless appliances, pantry, and outdoor yard space",
+      "Each bedroom has a private bathroom",
+      "Central AC, ceiling fans, and mirrored closets",
+      "Granite kitchen island, stainless appliances, and outdoor yard space",
       "Gardener included"
     ]
   },
@@ -202,7 +202,7 @@ const PROPERTIES = [
     bedrooms: "4",
     bathrooms: "2",
     leaseLabel: "4BR / 2BA Near SDSU",
-    benefitLine: "AC - Solar panels - Short walk to SDSU",
+    benefitLine: "Central AC - Solar panels - Short walk to SDSU",
     bestFor: "Rented",
     status: "rented",
     statusLabel: "Rented",
@@ -224,8 +224,8 @@ const PROPERTIES = [
     benefits: [
       "1,800 square foot open floor plan",
       "Eat-in kitchen, living room, and dining space",
-      "AC, solar panels, and oak hardwood floors",
-      "Washer and dryer, backyard",
+      "Central AC, solar panels, and oak hardwood floors",
+      "Washer and dryer, backyard with fruit trees",
       "Gardener included"
     ]
   },
@@ -256,9 +256,9 @@ const PROPERTIES = [
     secondaryCtaLabel: "View Photos",
     benefits: [
       "Built in 2020 with 1,200 square feet",
-      "Each bedroom has an ensuite bathroom",
-      "Ceiling-mounted AC, ceiling fans, and mirrored closets",
-      "Granite kitchen island, stainless appliances, pantry, and outdoor yard space",
+      "Each bedroom has a private bathroom",
+      "Central AC, ceiling fans, and mirrored closets",
+      "Granite kitchen island, stainless appliances, and outdoor yard space",
       "Gardener included"
     ]
   },
