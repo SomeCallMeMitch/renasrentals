@@ -7,7 +7,9 @@ if(slides.length>1&&!window.matchMedia('(prefers-reduced-motion: reduce)').match
 document.addEventListener('click',event=>{const cta=event.target.closest('[data-cta]');if(cta&&typeof window.gtag==='function'){window.gtag('event','cta_click',{cta:cta.dataset.cta,page:'5011_ad_landing',label:cta.textContent.trim()});}});
 const photoModal=document.querySelector('[data-photo-modal]');
 const photos=document.querySelector('[data-all-photos]');
-document.querySelector('[data-view-photos]').addEventListener('click',()=>{if(!photos.children.length){for(let i=1;i<=20;i++){const image=document.createElement('img');image.src=`../assets/property-galleries/5011/5011-${String(i).padStart(2,'0')}.jpg`;image.alt=`5011 63rd St property photo ${i}`;image.loading='lazy';photos.append(image);}}photoModal.hidden=false;document.body.style.overflow='hidden';photoModal.querySelector('.modal-close').focus();});
+function openPhotoGallery(){if(!photos.children.length){for(let i=1;i<=20;i++){const image=document.createElement('img');image.src=`../assets/property-galleries/5011/5011-${String(i).padStart(2,'0')}.jpg`;image.alt=`5011 63rd St property photo ${i}`;image.loading='lazy';photos.append(image);}}photoModal.hidden=false;document.body.style.overflow='hidden';photoModal.querySelector('.modal-close').focus();}
+document.querySelector('[data-view-photos]').addEventListener('click',openPhotoGallery);
+document.querySelectorAll('[data-open-gallery]').forEach(button=>button.addEventListener('click',openPhotoGallery));
 document.querySelectorAll('[data-close-modal]').forEach(button=>button.addEventListener('click',()=>{photoModal.hidden=true;document.body.style.overflow='';}));
 const videoModal=document.querySelector('#video-modal');
 const videoFrame=document.querySelector('[data-video-frame]');
