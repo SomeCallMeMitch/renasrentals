@@ -15,4 +15,8 @@ const videoModal=document.querySelector('#video-modal');
 const videoFrame=document.querySelector('[data-video-frame]');
 document.querySelector('[data-video-trigger]').addEventListener('click',()=>{videoFrame.src='https://www.youtube.com/embed/uTAwdTavdIw?autoplay=1&rel=0';videoModal.classList.add('is-open');videoModal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';});
 document.querySelectorAll('[data-close-video]').forEach(button=>button.addEventListener('click',()=>{videoModal.classList.remove('is-open');videoModal.setAttribute('aria-hidden','true');videoFrame.src='';document.body.style.overflow='';}));
-document.addEventListener('keydown',event=>{if(event.key==='Escape'){if(!photoModal.hidden){photoModal.hidden=true;}if(videoModal.classList.contains('is-open')){videoModal.classList.remove('is-open');videoModal.setAttribute('aria-hidden','true');videoFrame.src='';}document.body.style.overflow='';}});
+const openHousePopup=document.querySelector('[data-open-house-popup]');
+function closeOpenHousePopup(){if(!openHousePopup||openHousePopup.classList.contains('is-hidden'))return;openHousePopup.classList.add('is-hidden');window.setTimeout(()=>{openHousePopup.hidden=true;},320);}
+document.querySelector('[data-close-open-house]')?.addEventListener('click',closeOpenHousePopup);
+if(openHousePopup){window.setTimeout(closeOpenHousePopup,60000);}
+document.addEventListener('keydown',event=>{if(event.key==='Escape'){if(!photoModal.hidden){photoModal.hidden=true;}if(videoModal.classList.contains('is-open')){videoModal.classList.remove('is-open');videoModal.setAttribute('aria-hidden','true');videoFrame.src='';}closeOpenHousePopup();document.body.style.overflow='';}});

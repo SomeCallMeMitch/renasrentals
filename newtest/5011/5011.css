@@ -199,11 +199,137 @@
 }
 
 .single-video h2 {
-  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-size: clamp(1.76rem, 3.2vw, 3.2rem);
 }
 
 .single-video .video-card {
   max-width: none;
+}
+
+.open-house-note {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--green) 44%, var(--line));
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  background: color-mix(in srgb, var(--green) 7%, var(--paper));
+  box-shadow: 0 14px 32px oklch(20% 0.015 255 / 0.08);
+}
+
+.open-house-note strong {
+  color: var(--ink);
+  font-size: clamp(1.02rem, 1.25vw, 1.18rem);
+  line-height: 1.15;
+}
+
+.open-house-note span {
+  color: var(--muted);
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.open-house-popup {
+  position: fixed;
+  right: clamp(16px, 3vw, 36px);
+  bottom: clamp(76px, 5vw, 36px);
+  z-index: 950;
+  width: min(420px, calc(100vw - 32px));
+  border: 1px solid color-mix(in srgb, var(--green) 50%, var(--line));
+  border-radius: 14px;
+  padding: 1.35rem;
+  background: color-mix(in srgb, var(--paper) 96%, var(--green));
+  color: var(--ink);
+  box-shadow: 0 22px 60px oklch(17% 0.025 255 / 0.22);
+  transform: translateY(18px);
+  opacity: 0;
+  animation: open-house-in 520ms cubic-bezier(0.16, 1, 0.3, 1) 700ms forwards;
+}
+
+.open-house-popup.is-hidden {
+  pointer-events: none;
+  animation: open-house-out 280ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.open-house-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.42rem 0.7rem;
+  background: var(--paper);
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 850;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.open-house-close:hover,
+.open-house-close:focus-visible {
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--green) 55%, var(--line));
+}
+
+.open-house-kicker {
+  width: fit-content;
+  margin: 0 0 0.75rem;
+  border-radius: 999px;
+  padding: 0.36rem 0.62rem;
+  background: var(--green);
+  color: oklch(98% 0.006 255);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.open-house-popup h2 {
+  max-width: 14ch;
+  margin: 0;
+  padding-right: 4.5rem;
+  font-size: clamp(1.75rem, 4.5vw, 2.45rem);
+  line-height: 0.98;
+}
+
+.open-house-popup p:not(.open-house-kicker) {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.open-house-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.open-house-actions .button {
+  min-height: 40px;
+  margin: 0;
+  padding: 0.72rem 1rem;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+@keyframes open-house-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes open-house-out {
+  to {
+    opacity: 0;
+    transform: translateY(14px);
+  }
 }
 
 .photo-modal[hidden] {
@@ -324,6 +450,22 @@
   }
 
   .property-actions .button {
+    white-space: normal;
+  }
+
+  .open-house-popup {
+    right: 12px;
+    bottom: 72px;
+    width: calc(100vw - 24px);
+    padding: 1rem;
+  }
+
+  .open-house-popup h2 {
+    padding-right: 4rem;
+  }
+
+  .open-house-actions .button {
+    flex: 1 1 145px;
     white-space: normal;
   }
 
