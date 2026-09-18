@@ -27,7 +27,7 @@ const PROPERTIES = [
     bestFor: "Rented",
     status: "rented",
     statusLabel: "Rented",
-    rentTotal: "$8,000/mo",
+    rentTotal: "$7,450/mo + $600 each additional person",
     rentDisplayMode: "show",
     availability: "Rented",
     walkTime: "Short walk to SDSU",
@@ -134,7 +134,7 @@ const PROPERTIES = [
     bestFor: "Currently available",
     status: "available",
     statusLabel: "Available",
-    rentTotal: "$1,300/mo per room",
+    rentTotal: "$8,400/mo + $600 each additional person",
     rentDisplayMode: "show",
     availability: "Available",
     walkTime: "Short walk to SDSU",
@@ -206,7 +206,7 @@ const PROPERTIES = [
     bestFor: "Rented",
     status: "rented",
     statusLabel: "Rented",
-    rentTotal: "$7,300/mo",
+    rentTotal: "$5,600/mo + $600 each additional person",
     rentDisplayMode: "show",
     availability: "Rented",
     walkTime: "Short walk to SDSU",
@@ -713,13 +713,6 @@ function renderProperties() {
 
     heroButton.append(photoCount);
 
-    if (property.status === "rented") {
-      const rentedWatermark = document.createElement("span");
-      rentedWatermark.className = "rented-watermark";
-      rentedWatermark.setAttribute("aria-label", "Rented");
-      rentedWatermark.textContent = "RENTED";
-      heroButton.appendChild(rentedWatermark);
-    }
 
     const thumbnailStrip = document.createElement("div");
     thumbnailStrip.className = "property-thumbs";
