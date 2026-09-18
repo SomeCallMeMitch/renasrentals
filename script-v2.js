@@ -147,6 +147,12 @@ const PROPERTIES = [
     galleryImages: "property-galleries/5011",
     image: "assets/property-16.jpg",
     imageAlt: "Living room with exposed wood beam ceiling at 5011 63rd St",
+    extraGalleryPhotos: [
+      { src: "assets/uploads/20260809_130541.jpeg", width: 640, height: 480, category: "Kitchen", caption: "Updated kitchen view" },
+      { src: "assets/uploads/20260809_130552.jpeg", width: 640, height: 480, category: "Kitchen", caption: "Updated kitchen view" },
+      { src: "assets/uploads/IMG_20260817_171939.jpeg", width: 480, height: 480, category: "Bathroom", caption: "Updated bathroom view" },
+      { src: "assets/uploads/IMG_20260817_171945.jpeg", width: 480, height: 480, category: "Bathroom", caption: "Updated bathroom view" }
+    ],
     applyUrl: "https://renasrentals.tenantcloud.com/listing/610773",
     secondaryCtaLabel: "View Photos",
     benefits: [
@@ -558,7 +564,7 @@ function createGalleryPhotos(property) {
   const dimensions = GALLERY_DIMENSIONS[property.id] || [];
   const labels = GALLERY_LABELS[property.id] || [];
 
-  return dimensions.map(([width, height], index) => {
+  const basePhotos = dimensions.map(([width, height], index) => {
     const photoNumber = index + 1;
     const [category = "Photo Tour", caption = "Property photo from the old Rena's Rentals page"] = labels[index] || [];
     const padded = String(photoNumber).padStart(2, "0");
