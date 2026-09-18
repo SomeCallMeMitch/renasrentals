@@ -582,6 +582,24 @@ function createGalleryPhotos(property) {
       photoNumber
     };
   });
+
+  const extraPhotos = (property.extraGalleryPhotos || []).map((photo, index) => {
+    const photoNumber = basePhotos.length + index + 1;
+    const category = photo.category || "Photo Tour";
+    const caption = photo.caption || "Property photo";
+    const title = `${property.address} - ${category}`;
+
+    return {
+      ...photo,
+      category,
+      title,
+      caption,
+      alt: `${title}: ${caption}`,
+      photoNumber
+    };
+  });
+
+  return [...basePhotos, ...extraPhotos];
 }
 
 function getPropertyPhotos(propertyId) {
