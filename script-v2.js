@@ -803,7 +803,8 @@ function renderProperties() {
     price.className = "price-pill";
     price.textContent = property.rentTotal || "Ask Rena's Rentals";
 
-    metaRow.append(status, price);
+    if (property.status === "available") metaRow.append(status);
+    metaRow.append(price);
 
     heading.append(title, leaseLabel, benefitLine, metaRow);
 
