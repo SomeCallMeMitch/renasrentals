@@ -1,10 +1,14 @@
 # Rena's Rentals handoff index
 
-This is the starting point for a new project chat. Read [AGENTS.md](AGENTS.md) for the completion rule. Only entries with a verified GitHub link are remotely available; a local working folder may contain additional, unsynced files.
+This is the starting point for a new project chat. Read [AGENTS.md](AGENTS.md) for the completion rule. The links below were verified on GitHub. A dated handoff records what was known **at that date**; verify the current live website independently.
 
-| Date | Topic | Status and next step | Remote reference |
+| Date of underlying work | Topic | Status and use | Handoff |
 | --- | --- | --- | --- |
-| 2026-09-24 | Mobile-first property-page direction | Design brief recorded. No website implementation or deployment was part of this task. Use it when planning the property-page update. | [MOBILE_PROPERTY_PAGE_REDESIGN_HANDOFF.md](MOBILE_PROPERTY_PAGE_REDESIGN_HANDOFF.md) |
-| 2026-09-24 | Handoff completion rule | Repository instructions established. Future tasks must publish and remotely verify their handoff before claiming it is saved for the next chat. | [AGENTS.md](AGENTS.md) |
+| 2026-09-24 | Mobile-first property-page direction | Client-approved direction and optional ideas; no website implementation or deployment in this task. | [MOBILE_PROPERTY_PAGE_REDESIGN_HANDOFF.md](MOBILE_PROPERTY_PAGE_REDESIGN_HANDOFF.md) |
+| 2026-08-20 | WordPress / GoDaddy migration | Historical migration record, published as a public-safe summary on 2026-09-24. Current live host, DNS, PHP error, and production validation still require fresh checks. | [WORDPRESS_GODADDY_MIGRATION_HANDOFF.md](WORDPRESS_GODADDY_MIGRATION_HANDOFF.md) |
+| 2026-08-20 | Listing Gallery 0.2.0 | Historical debugging context, published as a public-safe summary on 2026-09-24. The original notes did not identify a specific current PHP error. | [LISTING_GALLERY_DEBUG_HANDOFF.md](LISTING_GALLERY_DEBUG_HANDOFF.md) |
+| 2026-09-24 | Handoff completion rule | Future project tasks must publish and remotely verify durable handoff information before claiming it is saved for the next chat. | [AGENTS.md](AGENTS.md) |
 
-Older WordPress migration and Listing Gallery troubleshooting notes exist in a separate local project folder and are **not yet in this GitHub repository**. Their August 2026 status should not be treated as a current live-site verification. Confirm the intended files and review them for public-repository safety before adding a concise version here.
+## Before implementing the mobile redesign
+
+Confirm which site and platform currently serve the property pages, inspect the current mobile experience and editable source, and incorporate the client's remaining design information. The mobile brief is enough to continue planning, but it is not a verification of today's live website or a deployment instruction.
