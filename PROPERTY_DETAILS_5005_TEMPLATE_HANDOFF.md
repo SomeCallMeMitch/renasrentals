@@ -4,7 +4,7 @@
 
 The client supplied a visual reference for the full property-details page and wants **5005 63rd St built first on the local WordPress site**. Tune that first page with the client until it is right, then reuse the approved structure as the template for the other properties.
 
-Reference image: [5005 property-details template reference](reference/property-details/5005-property-details-template-reference.jpg).
+**Reference image is intentionally not stored in the repository.** The client will upload the visual reference again in the next chat. Do not reconstruct, base64-encode, or embed it from this handoff.
 
 This work is still **local-only**. No property-details page has been built yet, and nothing in this handoff authorizes a production deployment.
 
@@ -94,13 +94,14 @@ The client has now chosen the overall behavior that was previously open: **See D
 ## Build sequence for the next chat
 
 1. Read `AGENTS.md`, `HANDOFF_INDEX.md`, this file, and the existing local-preview README.
-2. Use Computer / local browser access to inspect the current local WordPress 5005 card and Beaver Builder structure before changing anything.
-3. Create the 5005 mobile details page in a small first pass that follows the supplied reference.
-4. Keep original desktop content untouched and hide/show only with mobile-scoped presentation rules as needed.
-5. Check narrow phone widths (at least 320px and 390px) for overflow and compact spacing.
-6. Check desktop around 1100px to confirm it is unchanged.
-7. Review the first pass with the client before building other properties.
-8. After each accepted step, update this handoff or a linked dated file, update `HANDOFF_INDEX.md`, commit/push, and remotely verify the result as required by `AGENTS.md`.
+2. Ask the client to upload the property-details visual reference in the new chat if it is not already attached there.
+3. Use Computer / local browser access to inspect the current local WordPress 5005 card and Beaver Builder structure before changing anything.
+4. Create the 5005 mobile details page in a small first pass that follows the supplied reference.
+5. Keep original desktop content untouched and hide/show only with mobile-scoped presentation rules as needed.
+6. Check narrow phone widths (at least 320px and 390px) for overflow and compact spacing.
+7. Check desktop around 1100px to confirm it is unchanged.
+8. Review the first pass with the client before building other properties.
+9. After each accepted step, update this handoff or a linked dated file, update `HANDOFF_INDEX.md`, commit/push, and remotely verify the result as required by `AGENTS.md`.
 
 ## Reference implementation context
 
@@ -114,6 +115,7 @@ Those files are reference copies of local WordPress work. The active Beaver Buil
 
 ## Open items
 
+- **Reference image must be uploaded by the client in the next chat. It is not in this repository.**
 - Exact WordPress page slug/URL for the 5005 details page should be chosen/confirmed during local implementation.
 - Confirm any local property values that differ from the supplied reference before overwriting them.
 - The template is **not approved yet**; 5005 must be reviewed and adjusted with the client first.
