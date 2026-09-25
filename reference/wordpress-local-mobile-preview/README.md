@@ -25,6 +25,8 @@ Edit photos in **WordPress Dashboard → Listing Galleries**. Beaver Builder hos
 
 This reference has not been applied to the live WordPress site, imported into the static site, or validated against production. Verify the local WordPress state before continuing or deploying. The next design decision is what See Details should open.
 
+The client plans to design the details page collaboratively in a new chat. Start with [PROPERTY_DETAILS_PAGE_NEXT_CHAT_HANDOFF.md](../../PROPERTY_DETAILS_PAGE_NEXT_CHAT_HANDOFF.md).
+
 ## Verification at this checkpoint
 
 All seven phone cards rendered with Beaver Builder source modules after the correction. At 320px the badge and page had no horizontal overflow; at 1100px the original desktop cards remained visible while the new copy modules were hidden. The repository editing rule and spacing preference are recorded in the root `AGENTS.md`.
