@@ -1,0 +1,96 @@
+{
+  "note": "Public-safe snapshot of the seven local Beaver Builder Mobile Card Copy modules as created on 2026-09-24. The active values live in the local WordPress database; check Beaver Builder before treating this snapshot as current.",
+  "properties": [
+    {
+      "address": "5005 63rd St",
+      "available_date": "Aug 15, 2027",
+      "location": "San Diego, California 92115",
+      "bed_label": "Beds",
+      "bath_label": "Baths",
+      "parking_value": "4",
+      "parking_label": "Vehicles",
+      "headline": "5 BD, 4 BA, 10-minute walk to SDSU.",
+      "description": "",
+      "details_label": "See Details",
+      "apply_label": "Apply Now"
+    },
+    {
+      "address": "5005 63rd St Studio",
+      "available_date": "Aug 15, 2027",
+      "location": "San Diego, California 92115",
+      "bed_label": "Bed",
+      "bath_label": "Bath",
+      "parking_value": "1",
+      "parking_label": "Parking spot",
+      "headline": "1 BD, 1 BA, 10-minute walk to SDSU.",
+      "description": "",
+      "details_label": "See Details",
+      "apply_label": "Apply Now"
+    },
+    {
+      "address": "5005 63rd St Cottage",
+      "available_date": "Aug 15, 2027",
+      "location": "San Diego, California 92115",
+      "bed_label": "Bed",
+      "bath_label": "Bath",
+      "parking_value": "1",
+      "parking_label": "Parking spot",
+      "headline": "1 BD, 1 BA, 10-minute walk to SDSU.",
+      "description": "",
+      "details_label": "See Details",
+      "apply_label": "Apply Now"
+    },
+    {
+      "address": "5011 63rd St",
+      "available_date": "Aug 15, 2027",
+      "location": "San Diego, California 92115",
+      "bed_label": "Beds",
+      "bath_label": "Baths",
+      "parking_value": "5",
+      "parking_label": "Vehicles",
+      "headline": "6 BD, 3 BA, 10-minute walk to SDSU.",
+      "description": "",
+      "details_label": "See Details",
+      "apply_label": "Apply Now"
+    },
+    {
+      "address": "5013 63rd St",
+      "available_date": "Aug 15, 2027",
+      "location": "San Diego, California 92115",
+      "bed_label": "Beds",
+      "bath_label": "Baths",
+      "parking_value": "On-site",
+      "parking_label": "",
+      "headline": "3 BD, 3 BA, 10-minute walk to SDSU.",
+      "description": "",
+      "details_label": "See Details",
+      "apply_label": "Apply Now"
+    },
+    {
+      "address": "5051 63rd St",
+      "available_date": "Aug 15, 2027",
+      "location": "San Diego, California 92115",
+      "bed_label": "Beds",
+      "bath_label": "Baths",
+      "parking_value": "4",
+      "parking_label": "Vehicles",
+      "headline": "4 BD, 2 BA, 10-minute walk to SDSU.",
+      "description": "",
+      "details_label": "See Details",
+      "apply_label": "Apply Now"
+    },
+    {
+      "address": "5053 63rd St",
+      "available_date": "Aug 15, 2027",
+      "location": "San Diego, California 92115",
+      "bed_label": "Beds",
+      "bath_label": "Baths",
+      "parking_value": "Permit",
+      "parking_label": "",
+      "headline": "3 BD, 3 BA, 10-minute walk to SDSU.",
+      "description": "",
+      "details_label": "See Details",
+      "apply_label": "Apply Now"
+    }
+  ]
+}

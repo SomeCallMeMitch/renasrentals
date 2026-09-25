@@ -29,3 +29,9 @@ For every website or interface task in this repository, start with a compact mob
 - Inspect the rendered spacing, including margins and padding inherited from page builders or parent wrappers. Remove doubled gaps, spare outer frames, and decorative lines that make one card look like a box inside another.
 - Check the narrow phone view before reporting completion. Compare the image-to-content gap, each card section, and the space below its actions. If a gap looks unnecessary, reduce it.
 - Keep text readable and interactive controls at least 44px tall even when the surrounding layout is dense.
+
+## WordPress editing boundary
+
+For the Rena's Rentals property cards, **all visible property text must be editable in Beaver Builder**. Addresses, availability, dates, facts, location, descriptions, and button text must come from Beaver Builder fields. The Apply destination must also remain editable there. Images belong in the custom Listing Gallery plugin, edited through WordPress Dashboard → Listing Galleries.
+
+CSS and JavaScript may control mobile layout, styling, carousel behavior, and counts derived from gallery images. Do not hardcode property-specific copy or fallback dates in the presentation plugin. Before reporting a card change complete, verify the mobile output reads the current Beaver Builder values and that the gallery still uses Listing Gallery.

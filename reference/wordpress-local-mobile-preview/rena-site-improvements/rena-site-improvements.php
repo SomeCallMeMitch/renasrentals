@@ -9,6 +9,12 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+add_action('init', static function (): void {
+    if (class_exists('FLBuilder') && class_exists('FLBuilderModule')) {
+        require_once plugin_dir_path(__FILE__) . 'modules/mobile-card-copy/mobile-card-copy.php';
+    }
+}, 20);
+
 add_action('wp_enqueue_scripts', static function (): void {
     if (!is_front_page() && !is_page(498)) {
         return;

@@ -21,3 +21,9 @@ Use the ease and flow of Cethron's mobile rental pages as a reference for Rena's
 
 **Design goal:** Less filler, less scrolling, faster answers. A renter should quickly understand what the home is, where it is, what it costs, when it is available, and how to take the next step.
 
+## Later local-card decisions (2026-09-24)
+
+The subsequent local mobile property **card** design uses Beds, Baths, and Parking; it omits pets, square footage, and price for now. Its two actions are See Details (currently a visual placeholder) and Apply Now. See [the current local preview reference](reference/wordpress-local-mobile-preview/README.md) for its exact status. These later card decisions do not settle the future full property-detail page.
+
+**Editing requirement:** All visible property-card text must be editable in Beaver Builder; property photos stay in the custom Listing Gallery plugin. The presentation plugin may control layout and gallery behavior but must not hardcode property copy. This rule is also in [AGENTS.md](AGENTS.md).
+

@@ -4,7 +4,6 @@
   if (document.body.classList.contains('fl-builder-edit')) return;
 
   const icons = {
-    calendar: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg>',
     bed: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20v-9m18 9v-9M3 17h18M5 12V7h14v5M3 12h18v5M6 20v-3m12 3v-3"/></svg>',
     bath: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h18v2a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-2Zm3 8v1m12-1v1M6 13V5a3 3 0 0 1 6 0v1"/></svg>',
     parking: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>'
@@ -31,19 +30,13 @@
     parent.append(item);
   }
 
-  function parkingDisplay(raw) {
-    const vehicles = raw.match(/(\d+)\s*vehicles?/i);
-    if (vehicles) return [vehicles[1], Number(vehicles[1]) === 1 ? 'Vehicle' : 'Vehicles'];
-    if (/\bspot\b/i.test(raw)) return ['1', 'Parking spot'];
-    if (/permit street/i.test(raw)) return ['Permit', ''];
-    if (/on-site/i.test(raw)) return ['On-site', ''];
-    return [raw || 'Ask', 'Parking'];
-  }
-
   function buildCard(card, number) {
     const content = card.querySelector(':scope > .fl-col-content');
     const source = card.querySelector('.listing-gallery__data');
-    if (!content || !source) return;
+    const copySource = content?.querySelector(':scope > .fl-module-mobile-card-copy .rr-mobile-card-copy');
+    if (!content || !source || !copySource) return;
+
+    const copyText = (field) => copySource.querySelector(`[data-rr-copy-field="${field}"]`)?.textContent.trim() || '';
 
     let photos;
     try { photos = JSON.parse(source.textContent); } catch (_) { return; }
@@ -51,16 +44,15 @@
 
     const modules = [...content.children];
     const headings = modules.filter((node) => node.classList.contains('fl-module-heading'));
-    const address = headings[0]?.textContent.trim() || 'Property';
+    const address = headings[0]?.textContent.trim();
+    if (!address) return;
     const beds = factValue(card, 'bedrooms');
     const baths = factValue(card, 'baths');
-    const parkingSource = factValue(card, 'parking');
-    const parking = parkingDisplay(parkingSource);
     const statusModule = modules.find((node) => node.classList.contains('fl-module-button-group'));
-    const statusText = statusModule?.querySelector('.fl-button-text')?.textContent.trim() || 'Ask availability';
-    const dateMatch = statusModule?.textContent.match(/(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+\d{4}/i);
-    const date = dateMatch?.[0] || 'Aug 15, 2027';
-    const applySource = [...card.querySelectorAll('a[href]')].find((link) => /^Apply\b/i.test(link.textContent.trim()));
+    const statusText = statusModule?.querySelector('.fl-button-text')?.textContent.trim() || '';
+    if (!statusText) return;
+    const actionModule = modules.filter((node) => node.classList.contains('fl-module-button-group')).at(-1);
+    const applySource = [...(actionModule?.querySelectorAll('a[href]') || [])].at(-1);
 
     const shell = element('section', 'rr-card-mobile');
     shell.setAttribute('aria-label', address + ' property');
@@ -106,30 +98,31 @@
     const body = element('div', 'rr-card-body');
     const headingRow = element('div', 'rr-card-heading-row');
     const availability = element('div', 'rr-card-availability');
-    availability.innerHTML = icons.calendar;
+    if (statusText.toLowerCase() === 'available') availability.classList.add('rr-card-availability--available');
     const availabilityCopy = element('div', 'rr-card-availability-copy');
-    availabilityCopy.append(element('span', 'rr-card-status', statusText), element('strong', 'rr-card-date', date));
+    availabilityCopy.append(element('span', 'rr-card-status', statusText), element('strong', 'rr-card-date', copyText('available_date')));
     availability.append(availabilityCopy);
     const addressBlock = element('div', 'rr-card-address');
     addressBlock.append(element('h3', '', address));
-    addressBlock.append(element('p', 'rr-card-location', 'San Diego, California 92115'));
+    addressBlock.append(element('p', 'rr-card-location', copyText('location')));
     headingRow.append(availability, addressBlock);
 
     const facts = element('div', 'rr-card-facts');
-    appendFact(facts, 'bed', beds || 'Ask', Number(beds) === 1 ? 'Bed' : 'Beds');
-    appendFact(facts, 'bath', baths || 'Ask', Number(baths) === 1 ? 'Bath' : 'Baths');
-    appendFact(facts, 'parking', parking[0], parking[1]);
-    facts.lastElementChild.setAttribute('aria-label', 'Parking: ' + (parkingSource || 'ask for details'));
+    if (beds) appendFact(facts, 'bed', beds, copyText('bed_label'));
+    if (baths) appendFact(facts, 'bath', baths, copyText('bath_label'));
+    if (copyText('parking_value')) appendFact(facts, 'parking', copyText('parking_value'), copyText('parking_label'));
 
     const copy = element('div', 'rr-card-copy');
-    const headline = beds && baths ? beds + ' BD, ' + baths + ' BA, 10-minute walk to SDSU.' : 'A short walk to SDSU.';
-    copy.append(element('h4', '', headline));
+    const headline = copyText('headline');
+    if (headline) copy.append(element('h4', '', headline));
+    const description = copyText('description');
+    if (description) copy.append(element('p', '', description));
 
     const actions = element('div', 'rr-card-actions');
-    const details = element('span', 'rr-card-button rr-card-button--details', 'See Details');
-    details.setAttribute('aria-label', 'See Details, coming soon');
-    const apply = element('a', 'rr-card-button rr-card-button--apply', 'Apply Now');
-    apply.href = applySource?.href || 'https://renasrentals.tenantcloud.com/';
+    const details = element('span', 'rr-card-button rr-card-button--details', copyText('details_label'));
+    const apply = element('a', 'rr-card-button rr-card-button--apply', copyText('apply_label'));
+    if (!applySource?.href) return;
+    apply.href = applySource.href;
     apply.target = '_blank';
     apply.rel = 'noopener';
     actions.append(details, apply);

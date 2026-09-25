@@ -1,4 +1,16 @@
 /* Local mobile card concept, 2026-09-24. Original Beaver modules remain editable. */
+.fl-module-mobile-card-copy { display: none; }
+body.fl-builder-edit .fl-module-mobile-card-copy { display: block; }
+body.fl-builder-edit .rr-mobile-card-copy {
+  padding: 12px;
+  border: 1px solid #8baed3;
+  background: #f2f8ff;
+  color: #142943;
+}
+body.fl-builder-edit .rr-mobile-card-copy dl { margin: 8px 0; }
+body.fl-builder-edit .rr-mobile-card-copy dl > div { display: flex; gap: 8px; }
+body.fl-builder-edit .rr-mobile-card-copy dt { min-width: 180px; font-weight: 700; }
+body.fl-builder-edit .rr-mobile-card-copy dd { margin: 0; }
 .rr-card-mobile { display: none; }
 
 @media (max-width: 767px) {
@@ -103,9 +115,9 @@
     min-width: 0;
     padding: 4px 7px;
     border-radius: 12px;
-    background: #d9f1df;
+    background: #e9f4ff;
   }
-  .rr-card-availability > svg { display: none; }
+  .rr-card-availability--available { background: #d9f1df; }
   .rr-card-fact svg {
     display: block;
     flex: none;
