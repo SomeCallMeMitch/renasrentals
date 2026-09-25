@@ -20,3 +20,12 @@ This repository is public. Do not publish credentials, private customer data, ba
 ## Scope
 
 The repository and these handoffs are the source of truth for **recorded project work**. Verify the current live website independently before claiming a live issue is fixed, deployed, or reproduced. Never infer current production status from an older handoff alone.
+
+## Site-building spacing preference
+
+For every website or interface task in this repository, start with a compact mobile layout. The client prefers **minimal vertical padding and short gaps**; do not use generous spacing as a default.
+
+- Start with roughly 4–8px of vertical space between related card elements and 4–8px of vertical padding inside compact information rows. Add more only when the content demonstrably needs it.
+- Inspect the rendered spacing, including margins and padding inherited from page builders or parent wrappers. Remove doubled gaps, spare outer frames, and decorative lines that make one card look like a box inside another.
+- Check the narrow phone view before reporting completion. Compare the image-to-content gap, each card section, and the space below its actions. If a gap looks unnecessary, reduce it.
+- Keep text readable and interactive controls at least 44px tall even when the surrounding layout is dense.
