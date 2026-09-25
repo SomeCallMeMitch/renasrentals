@@ -35,3 +35,8 @@ After each details-page step, update this handoff or a linked dated document, co
 The client has now supplied and selected a concrete visual target for the details page. **5005 63rd St will be built first on the local WordPress site, reviewed with the client, and then used as the template for the remaining properties.** The design reference, field requirements, action behavior, and mobile-only/desktop-preservation rules are recorded in [PROPERTY_DETAILS_5005_TEMPLATE_HANDOFF.md](PROPERTY_DETAILS_5005_TEMPLATE_HANDOFF.md).
 
 This resolves several previously open decisions: See Details is intended to lead to a full property page, the first page to build is 5005, and the current desktop version must remain unchanged. The exact local WordPress page slug/URL is still to be chosen during implementation.
+
+
+### Reference image availability
+
+The visual reference selected for the 5005 details-page template is **not stored in this repository**. The client will upload it again in the next chat. Follow the permanent image-handling rule in `AGENTS.md`: never base64-encode or embed an image unless the client explicitly requests that format.
