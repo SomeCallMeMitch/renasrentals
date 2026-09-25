@@ -28,3 +28,10 @@ The destination for See Details, the content and order of each full property pag
 The local WordPress database holds the Beaver Builder page and the seven Mobile Card Copy instances. The repository cannot reproduce those database changes from plugin files alone. Its [local preview reference](reference/wordpress-local-mobile-preview/README.md) explains the editing points, and its `rena-site-improvements/` folder contains a **reference copy** of the local presentation plugin. Listing Gallery is a separate plugin and is the image source; edit photo sets in WordPress Dashboard → Listing Galleries. Before moving the design to another WordPress site, transfer/recreate the Beaver Builder content as well as the plugin, then verify both on that target.
 
 After each details-page step, update this handoff or a linked dated document, commit/push it, and verify the remote GitHub file as required by `AGENTS.md`. Record any Beaver Builder database-only content in a public-safe repo snapshot so the next chat can see what was done. Do not publish credentials, private backups, or database exports.
+
+
+## Client-selected 5005 template direction (later on 2026-09-24)
+
+The client has now supplied and selected a concrete visual target for the details page. **5005 63rd St will be built first on the local WordPress site, reviewed with the client, and then used as the template for the remaining properties.** The design reference, field requirements, action behavior, and mobile-only/desktop-preservation rules are recorded in [PROPERTY_DETAILS_5005_TEMPLATE_HANDOFF.md](PROPERTY_DETAILS_5005_TEMPLATE_HANDOFF.md).
+
+This resolves several previously open decisions: See Details is intended to lead to a full property page, the first page to build is 5005, and the current desktop version must remain unchanged. The exact local WordPress page slug/URL is still to be chosen during implementation.
