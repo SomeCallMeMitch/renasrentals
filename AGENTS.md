@@ -2,6 +2,14 @@
 
 Read this file and [HANDOFF_INDEX.md](HANDOFF_INDEX.md) at the start of every project task. Follow the handoffs relevant to the task. These instructions apply to all files in this repository.
 
+## IMPORTANT — image asset handling
+
+**Never encode images in base64 unless the client specifically asks for base64 in that task.** This applies to screenshots, design references, property photos, logos, and every other image asset.
+
+- Prefer normal image files and ordinary repository/file paths.
+- If the available tooling cannot upload a binary image normally, **do not substitute a base64 blob or data URI**. Leave the image out, record that it still needs to be supplied, and ask the client to upload it in the appropriate chat/workspace.
+- Do not place large encoded image strings in Markdown, JSON, JavaScript, CSS, PHP, HTML, handoffs, or repository source files unless the client explicitly requested that representation.
+
 ## Completion rule
 
 A project task is not ready to be reported as complete until its durable result is available to the next chat through this GitHub repository.
