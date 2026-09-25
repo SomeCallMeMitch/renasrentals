@@ -4,6 +4,7 @@ This is the starting point for a new project chat. Read [AGENTS.md](AGENTS.md) f
 
 | Date of underlying work | Topic | Status and use | Handoff |
 | --- | --- | --- | --- |
+| 2026-09-24 | Mobile availability badge | Local-only phone cards now show “Available” and its date on one line in a compact green badge. Checked at 320px and 390px with all seven cards present and no horizontal overflow; live site unchanged. | [reference/wordpress-local-mobile-preview/README.md](reference/wordpress-local-mobile-preview/README.md) |
 | 2026-09-24 | Local WordPress mobile preview and compact spacing | Seven phone cards and homepage mobile presentation updated **locally only**; live site unchanged. The repo includes the preview plugin source for reference. Future website work should follow the compact-spacing rule in `AGENTS.md`. | [reference/wordpress-local-mobile-preview/README.md](reference/wordpress-local-mobile-preview/README.md) |
 | 2026-09-24 | Mobile-first property-page direction | Client-approved direction and optional ideas; no website implementation or deployment in this task. | [MOBILE_PROPERTY_PAGE_REDESIGN_HANDOFF.md](MOBILE_PROPERTY_PAGE_REDESIGN_HANDOFF.md) |
 | 2026-08-20 | WordPress / GoDaddy migration | Historical migration record, published as a public-safe summary on 2026-09-24. Current live host, DNS, PHP error, and production validation still require fresh checks. | [WORDPRESS_GODADDY_MIGRATION_HANDOFF.md](WORDPRESS_GODADDY_MIGRATION_HANDOFF.md) |

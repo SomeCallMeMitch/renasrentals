@@ -94,19 +94,18 @@
   .rr-card-heading-row {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: stretch;
+    align-items: center;
     gap: 12px;
   }
   .rr-card-availability {
     display: flex;
     align-items: center;
-    gap: 6px;
     min-width: 0;
-    padding: 4px 9px;
+    padding: 4px 7px;
     border-radius: 12px;
-    background: #e9f4ff;
+    background: #d9f1df;
   }
-  .rr-card-availability svg,
+  .rr-card-availability > svg { display: none; }
   .rr-card-fact svg {
     display: block;
     flex: none;
@@ -118,17 +117,20 @@
     stroke-linecap: round;
     stroke-linejoin: round;
   }
-  .rr-card-availability-copy { min-width: 0; }
+  .rr-card-availability-copy {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    min-width: 0;
+    white-space: nowrap;
+  }
   .rr-card-status {
-    display: block;
-    color: #315d80;
-    font: 600 12px/1.25 Arial, sans-serif;
+    color: #176037;
+    font: 700 14px/1.25 Arial, sans-serif;
   }
   .rr-card-date {
-    display: block;
-    margin-top: 3px;
-    color: #152f4b;
-    font: 750 14px/1.2 Arial, sans-serif;
+    color: #184c32;
+    font: 700 12px/1.2 Arial, sans-serif;
   }
   .rr-card-address {
     display: flex;
@@ -225,9 +227,9 @@
 @media (max-width: 350px) {
   .rr-card-body { padding-right: 12px; padding-left: 12px; }
   .rr-card-heading-row { gap: 8px; }
-  .rr-card-availability { gap: 5px; padding: 4px 8px; }
-  .rr-card-availability svg { width: 19px; height: 19px; }
-  .rr-card-date { font-size: 13px; }
+  .rr-card-availability { padding: 4px 5px; }
+  .rr-card-status { font-size: 13px; }
+  .rr-card-date { font-size: 11px; }
   .rr-card-address h3 { font-size: 17px !important; }
   .rr-card-copy h4 { font-size: 16px !important; }
 }
