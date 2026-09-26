@@ -1,4 +1,29 @@
-/* 5005 review page only. The gallery and all property copy remain in their source plugins/modules. */
+/* Shared property-detail presentation and responsive layout. */
+body.rr-detail-page .rr-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  margin: 12px 0 14px;
+  padding: 10px 14px;
+  border: 1px solid #c8d7d0;
+  border-radius: 6px;
+  background: #fff;
+  color: #023226;
+  font: 700 14px/1.2 Arial, sans-serif;
+  text-decoration: none;
+}
+
+body.rr-detail-page .rr-detail-back:hover {
+  background: #edf5f1;
+  color: #023226;
+}
+
+body.rr-detail-page .rr-detail-back:focus-visible {
+  outline: 3px solid #eda01b;
+  outline-offset: 3px;
+}
+
 @media (max-width: 767px) {
   body.rr-detail-page {
     --rr-logo-green: #023226;
@@ -34,6 +59,12 @@
     align-items: center;
     column-gap: 8px;
     padding: 10px 13px 18px !important;
+  }
+
+  body.rr-detail-page .rr-detail-back {
+    grid-column: 1 / -1;
+    min-height: 44px;
+    margin: 8px 0 10px;
   }
 
   body.rr-detail-page .rr-detail-property > .fl-col-content > .fl-module {

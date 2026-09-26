@@ -4,6 +4,26 @@
 
   if (document.body.classList.contains('fl-builder-edit')) return;
   const section = document.querySelector('body.rr-detail-page .rr-detail-property');
+  const content = section?.querySelector(':scope > .fl-col-content');
+  const returnCards = {
+    '/5005-63rd-st-details/': 'property-5005',
+    '/5005-63rd-st-studio-details/': 'property-5005-studio',
+    '/5005-63rd-st-cottage-details/': 'property-5005-cottage',
+    '/5011-63rd-st-details/': 'property-5011',
+    '/5013-63rd-st-details/': 'property-5013',
+    '/5051-63rd-st-details/': 'property-5051',
+    '/5053-63rd-st-details/': 'property-5053'
+  };
+  const pagePath = window.location.pathname.replace(/\/?$/, '/') || '/';
+  const returnCard = returnCards[pagePath];
+  if (content && returnCard && !content.querySelector('.rr-detail-back')) {
+    const backLink = document.createElement('a');
+    backLink.className = 'rr-detail-back';
+    backLink.href = '/#' + returnCard;
+    backLink.textContent = '← Back to Available Homes';
+    content.insertBefore(backLink, content.firstChild);
+  }
+
   const videoLink = section?.querySelector('.rr-details-actions .fl-button-group-button:nth-child(2) a');
   if (!videoLink) return;
   const address = section.querySelector('.fl-module-heading')?.textContent.trim() || 'Property';

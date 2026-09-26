@@ -1,18 +1,18 @@
 {
-  "task_id": "wpvivid-d43bd03c6de99",
+  "task_id": "wpvivid-b1707fe2a6b6e",
   "backup_directory": "C:\\Users\\field\\Local Sites\\renas-rentals-local-test\\app\\public\\wp-content\\wpvividbackups",
   "parts": [
     {
-      "file": "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_all.zip",
-      "bytes": 208368877,
-      "sha256": "d0900feebe01ef94013769d5efb37f6dac031597aa1cded65556530731cde195",
+      "file": "localhost_wpvivid-b1707fe2a6b6e_2026-09-26-03-32_backup_all.zip",
+      "bytes": 208373531,
+      "sha256": "78c1567e92ccca1b894f393af0776a17d6df68868992adf9fa7e75dba1364a52",
       "contents": [
-        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_db.zip",
-        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_themes.zip",
-        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_plugin.zip",
-        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_uploads.zip",
-        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_content.zip",
-        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_core.zip"
+        "localhost_wpvivid-b1707fe2a6b6e_2026-09-26-03-32_backup_db.zip",
+        "localhost_wpvivid-b1707fe2a6b6e_2026-09-26-03-32_backup_themes.zip",
+        "localhost_wpvivid-b1707fe2a6b6e_2026-09-26-03-32_backup_plugin.zip",
+        "localhost_wpvivid-b1707fe2a6b6e_2026-09-26-03-32_backup_uploads.zip",
+        "localhost_wpvivid-b1707fe2a6b6e_2026-09-26-03-32_backup_content.zip",
+        "localhost_wpvivid-b1707fe2a6b6e_2026-09-26-03-32_backup_core.zip"
       ]
     }
   ],

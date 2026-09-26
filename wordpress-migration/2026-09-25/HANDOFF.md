@@ -6,7 +6,7 @@
 
 Publish the current local WordPress site as a whole. That means the live desktop and mobile experience should both match local. The user specifically confirmed: “leave it as it is currently on the local site.”
 
-The property detail pages and the current homepage are editable with Beaver Builder. The local homepage's mobile **See Details** links point to their matching individual pages. Existing browser back navigation works through standard page routes.
+The property detail pages and the current homepage are editable with Beaver Builder. The local homepage's mobile **See Details** links point to their matching individual pages. Each detail page now has a visible **Back to Available Homes** link at the top that returns to its matching property card, including when the detail page was opened directly. Standard phone/browser back navigation remains available too.
 
 ## Completed local details pages
 
@@ -20,18 +20,19 @@ The property detail pages and the current homepage are editable with Beaver Buil
 | 5051 63rd St | 516 | `/5051-63rd-st-details/` |
 | 5053 63rd St | 517 | `/5053-63rd-st-details/` |
 
-The design fixes include less-rounded buttons, larger Open Floorplan text, more spacing around price/features/checklist sections, the property-card bedroom/bath/parking boxes, green availability and logo-green checks, **Text Us** in place of **View Photos**, and working video modals. The 5005 Apply button keeps its current TenantCloud URL at the user's request, even though TenantCloud previously reported that listing as inactive.
+The design fixes include less-rounded buttons, larger Open Floorplan text, more spacing around price/features/checklist sections, the property-card bedroom/bath/parking boxes, green availability and logo-green checks, **Text Us** in place of **View Photos**, working video modals, and the new return link on each details page. The 5005 Apply button keeps its current TenantCloud URL at the user's request, even though TenantCloud previously reported that listing as inactive.
 
 Shared WordPress plugin source and Beaver Builder exports are in this directory. `rena-site-improvements/assets/5005-details.css` and `.js` are retained historical assets; the active plugin does not enqueue those unused files. Treat the exports as data, not a plugin installer. Local page IDs may differ after restore.
 
 ## Backup ready for migration
 
-- WPvivid completed and locked task: `wpvivid-d43bd03c6de99`
-- Backup file: `localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_all.zip`
-- Size: 208,368,877 bytes
+- WPvivid completed and locked task: `wpvivid-b1707fe2a6b6e`
+- Backup file: `localhost_wpvivid-b1707fe2a6b6e_2026-09-26-03-32_backup_all.zip`
+- Size: 208,373,531 bytes
+- It passed ZIP CRC checks, includes all seven detail slugs, `rena-site-improvements`, and the new back links, and excludes the three obsolete backup archives.
 - It passed ZIP CRC checks, includes all seven detail slugs and `rena-site-improvements`, and excludes three obsolete backup archives.
 - SHA-256 and backup metadata are in `LOCAL-TO-LIVE-BACKUP-2026-09-25.json`.
-- The 199 MB backup is intentionally not checked into Git. On the build machine it is at `C:\Users\field\Local Sites\renas-rentals-local-test\app\public\wp-content\wpvividbackups\localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_all.zip`. If the new account runs on another computer, copy the ZIP separately and verify its SHA-256 from the JSON manifest.
+- The 199 MB backup is intentionally not checked into Git. On the build machine it is at `C:\Users\field\Local Sites\renas-rentals-local-test\app\public\wp-content\wpvividbackups\localhost_wpvivid-b1707fe2a6b6e_2026-09-26-03-32_backup_all.zip`. If the new account runs on another computer, copy the ZIP separately and verify its SHA-256 from the JSON manifest.
 
 ## Next action: publish after live WordPress access
 
