@@ -1,0 +1,30 @@
+{
+  "task_id": "wpvivid-d43bd03c6de99",
+  "backup_directory": "C:\\Users\\field\\Local Sites\\renas-rentals-local-test\\app\\public\\wp-content\\wpvividbackups",
+  "parts": [
+    {
+      "file": "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_all.zip",
+      "bytes": 208368877,
+      "sha256": "d0900feebe01ef94013769d5efb37f6dac031597aa1cded65556530731cde195",
+      "contents": [
+        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_db.zip",
+        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_themes.zip",
+        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_plugin.zip",
+        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_uploads.zip",
+        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_content.zip",
+        "localhost_wpvivid-d43bd03c6de99_2026-09-26-03-07_backup_core.zip"
+      ]
+    }
+  ],
+  "all_page_slugs_in_database": {
+    "5005-63rd-st-details": true,
+    "5005-63rd-st-studio-details": true,
+    "5005-63rd-st-cottage-details": true,
+    "5011-63rd-st-details": true,
+    "5013-63rd-st-details": true,
+    "5051-63rd-st-details": true,
+    "5053-63rd-st-details": true
+  },
+  "site_plugin_in_archive": true,
+  "obsolete_archives_included": []
+}
